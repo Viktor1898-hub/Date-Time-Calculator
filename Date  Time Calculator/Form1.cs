@@ -16,5 +16,11 @@ namespace Date__Time_Calculator
         {
             InitializeComponent();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            long unixTimeSeconds = DateTimeOffset.Now.ToUnixTimeSeconds();
+            TimerLabel.Text = unixTimeSeconds.ToString();
+        }
     }
 }

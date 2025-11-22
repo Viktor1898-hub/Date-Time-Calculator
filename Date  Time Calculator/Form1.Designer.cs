@@ -45,6 +45,9 @@
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2DragControl3 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl4 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.UnixLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.TimerLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.MenuPanel.SuspendLayout();
             this.UnixPanel.SuspendLayout();
             this.SuspendLayout();
@@ -214,6 +217,8 @@
             // UnixPanel
             // 
             this.UnixPanel.BorderRadius = 17;
+            this.UnixPanel.Controls.Add(this.TimerLabel);
+            this.UnixPanel.Controls.Add(this.UnixLabel);
             this.UnixPanel.Controls.Add(this.guna2ControlBox1);
             this.UnixPanel.Controls.Add(this.guna2ControlBox2);
             this.UnixPanel.FillColor = System.Drawing.Color.Transparent;
@@ -261,6 +266,33 @@
             this.guna2DragControl4.TargetControl = this.DateComparPanel;
             this.guna2DragControl4.UseTransparentDrag = true;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // UnixLabel
+            // 
+            this.UnixLabel.BackColor = System.Drawing.Color.Transparent;
+            this.UnixLabel.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UnixLabel.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.UnixLabel.Location = new System.Drawing.Point(105, 36);
+            this.UnixLabel.Name = "UnixLabel";
+            this.UnixLabel.Size = new System.Drawing.Size(214, 31);
+            this.UnixLabel.TabIndex = 4;
+            this.UnixLabel.Text = "Unix Time Stamp";
+            // 
+            // TimerLabel
+            // 
+            this.TimerLabel.BackColor = System.Drawing.Color.Transparent;
+            this.TimerLabel.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimerLabel.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.TimerLabel.Location = new System.Drawing.Point(353, 36);
+            this.TimerLabel.Name = "TimerLabel";
+            this.TimerLabel.Size = new System.Drawing.Size(3, 2);
+            this.TimerLabel.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -276,6 +308,7 @@
             this.Text = "Form1";
             this.MenuPanel.ResumeLayout(false);
             this.UnixPanel.ResumeLayout(false);
+            this.UnixPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -296,6 +329,9 @@
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl3;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel TimerLabel;
+        private Guna.UI2.WinForms.Guna2HtmlLabel UnixLabel;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
