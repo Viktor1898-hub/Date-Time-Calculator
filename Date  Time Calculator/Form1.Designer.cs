@@ -60,13 +60,13 @@
             this.guna2CustomGradientPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2CustomGradientPanel5 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2CustomGradientPanel6 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2DragControl5 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2DragControl6 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2DragControl7 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2DragControl8 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2DragControl9 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2DragControl10 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl11 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl10 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl9 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl8 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl7 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl6 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl5 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.MenuPanel.SuspendLayout();
             this.UnixPanel.SuspendLayout();
             this.InfoPanel.SuspendLayout();
@@ -493,35 +493,11 @@
             this.guna2CustomGradientPanel6.Size = new System.Drawing.Size(916, 73);
             this.guna2CustomGradientPanel6.TabIndex = 6;
             // 
-            // guna2DragControl5
+            // guna2DragControl11
             // 
-            this.guna2DragControl5.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl5.TargetControl = this.InfoLCLabel;
-            this.guna2DragControl5.UseTransparentDrag = true;
-            // 
-            // guna2DragControl6
-            // 
-            this.guna2DragControl6.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl6.TargetControl = this.InfoDWCLabel;
-            this.guna2DragControl6.UseTransparentDrag = true;
-            // 
-            // guna2DragControl7
-            // 
-            this.guna2DragControl7.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl7.TargetControl = this.infoDCLabel;
-            this.guna2DragControl7.UseTransparentDrag = true;
-            // 
-            // guna2DragControl8
-            // 
-            this.guna2DragControl8.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl8.TargetControl = this.InfoTCLabel;
-            this.guna2DragControl8.UseTransparentDrag = true;
-            // 
-            // guna2DragControl9
-            // 
-            this.guna2DragControl9.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl9.TargetControl = this.InfoBILabel;
-            this.guna2DragControl9.UseTransparentDrag = true;
+            this.guna2DragControl11.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl11.TargetControl = this.TimerLabel;
+            this.guna2DragControl11.UseTransparentDrag = true;
             // 
             // guna2DragControl10
             // 
@@ -529,11 +505,35 @@
             this.guna2DragControl10.TargetControl = this.UnixLabel;
             this.guna2DragControl10.UseTransparentDrag = true;
             // 
-            // guna2DragControl11
+            // guna2DragControl9
             // 
-            this.guna2DragControl11.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl11.TargetControl = this.TimerLabel;
-            this.guna2DragControl11.UseTransparentDrag = true;
+            this.guna2DragControl9.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl9.TargetControl = this.InfoBILabel;
+            this.guna2DragControl9.UseTransparentDrag = true;
+            // 
+            // guna2DragControl8
+            // 
+            this.guna2DragControl8.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl8.TargetControl = this.InfoTCLabel;
+            this.guna2DragControl8.UseTransparentDrag = true;
+            // 
+            // guna2DragControl7
+            // 
+            this.guna2DragControl7.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl7.TargetControl = this.infoDCLabel;
+            this.guna2DragControl7.UseTransparentDrag = true;
+            // 
+            // guna2DragControl6
+            // 
+            this.guna2DragControl6.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl6.TargetControl = this.InfoDWCLabel;
+            this.guna2DragControl6.UseTransparentDrag = true;
+            // 
+            // guna2DragControl5
+            // 
+            this.guna2DragControl5.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl5.TargetControl = this.InfoLCLabel;
+            this.guna2DragControl5.UseTransparentDrag = true;
             // 
             // Form1
             // 
@@ -592,13 +592,13 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel4;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel3;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
-        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl5;
-        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl6;
-        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl7;
-        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl8;
-        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl9;
-        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl10;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl11;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl10;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl9;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl8;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl7;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl6;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl5;
     }
 }
 
