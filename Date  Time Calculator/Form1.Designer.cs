@@ -34,6 +34,7 @@
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.MenuPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.InfoBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.BirthdayInformerBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.TimeConverterBtn = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -47,19 +48,23 @@
             this.UnixLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2DragControl3 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl4 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.InfoPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.InfoBtn = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.infoDCLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.InfoDWCLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.InfoLCLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.InfoTCLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.InfoBILabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2CustomGradientPanel3 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2CustomGradientPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2CustomGradientPanel5 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.DateCompPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.DCGoBtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.ComparerToPicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.ComparerFromPicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.SelectToLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.SelectFromLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CustomGradientPanel6 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.InfoBILabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2CustomGradientPanel5 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.InfoTCLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2CustomGradientPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.InfoLCLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2CustomGradientPanel3 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.InfoDWCLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.infoDCLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2DragControl11 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl10 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl9 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
@@ -67,14 +72,32 @@
             this.guna2DragControl7 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl6 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl5 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.UnixTimer = new System.Windows.Forms.Timer(this.components);
+            this.guna2DragControl12 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl13 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl14 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.DCPassDateLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DCYLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DCYersNumLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DCMonthNumLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DCMLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DCWeekNumLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DCWLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DCDayNumLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DCDLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.HMSMSLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.HMSMSNumLBL = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.TotalDayLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DCTotalNumLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.MenuPanel.SuspendLayout();
             this.UnixPanel.SuspendLayout();
             this.InfoPanel.SuspendLayout();
-            this.guna2CustomGradientPanel2.SuspendLayout();
-            this.guna2CustomGradientPanel3.SuspendLayout();
-            this.guna2CustomGradientPanel4.SuspendLayout();
-            this.guna2CustomGradientPanel5.SuspendLayout();
+            this.DateCompPanel.SuspendLayout();
             this.guna2CustomGradientPanel6.SuspendLayout();
+            this.guna2CustomGradientPanel5.SuspendLayout();
+            this.guna2CustomGradientPanel4.SuspendLayout();
+            this.guna2CustomGradientPanel3.SuspendLayout();
+            this.guna2CustomGradientPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2ControlBox1
@@ -122,6 +145,29 @@
             this.MenuPanel.Name = "MenuPanel";
             this.MenuPanel.Size = new System.Drawing.Size(119, 674);
             this.MenuPanel.TabIndex = 4;
+            // 
+            // InfoBtn
+            // 
+            this.InfoBtn.Animated = true;
+            this.InfoBtn.BackColor = System.Drawing.Color.Transparent;
+            this.InfoBtn.BorderColor = System.Drawing.Color.Transparent;
+            this.InfoBtn.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.InfoBtn.Checked = true;
+            this.InfoBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.InfoBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.InfoBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.InfoBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.InfoBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.InfoBtn.FillColor = System.Drawing.Color.Transparent;
+            this.InfoBtn.FillColor2 = System.Drawing.Color.White;
+            this.InfoBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.InfoBtn.ForeColor = System.Drawing.Color.Black;
+            this.InfoBtn.Location = new System.Drawing.Point(0, 559);
+            this.InfoBtn.Name = "InfoBtn";
+            this.InfoBtn.Size = new System.Drawing.Size(120, 73);
+            this.InfoBtn.TabIndex = 5;
+            this.InfoBtn.Text = "Info";
+            this.InfoBtn.UseTransparentBackground = true;
             // 
             // guna2ImageButton1
             // 
@@ -316,15 +362,10 @@
             this.guna2DragControl4.TargetControl = this.InfoPanel;
             this.guna2DragControl4.UseTransparentDrag = true;
             // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // InfoPanel
             // 
             this.InfoPanel.BorderRadius = 17;
+            this.InfoPanel.Controls.Add(this.DateCompPanel);
             this.InfoPanel.Controls.Add(this.guna2CustomGradientPanel6);
             this.InfoPanel.Controls.Add(this.guna2CustomGradientPanel5);
             this.InfoPanel.Controls.Add(this.guna2CustomGradientPanel4);
@@ -337,82 +378,134 @@
             this.InfoPanel.Size = new System.Drawing.Size(930, 573);
             this.InfoPanel.TabIndex = 8;
             // 
-            // InfoBtn
+            // DateCompPanel
             // 
-            this.InfoBtn.Animated = true;
-            this.InfoBtn.BackColor = System.Drawing.Color.Transparent;
-            this.InfoBtn.BorderColor = System.Drawing.Color.Transparent;
-            this.InfoBtn.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.InfoBtn.Checked = true;
-            this.InfoBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.InfoBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.InfoBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.InfoBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.InfoBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.InfoBtn.FillColor = System.Drawing.Color.Transparent;
-            this.InfoBtn.FillColor2 = System.Drawing.Color.White;
-            this.InfoBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.InfoBtn.ForeColor = System.Drawing.Color.Black;
-            this.InfoBtn.Location = new System.Drawing.Point(0, 559);
-            this.InfoBtn.Name = "InfoBtn";
-            this.InfoBtn.Size = new System.Drawing.Size(120, 73);
-            this.InfoBtn.TabIndex = 5;
-            this.InfoBtn.Text = "Info";
-            this.InfoBtn.UseTransparentBackground = true;
+            this.DateCompPanel.BorderRadius = 17;
+            this.DateCompPanel.Controls.Add(this.DCTotalNumLbl);
+            this.DateCompPanel.Controls.Add(this.TotalDayLbl);
+            this.DateCompPanel.Controls.Add(this.HMSMSNumLBL);
+            this.DateCompPanel.Controls.Add(this.HMSMSLbl);
+            this.DateCompPanel.Controls.Add(this.DCDayNumLbl);
+            this.DateCompPanel.Controls.Add(this.DCDLbl);
+            this.DateCompPanel.Controls.Add(this.DCWeekNumLbl);
+            this.DateCompPanel.Controls.Add(this.DCWLbl);
+            this.DateCompPanel.Controls.Add(this.DCMonthNumLbl);
+            this.DateCompPanel.Controls.Add(this.DCMLbl);
+            this.DateCompPanel.Controls.Add(this.DCYersNumLbl);
+            this.DateCompPanel.Controls.Add(this.DCYLbl);
+            this.DateCompPanel.Controls.Add(this.DCPassDateLbl);
+            this.DateCompPanel.Controls.Add(this.DCGoBtn);
+            this.DateCompPanel.Controls.Add(this.ComparerToPicker);
+            this.DateCompPanel.Controls.Add(this.ComparerFromPicker);
+            this.DateCompPanel.Controls.Add(this.SelectToLabel);
+            this.DateCompPanel.Controls.Add(this.SelectFromLabel);
+            this.DateCompPanel.FillColor = System.Drawing.Color.Transparent;
+            this.DateCompPanel.FillColor3 = System.Drawing.Color.Transparent;
+            this.DateCompPanel.Location = new System.Drawing.Point(-2, 0);
+            this.DateCompPanel.Name = "DateCompPanel";
+            this.DateCompPanel.Size = new System.Drawing.Size(932, 573);
+            this.DateCompPanel.TabIndex = 8;
             // 
-            // infoDCLabel
+            // DCGoBtn
             // 
-            this.infoDCLabel.AutoSize = false;
-            this.infoDCLabel.BackColor = System.Drawing.Color.Transparent;
-            this.infoDCLabel.Font = new System.Drawing.Font("Mongolian Baiti", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.infoDCLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.infoDCLabel.IsSelectionEnabled = false;
-            this.infoDCLabel.Location = new System.Drawing.Point(21, 3);
-            this.infoDCLabel.Name = "infoDCLabel";
-            this.infoDCLabel.Size = new System.Drawing.Size(876, 70);
-            this.infoDCLabel.TabIndex = 0;
-            this.infoDCLabel.Text = "How many  Y\\M\\W\\D\\H\\M\\S\\MS have passed between two dates (+ a separate output sho" +
-    "wing the total number of days passed)";
+            this.DCGoBtn.BackColor = System.Drawing.Color.Transparent;
+            this.DCGoBtn.BorderRadius = 8;
+            this.DCGoBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.DCGoBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.DCGoBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.DCGoBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.DCGoBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.DCGoBtn.FillColor = System.Drawing.Color.Transparent;
+            this.DCGoBtn.FillColor2 = System.Drawing.Color.Transparent;
+            this.DCGoBtn.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCGoBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCGoBtn.Location = new System.Drawing.Point(401, 123);
+            this.DCGoBtn.Name = "DCGoBtn";
+            this.DCGoBtn.ShadowDecoration.BorderRadius = 8;
+            this.DCGoBtn.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.DCGoBtn.ShadowDecoration.Depth = 20;
+            this.DCGoBtn.ShadowDecoration.Enabled = true;
+            this.DCGoBtn.Size = new System.Drawing.Size(118, 73);
+            this.DCGoBtn.TabIndex = 9;
+            this.DCGoBtn.Text = "Go";
+            this.DCGoBtn.UseTransparentBackground = true;
             // 
-            // InfoDWCLabel
+            // ComparerToPicker
             // 
-            this.InfoDWCLabel.AutoSize = false;
-            this.InfoDWCLabel.BackColor = System.Drawing.Color.Transparent;
-            this.InfoDWCLabel.Font = new System.Drawing.Font("Mongolian Baiti", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InfoDWCLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.InfoDWCLabel.IsSelectionEnabled = false;
-            this.InfoDWCLabel.Location = new System.Drawing.Point(21, 3);
-            this.InfoDWCLabel.Name = "InfoDWCLabel";
-            this.InfoDWCLabel.Size = new System.Drawing.Size(876, 70);
-            this.InfoDWCLabel.TabIndex = 1;
-            this.InfoDWCLabel.Text = "How many \"business” days have passed between two dates";
+            this.ComparerToPicker.Animated = true;
+            this.ComparerToPicker.BackColor = System.Drawing.Color.Transparent;
+            this.ComparerToPicker.BorderRadius = 10;
+            this.ComparerToPicker.Checked = true;
+            this.ComparerToPicker.CustomFormat = "dd.MM.yyyy HH:mm:ss";
+            this.ComparerToPicker.FillColor = System.Drawing.Color.PaleTurquoise;
+            this.ComparerToPicker.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.ComparerToPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ComparerToPicker.Location = new System.Drawing.Point(543, 73);
+            this.ComparerToPicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.ComparerToPicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.ComparerToPicker.Name = "ComparerToPicker";
+            this.ComparerToPicker.ShowUpDown = true;
+            this.ComparerToPicker.Size = new System.Drawing.Size(318, 44);
+            this.ComparerToPicker.TabIndex = 8;
+            this.ComparerToPicker.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ComparerToPicker.Value = new System.DateTime(2025, 11, 22, 16, 36, 11, 0);
             // 
-            // InfoLCLabel
+            // ComparerFromPicker
             // 
-            this.InfoLCLabel.AutoSize = false;
-            this.InfoLCLabel.BackColor = System.Drawing.Color.Transparent;
-            this.InfoLCLabel.Font = new System.Drawing.Font("Mongolian Baiti", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InfoLCLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.InfoLCLabel.IsSelectionEnabled = false;
-            this.InfoLCLabel.Location = new System.Drawing.Point(21, 3);
-            this.InfoLCLabel.Name = "InfoLCLabel";
-            this.InfoLCLabel.Size = new System.Drawing.Size(876, 70);
-            this.InfoLCLabel.TabIndex = 2;
-            this.InfoLCLabel.Text = "How many leap years have passed between two dates";
+            this.ComparerFromPicker.Animated = true;
+            this.ComparerFromPicker.BackColor = System.Drawing.Color.Transparent;
+            this.ComparerFromPicker.BorderRadius = 10;
+            this.ComparerFromPicker.Checked = true;
+            this.ComparerFromPicker.CustomFormat = "dd.MM.yyyy HH:mm:ss";
+            this.ComparerFromPicker.FillColor = System.Drawing.Color.PaleTurquoise;
+            this.ComparerFromPicker.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.ComparerFromPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ComparerFromPicker.Location = new System.Drawing.Point(58, 74);
+            this.ComparerFromPicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.ComparerFromPicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.ComparerFromPicker.Name = "ComparerFromPicker";
+            this.ComparerFromPicker.ShowUpDown = true;
+            this.ComparerFromPicker.Size = new System.Drawing.Size(318, 44);
+            this.ComparerFromPicker.TabIndex = 7;
+            this.ComparerFromPicker.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ComparerFromPicker.Value = new System.DateTime(2025, 11, 22, 16, 36, 4, 0);
             // 
-            // InfoTCLabel
+            // SelectToLabel
             // 
-            this.InfoTCLabel.AutoSize = false;
-            this.InfoTCLabel.BackColor = System.Drawing.Color.Transparent;
-            this.InfoTCLabel.Font = new System.Drawing.Font("Mongolian Baiti", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InfoTCLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.InfoTCLabel.IsSelectionEnabled = false;
-            this.InfoTCLabel.Location = new System.Drawing.Point(21, 3);
-            this.InfoTCLabel.Name = "InfoTCLabel";
-            this.InfoTCLabel.Size = new System.Drawing.Size(878, 70);
-            this.InfoTCLabel.TabIndex = 3;
-            this.InfoTCLabel.Text = "How many Y\\M\\W\\D\\H\\M\\S are in a specified amount\r\nFor example: “how many days are" +
-    " in 5000 hours?” or “how many minutes are in 120 months?”";
+            this.SelectToLabel.BackColor = System.Drawing.Color.Transparent;
+            this.SelectToLabel.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectToLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.SelectToLabel.IsSelectionEnabled = false;
+            this.SelectToLabel.Location = new System.Drawing.Point(543, 36);
+            this.SelectToLabel.Name = "SelectToLabel";
+            this.SelectToLabel.Size = new System.Drawing.Size(323, 31);
+            this.SelectToLabel.TabIndex = 6;
+            this.SelectToLabel.Text = "Select the second date(To)";
+            // 
+            // SelectFromLabel
+            // 
+            this.SelectFromLabel.BackColor = System.Drawing.Color.Transparent;
+            this.SelectFromLabel.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectFromLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.SelectFromLabel.IsSelectionEnabled = false;
+            this.SelectFromLabel.Location = new System.Drawing.Point(58, 36);
+            this.SelectFromLabel.Name = "SelectFromLabel";
+            this.SelectFromLabel.Size = new System.Drawing.Size(319, 31);
+            this.SelectFromLabel.TabIndex = 5;
+            this.SelectFromLabel.Text = "Select the first date(From)";
+            // 
+            // guna2CustomGradientPanel6
+            // 
+            this.guna2CustomGradientPanel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel6.BorderRadius = 16;
+            this.guna2CustomGradientPanel6.Controls.Add(this.InfoBILabel);
+            this.guna2CustomGradientPanel6.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel6.FillColor3 = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel6.FillColor4 = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel6.Location = new System.Drawing.Point(-2, 338);
+            this.guna2CustomGradientPanel6.Name = "guna2CustomGradientPanel6";
+            this.guna2CustomGradientPanel6.Size = new System.Drawing.Size(916, 73);
+            this.guna2CustomGradientPanel6.TabIndex = 6;
             // 
             // InfoBILabel
             // 
@@ -428,31 +521,32 @@
             this.InfoBILabel.Text = "How much time has passed since the date of birth, plus several other age-related " +
     "functions";
             // 
-            // guna2CustomGradientPanel2
+            // guna2CustomGradientPanel5
             // 
-            this.guna2CustomGradientPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel2.BorderRadius = 16;
-            this.guna2CustomGradientPanel2.Controls.Add(this.infoDCLabel);
-            this.guna2CustomGradientPanel2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(-2, 22);
-            this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
-            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(916, 73);
-            this.guna2CustomGradientPanel2.TabIndex = 5;
+            this.guna2CustomGradientPanel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel5.BorderRadius = 16;
+            this.guna2CustomGradientPanel5.Controls.Add(this.InfoTCLabel);
+            this.guna2CustomGradientPanel5.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel5.FillColor3 = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel5.FillColor4 = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel5.Location = new System.Drawing.Point(-2, 259);
+            this.guna2CustomGradientPanel5.Name = "guna2CustomGradientPanel5";
+            this.guna2CustomGradientPanel5.Size = new System.Drawing.Size(916, 73);
+            this.guna2CustomGradientPanel5.TabIndex = 6;
             // 
-            // guna2CustomGradientPanel3
+            // InfoTCLabel
             // 
-            this.guna2CustomGradientPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel3.BorderRadius = 16;
-            this.guna2CustomGradientPanel3.Controls.Add(this.InfoDWCLabel);
-            this.guna2CustomGradientPanel3.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel3.FillColor3 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel3.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel3.Location = new System.Drawing.Point(-2, 101);
-            this.guna2CustomGradientPanel3.Name = "guna2CustomGradientPanel3";
-            this.guna2CustomGradientPanel3.Size = new System.Drawing.Size(916, 73);
-            this.guna2CustomGradientPanel3.TabIndex = 6;
+            this.InfoTCLabel.AutoSize = false;
+            this.InfoTCLabel.BackColor = System.Drawing.Color.Transparent;
+            this.InfoTCLabel.Font = new System.Drawing.Font("Mongolian Baiti", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InfoTCLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.InfoTCLabel.IsSelectionEnabled = false;
+            this.InfoTCLabel.Location = new System.Drawing.Point(21, 3);
+            this.InfoTCLabel.Name = "InfoTCLabel";
+            this.InfoTCLabel.Size = new System.Drawing.Size(878, 70);
+            this.InfoTCLabel.TabIndex = 3;
+            this.InfoTCLabel.Text = "How many Y\\M\\W\\D\\H\\M\\S are in a specified amount\r\nFor example: “how many days are" +
+    " in 5000 hours?” or “how many minutes are in 120 months?”";
             // 
             // guna2CustomGradientPanel4
             // 
@@ -467,31 +561,71 @@
             this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(916, 73);
             this.guna2CustomGradientPanel4.TabIndex = 6;
             // 
-            // guna2CustomGradientPanel5
+            // InfoLCLabel
             // 
-            this.guna2CustomGradientPanel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel5.BorderRadius = 16;
-            this.guna2CustomGradientPanel5.Controls.Add(this.InfoTCLabel);
-            this.guna2CustomGradientPanel5.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel5.FillColor3 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel5.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel5.Location = new System.Drawing.Point(-2, 259);
-            this.guna2CustomGradientPanel5.Name = "guna2CustomGradientPanel5";
-            this.guna2CustomGradientPanel5.Size = new System.Drawing.Size(916, 73);
-            this.guna2CustomGradientPanel5.TabIndex = 6;
+            this.InfoLCLabel.AutoSize = false;
+            this.InfoLCLabel.BackColor = System.Drawing.Color.Transparent;
+            this.InfoLCLabel.Font = new System.Drawing.Font("Mongolian Baiti", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InfoLCLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.InfoLCLabel.IsSelectionEnabled = false;
+            this.InfoLCLabel.Location = new System.Drawing.Point(21, 3);
+            this.InfoLCLabel.Name = "InfoLCLabel";
+            this.InfoLCLabel.Size = new System.Drawing.Size(876, 70);
+            this.InfoLCLabel.TabIndex = 2;
+            this.InfoLCLabel.Text = "How many leap years have passed between two dates";
             // 
-            // guna2CustomGradientPanel6
+            // guna2CustomGradientPanel3
             // 
-            this.guna2CustomGradientPanel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel6.BorderRadius = 16;
-            this.guna2CustomGradientPanel6.Controls.Add(this.InfoBILabel);
-            this.guna2CustomGradientPanel6.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel6.FillColor3 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel6.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel6.Location = new System.Drawing.Point(-2, 338);
-            this.guna2CustomGradientPanel6.Name = "guna2CustomGradientPanel6";
-            this.guna2CustomGradientPanel6.Size = new System.Drawing.Size(916, 73);
-            this.guna2CustomGradientPanel6.TabIndex = 6;
+            this.guna2CustomGradientPanel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel3.BorderRadius = 16;
+            this.guna2CustomGradientPanel3.Controls.Add(this.InfoDWCLabel);
+            this.guna2CustomGradientPanel3.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel3.FillColor3 = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel3.FillColor4 = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel3.Location = new System.Drawing.Point(-2, 101);
+            this.guna2CustomGradientPanel3.Name = "guna2CustomGradientPanel3";
+            this.guna2CustomGradientPanel3.Size = new System.Drawing.Size(916, 73);
+            this.guna2CustomGradientPanel3.TabIndex = 6;
+            // 
+            // InfoDWCLabel
+            // 
+            this.InfoDWCLabel.AutoSize = false;
+            this.InfoDWCLabel.BackColor = System.Drawing.Color.Transparent;
+            this.InfoDWCLabel.Font = new System.Drawing.Font("Mongolian Baiti", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InfoDWCLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.InfoDWCLabel.IsSelectionEnabled = false;
+            this.InfoDWCLabel.Location = new System.Drawing.Point(21, 3);
+            this.InfoDWCLabel.Name = "InfoDWCLabel";
+            this.InfoDWCLabel.Size = new System.Drawing.Size(876, 70);
+            this.InfoDWCLabel.TabIndex = 1;
+            this.InfoDWCLabel.Text = "How many \"business” days have passed between two dates";
+            // 
+            // guna2CustomGradientPanel2
+            // 
+            this.guna2CustomGradientPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel2.BorderRadius = 16;
+            this.guna2CustomGradientPanel2.Controls.Add(this.infoDCLabel);
+            this.guna2CustomGradientPanel2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(-2, 22);
+            this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(916, 73);
+            this.guna2CustomGradientPanel2.TabIndex = 5;
+            // 
+            // infoDCLabel
+            // 
+            this.infoDCLabel.AutoSize = false;
+            this.infoDCLabel.BackColor = System.Drawing.Color.Transparent;
+            this.infoDCLabel.Font = new System.Drawing.Font("Mongolian Baiti", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.infoDCLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.infoDCLabel.IsSelectionEnabled = false;
+            this.infoDCLabel.Location = new System.Drawing.Point(21, 3);
+            this.infoDCLabel.Name = "infoDCLabel";
+            this.infoDCLabel.Size = new System.Drawing.Size(876, 70);
+            this.infoDCLabel.TabIndex = 0;
+            this.infoDCLabel.Text = "How many  Y\\M\\W\\D\\H\\M\\S\\MS have passed between two dates (+ a separate output sho" +
+    "wing the total number of days passed)";
             // 
             // guna2DragControl11
             // 
@@ -535,6 +669,185 @@
             this.guna2DragControl5.TargetControl = this.InfoLCLabel;
             this.guna2DragControl5.UseTransparentDrag = true;
             // 
+            // UnixTimer
+            // 
+            this.UnixTimer.Enabled = true;
+            this.UnixTimer.Tick += new System.EventHandler(this.UnixTimer_Tick);
+            // 
+            // guna2DragControl12
+            // 
+            this.guna2DragControl12.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl12.TargetControl = this.DateCompPanel;
+            this.guna2DragControl12.UseTransparentDrag = true;
+            // 
+            // guna2DragControl13
+            // 
+            this.guna2DragControl13.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl13.TargetControl = this.SelectToLabel;
+            this.guna2DragControl13.UseTransparentDrag = true;
+            // 
+            // guna2DragControl14
+            // 
+            this.guna2DragControl14.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl14.TargetControl = this.SelectFromLabel;
+            this.guna2DragControl14.UseTransparentDrag = true;
+            // 
+            // DCPassDateLbl
+            // 
+            this.DCPassDateLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DCPassDateLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCPassDateLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCPassDateLbl.IsSelectionEnabled = false;
+            this.DCPassDateLbl.Location = new System.Drawing.Point(297, 245);
+            this.DCPassDateLbl.Name = "DCPassDateLbl";
+            this.DCPassDateLbl.Size = new System.Drawing.Size(315, 31);
+            this.DCPassDateLbl.TabIndex = 10;
+            this.DCPassDateLbl.Text = "Passed between the dates:";
+            // 
+            // DCYLbl
+            // 
+            this.DCYLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DCYLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCYLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCYLbl.IsSelectionEnabled = false;
+            this.DCYLbl.Location = new System.Drawing.Point(117, 306);
+            this.DCYLbl.Name = "DCYLbl";
+            this.DCYLbl.Size = new System.Drawing.Size(81, 31);
+            this.DCYLbl.TabIndex = 11;
+            this.DCYLbl.Text = "Years:";
+            // 
+            // DCYersNumLbl
+            // 
+            this.DCYersNumLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DCYersNumLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCYersNumLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCYersNumLbl.IsSelectionEnabled = false;
+            this.DCYersNumLbl.Location = new System.Drawing.Point(204, 306);
+            this.DCYersNumLbl.Name = "DCYersNumLbl";
+            this.DCYersNumLbl.Size = new System.Drawing.Size(18, 31);
+            this.DCYersNumLbl.TabIndex = 12;
+            this.DCYersNumLbl.Text = "0";
+            // 
+            // DCMonthNumLbl
+            // 
+            this.DCMonthNumLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DCMonthNumLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCMonthNumLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCMonthNumLbl.IsSelectionEnabled = false;
+            this.DCMonthNumLbl.Location = new System.Drawing.Point(407, 306);
+            this.DCMonthNumLbl.Name = "DCMonthNumLbl";
+            this.DCMonthNumLbl.Size = new System.Drawing.Size(18, 31);
+            this.DCMonthNumLbl.TabIndex = 14;
+            this.DCMonthNumLbl.Text = "0";
+            // 
+            // DCMLbl
+            // 
+            this.DCMLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DCMLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCMLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCMLbl.IsSelectionEnabled = false;
+            this.DCMLbl.Location = new System.Drawing.Point(298, 306);
+            this.DCMLbl.Name = "DCMLbl";
+            this.DCMLbl.Size = new System.Drawing.Size(103, 31);
+            this.DCMLbl.TabIndex = 13;
+            this.DCMLbl.Text = "Months:";
+            // 
+            // DCWeekNumLbl
+            // 
+            this.DCWeekNumLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DCWeekNumLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCWeekNumLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCWeekNumLbl.IsSelectionEnabled = false;
+            this.DCWeekNumLbl.Location = new System.Drawing.Point(588, 306);
+            this.DCWeekNumLbl.Name = "DCWeekNumLbl";
+            this.DCWeekNumLbl.Size = new System.Drawing.Size(18, 31);
+            this.DCWeekNumLbl.TabIndex = 16;
+            this.DCWeekNumLbl.Text = "0";
+            // 
+            // DCWLbl
+            // 
+            this.DCWLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DCWLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCWLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCWLbl.IsSelectionEnabled = false;
+            this.DCWLbl.Location = new System.Drawing.Point(491, 306);
+            this.DCWLbl.Name = "DCWLbl";
+            this.DCWLbl.Size = new System.Drawing.Size(91, 31);
+            this.DCWLbl.TabIndex = 15;
+            this.DCWLbl.Text = "Weeks:";
+            // 
+            // DCDayNumLbl
+            // 
+            this.DCDayNumLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DCDayNumLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCDayNumLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCDayNumLbl.IsSelectionEnabled = false;
+            this.DCDayNumLbl.Location = new System.Drawing.Point(755, 306);
+            this.DCDayNumLbl.Name = "DCDayNumLbl";
+            this.DCDayNumLbl.Size = new System.Drawing.Size(18, 31);
+            this.DCDayNumLbl.TabIndex = 18;
+            this.DCDayNumLbl.Text = "0";
+            // 
+            // DCDLbl
+            // 
+            this.DCDLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DCDLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCDLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCDLbl.IsSelectionEnabled = false;
+            this.DCDLbl.Location = new System.Drawing.Point(676, 306);
+            this.DCDLbl.Name = "DCDLbl";
+            this.DCDLbl.Size = new System.Drawing.Size(73, 31);
+            this.DCDLbl.TabIndex = 17;
+            this.DCDLbl.Text = "Days:";
+            // 
+            // HMSMSLbl
+            // 
+            this.HMSMSLbl.BackColor = System.Drawing.Color.Transparent;
+            this.HMSMSLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HMSMSLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.HMSMSLbl.IsSelectionEnabled = false;
+            this.HMSMSLbl.Location = new System.Drawing.Point(117, 370);
+            this.HMSMSLbl.Name = "HMSMSLbl";
+            this.HMSMSLbl.Size = new System.Drawing.Size(452, 31);
+            this.HMSMSLbl.TabIndex = 19;
+            this.HMSMSLbl.Text = "Hours/Minuts/Seconds/Milliseconds:";
+            // 
+            // HMSMSNumLBL
+            // 
+            this.HMSMSNumLBL.BackColor = System.Drawing.Color.Transparent;
+            this.HMSMSNumLBL.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HMSMSNumLBL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.HMSMSNumLBL.IsSelectionEnabled = false;
+            this.HMSMSNumLBL.Location = new System.Drawing.Point(575, 370);
+            this.HMSMSNumLBL.Name = "HMSMSNumLBL";
+            this.HMSMSNumLBL.Size = new System.Drawing.Size(150, 31);
+            this.HMSMSNumLBL.TabIndex = 20;
+            this.HMSMSNumLBL.Text = "00:00:00:00";
+            // 
+            // TotalDayLbl
+            // 
+            this.TotalDayLbl.BackColor = System.Drawing.Color.Transparent;
+            this.TotalDayLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalDayLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TotalDayLbl.IsSelectionEnabled = false;
+            this.TotalDayLbl.Location = new System.Drawing.Point(117, 435);
+            this.TotalDayLbl.Name = "TotalDayLbl";
+            this.TotalDayLbl.Size = new System.Drawing.Size(168, 31);
+            this.TotalDayLbl.TabIndex = 21;
+            this.TotalDayLbl.Text = "Days in total: ";
+            // 
+            // DCTotalNumLbl
+            // 
+            this.DCTotalNumLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DCTotalNumLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCTotalNumLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCTotalNumLbl.IsSelectionEnabled = false;
+            this.DCTotalNumLbl.Location = new System.Drawing.Point(291, 435);
+            this.DCTotalNumLbl.Name = "DCTotalNumLbl";
+            this.DCTotalNumLbl.Size = new System.Drawing.Size(18, 31);
+            this.DCTotalNumLbl.TabIndex = 22;
+            this.DCTotalNumLbl.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -552,11 +865,13 @@
             this.UnixPanel.ResumeLayout(false);
             this.UnixPanel.PerformLayout();
             this.InfoPanel.ResumeLayout(false);
-            this.guna2CustomGradientPanel2.ResumeLayout(false);
-            this.guna2CustomGradientPanel3.ResumeLayout(false);
-            this.guna2CustomGradientPanel4.ResumeLayout(false);
-            this.guna2CustomGradientPanel5.ResumeLayout(false);
+            this.DateCompPanel.ResumeLayout(false);
+            this.DateCompPanel.PerformLayout();
             this.guna2CustomGradientPanel6.ResumeLayout(false);
+            this.guna2CustomGradientPanel5.ResumeLayout(false);
+            this.guna2CustomGradientPanel4.ResumeLayout(false);
+            this.guna2CustomGradientPanel3.ResumeLayout(false);
+            this.guna2CustomGradientPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -578,7 +893,6 @@
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl4;
         private Guna.UI2.WinForms.Guna2HtmlLabel TimerLabel;
         private Guna.UI2.WinForms.Guna2HtmlLabel UnixLabel;
-        private System.Windows.Forms.Timer timer1;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel InfoPanel;
         private Guna.UI2.WinForms.Guna2GradientButton InfoBtn;
@@ -599,6 +913,29 @@
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl7;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl6;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl5;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel DateCompPanel;
+        private Guna.UI2.WinForms.Guna2HtmlLabel SelectToLabel;
+        private Guna.UI2.WinForms.Guna2HtmlLabel SelectFromLabel;
+        private Guna.UI2.WinForms.Guna2DateTimePicker ComparerToPicker;
+        private Guna.UI2.WinForms.Guna2DateTimePicker ComparerFromPicker;
+        private System.Windows.Forms.Timer UnixTimer;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl12;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl13;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl14;
+        private Guna.UI2.WinForms.Guna2GradientButton DCGoBtn;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DCPassDateLbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DCYersNumLbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DCYLbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DCDayNumLbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DCDLbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DCWeekNumLbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DCWLbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DCMonthNumLbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DCMLbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel HMSMSNumLBL;
+        private Guna.UI2.WinForms.Guna2HtmlLabel HMSMSLbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DCTotalNumLbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel TotalDayLbl;
     }
 }
 
