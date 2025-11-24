@@ -50,6 +50,23 @@
             this.guna2DragControl4 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.InfoPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.DateCompPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.DCMSNum = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DCSecondNum = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DCMinutNum = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DCDateTimeNowBtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.DCTotalNumLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.TotalDayLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DCHourNum = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.HMSMSLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DCDayNumLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DCDLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DCWeekNumLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DCWLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DCMonthNumLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DCMLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DCYersNumLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DCYLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DCPassDateLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DCGoBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.ComparerToPicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.ComparerFromPicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -76,19 +93,6 @@
             this.guna2DragControl12 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl13 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl14 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.DCPassDateLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DCYLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DCYersNumLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DCMonthNumLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DCMLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DCWeekNumLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DCWLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DCDayNumLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DCDLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.HMSMSLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.HMSMSNumLBL = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.TotalDayLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DCTotalNumLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.MenuPanel.SuspendLayout();
             this.UnixPanel.SuspendLayout();
             this.InfoPanel.SuspendLayout();
@@ -381,9 +385,13 @@
             // DateCompPanel
             // 
             this.DateCompPanel.BorderRadius = 17;
+            this.DateCompPanel.Controls.Add(this.DCMSNum);
+            this.DateCompPanel.Controls.Add(this.DCSecondNum);
+            this.DateCompPanel.Controls.Add(this.DCMinutNum);
+            this.DateCompPanel.Controls.Add(this.DCDateTimeNowBtn);
             this.DateCompPanel.Controls.Add(this.DCTotalNumLbl);
             this.DateCompPanel.Controls.Add(this.TotalDayLbl);
-            this.DateCompPanel.Controls.Add(this.HMSMSNumLBL);
+            this.DateCompPanel.Controls.Add(this.DCHourNum);
             this.DateCompPanel.Controls.Add(this.HMSMSLbl);
             this.DateCompPanel.Controls.Add(this.DCDayNumLbl);
             this.DateCompPanel.Controls.Add(this.DCDLbl);
@@ -405,6 +413,223 @@
             this.DateCompPanel.Name = "DateCompPanel";
             this.DateCompPanel.Size = new System.Drawing.Size(932, 573);
             this.DateCompPanel.TabIndex = 8;
+            this.DateCompPanel.Visible = false;
+            // 
+            // DCMSNum
+            // 
+            this.DCMSNum.BackColor = System.Drawing.Color.Transparent;
+            this.DCMSNum.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCMSNum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCMSNum.IsSelectionEnabled = false;
+            this.DCMSNum.Location = new System.Drawing.Point(695, 370);
+            this.DCMSNum.Name = "DCMSNum";
+            this.DCMSNum.Size = new System.Drawing.Size(48, 31);
+            this.DCMSNum.TabIndex = 26;
+            this.DCMSNum.Text = "000";
+            // 
+            // DCSecondNum
+            // 
+            this.DCSecondNum.BackColor = System.Drawing.Color.Transparent;
+            this.DCSecondNum.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCSecondNum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCSecondNum.IsSelectionEnabled = false;
+            this.DCSecondNum.Location = new System.Drawing.Point(655, 370);
+            this.DCSecondNum.Name = "DCSecondNum";
+            this.DCSecondNum.Size = new System.Drawing.Size(42, 31);
+            this.DCSecondNum.TabIndex = 25;
+            this.DCSecondNum.Text = "00:";
+            // 
+            // DCMinutNum
+            // 
+            this.DCMinutNum.BackColor = System.Drawing.Color.Transparent;
+            this.DCMinutNum.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCMinutNum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCMinutNum.IsSelectionEnabled = false;
+            this.DCMinutNum.Location = new System.Drawing.Point(615, 370);
+            this.DCMinutNum.Name = "DCMinutNum";
+            this.DCMinutNum.Size = new System.Drawing.Size(42, 31);
+            this.DCMinutNum.TabIndex = 24;
+            this.DCMinutNum.Text = "00:";
+            // 
+            // DCDateTimeNowBtn
+            // 
+            this.DCDateTimeNowBtn.BackColor = System.Drawing.Color.Transparent;
+            this.DCDateTimeNowBtn.BorderRadius = 8;
+            this.DCDateTimeNowBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.DCDateTimeNowBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.DCDateTimeNowBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.DCDateTimeNowBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.DCDateTimeNowBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.DCDateTimeNowBtn.FillColor = System.Drawing.Color.Transparent;
+            this.DCDateTimeNowBtn.FillColor2 = System.Drawing.Color.Transparent;
+            this.DCDateTimeNowBtn.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCDateTimeNowBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCDateTimeNowBtn.Location = new System.Drawing.Point(401, 44);
+            this.DCDateTimeNowBtn.Name = "DCDateTimeNowBtn";
+            this.DCDateTimeNowBtn.ShadowDecoration.BorderRadius = 8;
+            this.DCDateTimeNowBtn.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.DCDateTimeNowBtn.ShadowDecoration.Depth = 20;
+            this.DCDateTimeNowBtn.ShadowDecoration.Enabled = true;
+            this.DCDateTimeNowBtn.Size = new System.Drawing.Size(118, 73);
+            this.DCDateTimeNowBtn.TabIndex = 23;
+            this.DCDateTimeNowBtn.Text = "Date Time Now";
+            this.DCDateTimeNowBtn.UseTransparentBackground = true;
+            // 
+            // DCTotalNumLbl
+            // 
+            this.DCTotalNumLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DCTotalNumLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCTotalNumLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCTotalNumLbl.IsSelectionEnabled = false;
+            this.DCTotalNumLbl.Location = new System.Drawing.Point(291, 435);
+            this.DCTotalNumLbl.Name = "DCTotalNumLbl";
+            this.DCTotalNumLbl.Size = new System.Drawing.Size(18, 31);
+            this.DCTotalNumLbl.TabIndex = 22;
+            this.DCTotalNumLbl.Text = "0";
+            // 
+            // TotalDayLbl
+            // 
+            this.TotalDayLbl.BackColor = System.Drawing.Color.Transparent;
+            this.TotalDayLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalDayLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TotalDayLbl.IsSelectionEnabled = false;
+            this.TotalDayLbl.Location = new System.Drawing.Point(117, 435);
+            this.TotalDayLbl.Name = "TotalDayLbl";
+            this.TotalDayLbl.Size = new System.Drawing.Size(168, 31);
+            this.TotalDayLbl.TabIndex = 21;
+            this.TotalDayLbl.Text = "Days in total: ";
+            // 
+            // DCHourNum
+            // 
+            this.DCHourNum.BackColor = System.Drawing.Color.Transparent;
+            this.DCHourNum.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCHourNum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCHourNum.IsSelectionEnabled = false;
+            this.DCHourNum.Location = new System.Drawing.Point(575, 370);
+            this.DCHourNum.Name = "DCHourNum";
+            this.DCHourNum.Size = new System.Drawing.Size(42, 31);
+            this.DCHourNum.TabIndex = 20;
+            this.DCHourNum.Text = "00:";
+            // 
+            // HMSMSLbl
+            // 
+            this.HMSMSLbl.BackColor = System.Drawing.Color.Transparent;
+            this.HMSMSLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HMSMSLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.HMSMSLbl.IsSelectionEnabled = false;
+            this.HMSMSLbl.Location = new System.Drawing.Point(117, 370);
+            this.HMSMSLbl.Name = "HMSMSLbl";
+            this.HMSMSLbl.Size = new System.Drawing.Size(452, 31);
+            this.HMSMSLbl.TabIndex = 19;
+            this.HMSMSLbl.Text = "Hours/Minuts/Seconds/Milliseconds:";
+            // 
+            // DCDayNumLbl
+            // 
+            this.DCDayNumLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DCDayNumLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCDayNumLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCDayNumLbl.IsSelectionEnabled = false;
+            this.DCDayNumLbl.Location = new System.Drawing.Point(755, 306);
+            this.DCDayNumLbl.Name = "DCDayNumLbl";
+            this.DCDayNumLbl.Size = new System.Drawing.Size(18, 31);
+            this.DCDayNumLbl.TabIndex = 18;
+            this.DCDayNumLbl.Text = "0";
+            // 
+            // DCDLbl
+            // 
+            this.DCDLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DCDLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCDLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCDLbl.IsSelectionEnabled = false;
+            this.DCDLbl.Location = new System.Drawing.Point(676, 306);
+            this.DCDLbl.Name = "DCDLbl";
+            this.DCDLbl.Size = new System.Drawing.Size(73, 31);
+            this.DCDLbl.TabIndex = 17;
+            this.DCDLbl.Text = "Days:";
+            // 
+            // DCWeekNumLbl
+            // 
+            this.DCWeekNumLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DCWeekNumLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCWeekNumLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCWeekNumLbl.IsSelectionEnabled = false;
+            this.DCWeekNumLbl.Location = new System.Drawing.Point(588, 306);
+            this.DCWeekNumLbl.Name = "DCWeekNumLbl";
+            this.DCWeekNumLbl.Size = new System.Drawing.Size(18, 31);
+            this.DCWeekNumLbl.TabIndex = 16;
+            this.DCWeekNumLbl.Text = "0";
+            // 
+            // DCWLbl
+            // 
+            this.DCWLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DCWLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCWLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCWLbl.IsSelectionEnabled = false;
+            this.DCWLbl.Location = new System.Drawing.Point(491, 306);
+            this.DCWLbl.Name = "DCWLbl";
+            this.DCWLbl.Size = new System.Drawing.Size(91, 31);
+            this.DCWLbl.TabIndex = 15;
+            this.DCWLbl.Text = "Weeks:";
+            // 
+            // DCMonthNumLbl
+            // 
+            this.DCMonthNumLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DCMonthNumLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCMonthNumLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCMonthNumLbl.IsSelectionEnabled = false;
+            this.DCMonthNumLbl.Location = new System.Drawing.Point(407, 306);
+            this.DCMonthNumLbl.Name = "DCMonthNumLbl";
+            this.DCMonthNumLbl.Size = new System.Drawing.Size(18, 31);
+            this.DCMonthNumLbl.TabIndex = 14;
+            this.DCMonthNumLbl.Text = "0";
+            // 
+            // DCMLbl
+            // 
+            this.DCMLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DCMLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCMLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCMLbl.IsSelectionEnabled = false;
+            this.DCMLbl.Location = new System.Drawing.Point(298, 306);
+            this.DCMLbl.Name = "DCMLbl";
+            this.DCMLbl.Size = new System.Drawing.Size(103, 31);
+            this.DCMLbl.TabIndex = 13;
+            this.DCMLbl.Text = "Months:";
+            // 
+            // DCYersNumLbl
+            // 
+            this.DCYersNumLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DCYersNumLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCYersNumLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCYersNumLbl.IsSelectionEnabled = false;
+            this.DCYersNumLbl.Location = new System.Drawing.Point(204, 306);
+            this.DCYersNumLbl.Name = "DCYersNumLbl";
+            this.DCYersNumLbl.Size = new System.Drawing.Size(18, 31);
+            this.DCYersNumLbl.TabIndex = 12;
+            this.DCYersNumLbl.Text = "0";
+            // 
+            // DCYLbl
+            // 
+            this.DCYLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DCYLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCYLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCYLbl.IsSelectionEnabled = false;
+            this.DCYLbl.Location = new System.Drawing.Point(117, 306);
+            this.DCYLbl.Name = "DCYLbl";
+            this.DCYLbl.Size = new System.Drawing.Size(81, 31);
+            this.DCYLbl.TabIndex = 11;
+            this.DCYLbl.Text = "Years:";
+            // 
+            // DCPassDateLbl
+            // 
+            this.DCPassDateLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DCPassDateLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCPassDateLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DCPassDateLbl.IsSelectionEnabled = false;
+            this.DCPassDateLbl.Location = new System.Drawing.Point(297, 245);
+            this.DCPassDateLbl.Name = "DCPassDateLbl";
+            this.DCPassDateLbl.Size = new System.Drawing.Size(315, 31);
+            this.DCPassDateLbl.TabIndex = 10;
+            this.DCPassDateLbl.Text = "Passed between the dates:";
             // 
             // DCGoBtn
             // 
@@ -429,6 +654,7 @@
             this.DCGoBtn.TabIndex = 9;
             this.DCGoBtn.Text = "Go";
             this.DCGoBtn.UseTransparentBackground = true;
+            this.DCGoBtn.Click += new System.EventHandler(this.DCGoBtn_Click);
             // 
             // ComparerToPicker
             // 
@@ -692,162 +918,6 @@
             this.guna2DragControl14.TargetControl = this.SelectFromLabel;
             this.guna2DragControl14.UseTransparentDrag = true;
             // 
-            // DCPassDateLbl
-            // 
-            this.DCPassDateLbl.BackColor = System.Drawing.Color.Transparent;
-            this.DCPassDateLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DCPassDateLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DCPassDateLbl.IsSelectionEnabled = false;
-            this.DCPassDateLbl.Location = new System.Drawing.Point(297, 245);
-            this.DCPassDateLbl.Name = "DCPassDateLbl";
-            this.DCPassDateLbl.Size = new System.Drawing.Size(315, 31);
-            this.DCPassDateLbl.TabIndex = 10;
-            this.DCPassDateLbl.Text = "Passed between the dates:";
-            // 
-            // DCYLbl
-            // 
-            this.DCYLbl.BackColor = System.Drawing.Color.Transparent;
-            this.DCYLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DCYLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DCYLbl.IsSelectionEnabled = false;
-            this.DCYLbl.Location = new System.Drawing.Point(117, 306);
-            this.DCYLbl.Name = "DCYLbl";
-            this.DCYLbl.Size = new System.Drawing.Size(81, 31);
-            this.DCYLbl.TabIndex = 11;
-            this.DCYLbl.Text = "Years:";
-            // 
-            // DCYersNumLbl
-            // 
-            this.DCYersNumLbl.BackColor = System.Drawing.Color.Transparent;
-            this.DCYersNumLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DCYersNumLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DCYersNumLbl.IsSelectionEnabled = false;
-            this.DCYersNumLbl.Location = new System.Drawing.Point(204, 306);
-            this.DCYersNumLbl.Name = "DCYersNumLbl";
-            this.DCYersNumLbl.Size = new System.Drawing.Size(18, 31);
-            this.DCYersNumLbl.TabIndex = 12;
-            this.DCYersNumLbl.Text = "0";
-            // 
-            // DCMonthNumLbl
-            // 
-            this.DCMonthNumLbl.BackColor = System.Drawing.Color.Transparent;
-            this.DCMonthNumLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DCMonthNumLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DCMonthNumLbl.IsSelectionEnabled = false;
-            this.DCMonthNumLbl.Location = new System.Drawing.Point(407, 306);
-            this.DCMonthNumLbl.Name = "DCMonthNumLbl";
-            this.DCMonthNumLbl.Size = new System.Drawing.Size(18, 31);
-            this.DCMonthNumLbl.TabIndex = 14;
-            this.DCMonthNumLbl.Text = "0";
-            // 
-            // DCMLbl
-            // 
-            this.DCMLbl.BackColor = System.Drawing.Color.Transparent;
-            this.DCMLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DCMLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DCMLbl.IsSelectionEnabled = false;
-            this.DCMLbl.Location = new System.Drawing.Point(298, 306);
-            this.DCMLbl.Name = "DCMLbl";
-            this.DCMLbl.Size = new System.Drawing.Size(103, 31);
-            this.DCMLbl.TabIndex = 13;
-            this.DCMLbl.Text = "Months:";
-            // 
-            // DCWeekNumLbl
-            // 
-            this.DCWeekNumLbl.BackColor = System.Drawing.Color.Transparent;
-            this.DCWeekNumLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DCWeekNumLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DCWeekNumLbl.IsSelectionEnabled = false;
-            this.DCWeekNumLbl.Location = new System.Drawing.Point(588, 306);
-            this.DCWeekNumLbl.Name = "DCWeekNumLbl";
-            this.DCWeekNumLbl.Size = new System.Drawing.Size(18, 31);
-            this.DCWeekNumLbl.TabIndex = 16;
-            this.DCWeekNumLbl.Text = "0";
-            // 
-            // DCWLbl
-            // 
-            this.DCWLbl.BackColor = System.Drawing.Color.Transparent;
-            this.DCWLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DCWLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DCWLbl.IsSelectionEnabled = false;
-            this.DCWLbl.Location = new System.Drawing.Point(491, 306);
-            this.DCWLbl.Name = "DCWLbl";
-            this.DCWLbl.Size = new System.Drawing.Size(91, 31);
-            this.DCWLbl.TabIndex = 15;
-            this.DCWLbl.Text = "Weeks:";
-            // 
-            // DCDayNumLbl
-            // 
-            this.DCDayNumLbl.BackColor = System.Drawing.Color.Transparent;
-            this.DCDayNumLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DCDayNumLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DCDayNumLbl.IsSelectionEnabled = false;
-            this.DCDayNumLbl.Location = new System.Drawing.Point(755, 306);
-            this.DCDayNumLbl.Name = "DCDayNumLbl";
-            this.DCDayNumLbl.Size = new System.Drawing.Size(18, 31);
-            this.DCDayNumLbl.TabIndex = 18;
-            this.DCDayNumLbl.Text = "0";
-            // 
-            // DCDLbl
-            // 
-            this.DCDLbl.BackColor = System.Drawing.Color.Transparent;
-            this.DCDLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DCDLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DCDLbl.IsSelectionEnabled = false;
-            this.DCDLbl.Location = new System.Drawing.Point(676, 306);
-            this.DCDLbl.Name = "DCDLbl";
-            this.DCDLbl.Size = new System.Drawing.Size(73, 31);
-            this.DCDLbl.TabIndex = 17;
-            this.DCDLbl.Text = "Days:";
-            // 
-            // HMSMSLbl
-            // 
-            this.HMSMSLbl.BackColor = System.Drawing.Color.Transparent;
-            this.HMSMSLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HMSMSLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.HMSMSLbl.IsSelectionEnabled = false;
-            this.HMSMSLbl.Location = new System.Drawing.Point(117, 370);
-            this.HMSMSLbl.Name = "HMSMSLbl";
-            this.HMSMSLbl.Size = new System.Drawing.Size(452, 31);
-            this.HMSMSLbl.TabIndex = 19;
-            this.HMSMSLbl.Text = "Hours/Minuts/Seconds/Milliseconds:";
-            // 
-            // HMSMSNumLBL
-            // 
-            this.HMSMSNumLBL.BackColor = System.Drawing.Color.Transparent;
-            this.HMSMSNumLBL.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HMSMSNumLBL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.HMSMSNumLBL.IsSelectionEnabled = false;
-            this.HMSMSNumLBL.Location = new System.Drawing.Point(575, 370);
-            this.HMSMSNumLBL.Name = "HMSMSNumLBL";
-            this.HMSMSNumLBL.Size = new System.Drawing.Size(150, 31);
-            this.HMSMSNumLBL.TabIndex = 20;
-            this.HMSMSNumLBL.Text = "00:00:00:00";
-            // 
-            // TotalDayLbl
-            // 
-            this.TotalDayLbl.BackColor = System.Drawing.Color.Transparent;
-            this.TotalDayLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalDayLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TotalDayLbl.IsSelectionEnabled = false;
-            this.TotalDayLbl.Location = new System.Drawing.Point(117, 435);
-            this.TotalDayLbl.Name = "TotalDayLbl";
-            this.TotalDayLbl.Size = new System.Drawing.Size(168, 31);
-            this.TotalDayLbl.TabIndex = 21;
-            this.TotalDayLbl.Text = "Days in total: ";
-            // 
-            // DCTotalNumLbl
-            // 
-            this.DCTotalNumLbl.BackColor = System.Drawing.Color.Transparent;
-            this.DCTotalNumLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DCTotalNumLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DCTotalNumLbl.IsSelectionEnabled = false;
-            this.DCTotalNumLbl.Location = new System.Drawing.Point(291, 435);
-            this.DCTotalNumLbl.Name = "DCTotalNumLbl";
-            this.DCTotalNumLbl.Size = new System.Drawing.Size(18, 31);
-            this.DCTotalNumLbl.TabIndex = 22;
-            this.DCTotalNumLbl.Text = "0";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -932,10 +1002,14 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel DCWLbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel DCMonthNumLbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel DCMLbl;
-        private Guna.UI2.WinForms.Guna2HtmlLabel HMSMSNumLBL;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DCHourNum;
         private Guna.UI2.WinForms.Guna2HtmlLabel HMSMSLbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel DCTotalNumLbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel TotalDayLbl;
+        private Guna.UI2.WinForms.Guna2GradientButton DCDateTimeNowBtn;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DCMSNum;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DCSecondNum;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DCMinutNum;
     }
 }
 

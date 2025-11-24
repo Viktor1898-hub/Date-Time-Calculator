@@ -15,11 +15,51 @@ namespace Date__Time_Calculator
         public Form1()
         {
             InitializeComponent();
+            ComparerFromPicker.Value = DateTime.Now;
+            ComparerToPicker.Value = DateTime.Now;
         }
         private void UnixTimer_Tick(object sender, EventArgs e)
         {
             long unixTimeSeconds = DateTimeOffset.Now.ToUnixTimeMilliseconds();
             TimerLabel.Text = unixTimeSeconds.ToString();
+        }
+
+
+        private void DCGoBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ComparerFromPicker.Value > ComparerToPicker.Value)
+                {
+                    MessageBox.Show("The 'From' date cannot be later than the 'To' date.", "Date Time Calculator", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                }
+                Work.DateCompar();
+                Settings.dcfrom = ComparerFromPicker.Value;
+                Settings.dcto = ComparerToPicker.Value;
+                DCYersNumLbl.Text = Settings.years.ToString();
+                DCMonthNumLbl.Text = Settings.months.ToString();
+                DCWeekNumLbl.Text = Settings.weeks.ToString();
+                DCDayNumLbl.Text = Settings.days.ToString();
+                DCHourNum.Text = Settings.hours.ToString() + ':';
+                DCMinutNum.Text = Settings.minutes.ToString() + ':';
+                DCSecondNum.Text = Settings.seconds.ToString() + ':';
+                DCMSNum.Text = Settings.milliseconds.ToString();
+                DCTotalNumLbl.Text = Settings.total.ToString();
+                if (Settings.hours < 10) DCHourNum.Text = "0" + DCHourNum.Text;
+                if (Settings.minutes < 10) DCMinutNum.Text = "0" + DCMinutNum.Text;
+                if (Settings.seconds < 10) DCSecondNum.Text = "0" + DCSecondNum.Text;
+                if (Settings.milliseconds < 10) DCMSNum.Text = "00" + DCMSNum.Text;
+                else if (Settings.milliseconds < 100) DCMSNum.Text = "0" + DCMSNum.Text;
+            }
+            catch { }
+        }
+
+
+        private void DCDateTimeNowBtn_Click(object sender, EventArgs e)
+        {
+            ComparerFromPicker.Value = DateTime.Now;
+            ComparerToPicker.Value = DateTime.Now;
         }
     }
 }
