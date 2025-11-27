@@ -93,6 +93,22 @@
             this.guna2DragControl12 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl13 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl14 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.DateWorkCountPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2DragControl15 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.DWCDTNBtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.DWCGoBtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.DWKSelectToPicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.DWKSelectFromPicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.DWKSelectToLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DWKSelectFromLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.MondayCheckBox = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.guna2CustomCheckBox1 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.guna2CustomCheckBox2 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.guna2CustomCheckBox3 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.guna2CustomCheckBox4 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.guna2CustomCheckBox5 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.guna2CustomCheckBox6 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.MenuPanel.SuspendLayout();
             this.UnixPanel.SuspendLayout();
             this.InfoPanel.SuspendLayout();
@@ -102,6 +118,7 @@
             this.guna2CustomGradientPanel4.SuspendLayout();
             this.guna2CustomGradientPanel3.SuspendLayout();
             this.guna2CustomGradientPanel2.SuspendLayout();
+            this.DateWorkCountPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2ControlBox1
@@ -918,12 +935,314 @@
             this.guna2DragControl14.TargetControl = this.SelectFromLabel;
             this.guna2DragControl14.UseTransparentDrag = true;
             // 
+            // DateWorkCountPanel
+            // 
+            this.DateWorkCountPanel.BorderRadius = 17;
+            this.DateWorkCountPanel.Controls.Add(this.guna2HtmlLabel1);
+            this.DateWorkCountPanel.Controls.Add(this.guna2CustomCheckBox6);
+            this.DateWorkCountPanel.Controls.Add(this.guna2CustomCheckBox5);
+            this.DateWorkCountPanel.Controls.Add(this.guna2CustomCheckBox4);
+            this.DateWorkCountPanel.Controls.Add(this.guna2CustomCheckBox3);
+            this.DateWorkCountPanel.Controls.Add(this.guna2CustomCheckBox2);
+            this.DateWorkCountPanel.Controls.Add(this.guna2CustomCheckBox1);
+            this.DateWorkCountPanel.Controls.Add(this.MondayCheckBox);
+            this.DateWorkCountPanel.Controls.Add(this.DWCDTNBtn);
+            this.DateWorkCountPanel.Controls.Add(this.DWCGoBtn);
+            this.DateWorkCountPanel.Controls.Add(this.DWKSelectToPicker);
+            this.DateWorkCountPanel.Controls.Add(this.DWKSelectFromPicker);
+            this.DateWorkCountPanel.Controls.Add(this.DWKSelectToLbl);
+            this.DateWorkCountPanel.Controls.Add(this.DWKSelectFromLbl);
+            this.DateWorkCountPanel.FillColor = System.Drawing.Color.Transparent;
+            this.DateWorkCountPanel.FillColor3 = System.Drawing.Color.Transparent;
+            this.DateWorkCountPanel.Location = new System.Drawing.Point(118, 100);
+            this.DateWorkCountPanel.Name = "DateWorkCountPanel";
+            this.DateWorkCountPanel.Size = new System.Drawing.Size(932, 573);
+            this.DateWorkCountPanel.TabIndex = 8;
+            // 
+            // guna2DragControl15
+            // 
+            this.guna2DragControl15.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl15.TargetControl = this.DateWorkCountPanel;
+            this.guna2DragControl15.UseTransparentDrag = true;
+            // 
+            // DWCDTNBtn
+            // 
+            this.DWCDTNBtn.BackColor = System.Drawing.Color.Transparent;
+            this.DWCDTNBtn.BorderRadius = 8;
+            this.DWCDTNBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.DWCDTNBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.DWCDTNBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.DWCDTNBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.DWCDTNBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.DWCDTNBtn.FillColor = System.Drawing.Color.Transparent;
+            this.DWCDTNBtn.FillColor2 = System.Drawing.Color.Transparent;
+            this.DWCDTNBtn.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DWCDTNBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DWCDTNBtn.Location = new System.Drawing.Point(401, 45);
+            this.DWCDTNBtn.Name = "DWCDTNBtn";
+            this.DWCDTNBtn.ShadowDecoration.BorderRadius = 8;
+            this.DWCDTNBtn.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.DWCDTNBtn.ShadowDecoration.Depth = 20;
+            this.DWCDTNBtn.ShadowDecoration.Enabled = true;
+            this.DWCDTNBtn.Size = new System.Drawing.Size(118, 73);
+            this.DWCDTNBtn.TabIndex = 29;
+            this.DWCDTNBtn.Text = "Date Time Now";
+            this.DWCDTNBtn.UseTransparentBackground = true;
+            // 
+            // DWCGoBtn
+            // 
+            this.DWCGoBtn.BackColor = System.Drawing.Color.Transparent;
+            this.DWCGoBtn.BorderRadius = 8;
+            this.DWCGoBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.DWCGoBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.DWCGoBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.DWCGoBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.DWCGoBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.DWCGoBtn.FillColor = System.Drawing.Color.Transparent;
+            this.DWCGoBtn.FillColor2 = System.Drawing.Color.Transparent;
+            this.DWCGoBtn.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DWCGoBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DWCGoBtn.Location = new System.Drawing.Point(401, 124);
+            this.DWCGoBtn.Name = "DWCGoBtn";
+            this.DWCGoBtn.ShadowDecoration.BorderRadius = 8;
+            this.DWCGoBtn.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.DWCGoBtn.ShadowDecoration.Depth = 20;
+            this.DWCGoBtn.ShadowDecoration.Enabled = true;
+            this.DWCGoBtn.Size = new System.Drawing.Size(118, 73);
+            this.DWCGoBtn.TabIndex = 28;
+            this.DWCGoBtn.Text = "Go";
+            this.DWCGoBtn.UseTransparentBackground = true;
+            // 
+            // DWKSelectToPicker
+            // 
+            this.DWKSelectToPicker.Animated = true;
+            this.DWKSelectToPicker.BackColor = System.Drawing.Color.Transparent;
+            this.DWKSelectToPicker.BorderRadius = 10;
+            this.DWKSelectToPicker.Checked = true;
+            this.DWKSelectToPicker.CustomFormat = "dd.MM.yyyy ";
+            this.DWKSelectToPicker.FillColor = System.Drawing.Color.PaleTurquoise;
+            this.DWKSelectToPicker.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.DWKSelectToPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DWKSelectToPicker.Location = new System.Drawing.Point(543, 74);
+            this.DWKSelectToPicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DWKSelectToPicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DWKSelectToPicker.Name = "DWKSelectToPicker";
+            this.DWKSelectToPicker.ShowUpDown = true;
+            this.DWKSelectToPicker.Size = new System.Drawing.Size(318, 44);
+            this.DWKSelectToPicker.TabIndex = 27;
+            this.DWKSelectToPicker.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.DWKSelectToPicker.Value = new System.DateTime(2025, 11, 22, 16, 36, 11, 0);
+            // 
+            // DWKSelectFromPicker
+            // 
+            this.DWKSelectFromPicker.Animated = true;
+            this.DWKSelectFromPicker.BackColor = System.Drawing.Color.Transparent;
+            this.DWKSelectFromPicker.BorderRadius = 10;
+            this.DWKSelectFromPicker.Checked = true;
+            this.DWKSelectFromPicker.CustomFormat = "dd.MM.yyyy";
+            this.DWKSelectFromPicker.FillColor = System.Drawing.Color.PaleTurquoise;
+            this.DWKSelectFromPicker.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.DWKSelectFromPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DWKSelectFromPicker.Location = new System.Drawing.Point(58, 75);
+            this.DWKSelectFromPicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DWKSelectFromPicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DWKSelectFromPicker.Name = "DWKSelectFromPicker";
+            this.DWKSelectFromPicker.ShowUpDown = true;
+            this.DWKSelectFromPicker.Size = new System.Drawing.Size(318, 44);
+            this.DWKSelectFromPicker.TabIndex = 26;
+            this.DWKSelectFromPicker.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.DWKSelectFromPicker.Value = new System.DateTime(2025, 11, 22, 16, 36, 4, 0);
+            // 
+            // DWKSelectToLbl
+            // 
+            this.DWKSelectToLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DWKSelectToLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DWKSelectToLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DWKSelectToLbl.IsSelectionEnabled = false;
+            this.DWKSelectToLbl.Location = new System.Drawing.Point(543, 37);
+            this.DWKSelectToLbl.Name = "DWKSelectToLbl";
+            this.DWKSelectToLbl.Size = new System.Drawing.Size(323, 31);
+            this.DWKSelectToLbl.TabIndex = 25;
+            this.DWKSelectToLbl.Text = "Select the second date(To)";
+            // 
+            // DWKSelectFromLbl
+            // 
+            this.DWKSelectFromLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DWKSelectFromLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DWKSelectFromLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DWKSelectFromLbl.IsSelectionEnabled = false;
+            this.DWKSelectFromLbl.Location = new System.Drawing.Point(58, 37);
+            this.DWKSelectFromLbl.Name = "DWKSelectFromLbl";
+            this.DWKSelectFromLbl.Size = new System.Drawing.Size(319, 31);
+            this.DWKSelectFromLbl.TabIndex = 24;
+            this.DWKSelectFromLbl.Text = "Select the first date(From)";
+            // 
+            // MondayCheckBox
+            // 
+            this.MondayCheckBox.BackColor = System.Drawing.Color.Transparent;
+            this.MondayCheckBox.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.MondayCheckBox.CheckedState.BorderRadius = 2;
+            this.MondayCheckBox.CheckedState.BorderThickness = 0;
+            this.MondayCheckBox.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.MondayCheckBox.Location = new System.Drawing.Point(58, 159);
+            this.MondayCheckBox.Name = "MondayCheckBox";
+            this.MondayCheckBox.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.MondayCheckBox.ShadowDecoration.Depth = 15;
+            this.MondayCheckBox.ShadowDecoration.Enabled = true;
+            this.MondayCheckBox.Size = new System.Drawing.Size(30, 30);
+            this.MondayCheckBox.TabIndex = 30;
+            this.MondayCheckBox.Text = "guna2CustomCheckBox1";
+            this.MondayCheckBox.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.MondayCheckBox.UncheckedState.BorderRadius = 2;
+            this.MondayCheckBox.UncheckedState.BorderThickness = 0;
+            this.MondayCheckBox.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.MondayCheckBox.UseTransparentBackground = true;
+            // 
+            // guna2CustomCheckBox1
+            // 
+            this.guna2CustomCheckBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox1.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox1.CheckedState.BorderRadius = 2;
+            this.guna2CustomCheckBox1.CheckedState.BorderThickness = 0;
+            this.guna2CustomCheckBox1.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox1.Location = new System.Drawing.Point(58, 213);
+            this.guna2CustomCheckBox1.Name = "guna2CustomCheckBox1";
+            this.guna2CustomCheckBox1.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox1.ShadowDecoration.Depth = 15;
+            this.guna2CustomCheckBox1.ShadowDecoration.Enabled = true;
+            this.guna2CustomCheckBox1.Size = new System.Drawing.Size(30, 30);
+            this.guna2CustomCheckBox1.TabIndex = 31;
+            this.guna2CustomCheckBox1.Text = "guna2CustomCheckBox1";
+            this.guna2CustomCheckBox1.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox1.UncheckedState.BorderRadius = 2;
+            this.guna2CustomCheckBox1.UncheckedState.BorderThickness = 0;
+            this.guna2CustomCheckBox1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox1.UseTransparentBackground = true;
+            // 
+            // guna2CustomCheckBox2
+            // 
+            this.guna2CustomCheckBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox2.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox2.CheckedState.BorderRadius = 2;
+            this.guna2CustomCheckBox2.CheckedState.BorderThickness = 0;
+            this.guna2CustomCheckBox2.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox2.Location = new System.Drawing.Point(58, 267);
+            this.guna2CustomCheckBox2.Name = "guna2CustomCheckBox2";
+            this.guna2CustomCheckBox2.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox2.ShadowDecoration.Depth = 15;
+            this.guna2CustomCheckBox2.ShadowDecoration.Enabled = true;
+            this.guna2CustomCheckBox2.Size = new System.Drawing.Size(30, 30);
+            this.guna2CustomCheckBox2.TabIndex = 32;
+            this.guna2CustomCheckBox2.Text = "guna2CustomCheckBox1";
+            this.guna2CustomCheckBox2.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox2.UncheckedState.BorderRadius = 2;
+            this.guna2CustomCheckBox2.UncheckedState.BorderThickness = 0;
+            this.guna2CustomCheckBox2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox2.UseTransparentBackground = true;
+            // 
+            // guna2CustomCheckBox3
+            // 
+            this.guna2CustomCheckBox3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox3.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox3.CheckedState.BorderRadius = 2;
+            this.guna2CustomCheckBox3.CheckedState.BorderThickness = 0;
+            this.guna2CustomCheckBox3.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox3.Location = new System.Drawing.Point(58, 321);
+            this.guna2CustomCheckBox3.Name = "guna2CustomCheckBox3";
+            this.guna2CustomCheckBox3.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox3.ShadowDecoration.Depth = 15;
+            this.guna2CustomCheckBox3.ShadowDecoration.Enabled = true;
+            this.guna2CustomCheckBox3.Size = new System.Drawing.Size(30, 30);
+            this.guna2CustomCheckBox3.TabIndex = 33;
+            this.guna2CustomCheckBox3.Text = "guna2CustomCheckBox1";
+            this.guna2CustomCheckBox3.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox3.UncheckedState.BorderRadius = 2;
+            this.guna2CustomCheckBox3.UncheckedState.BorderThickness = 0;
+            this.guna2CustomCheckBox3.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox3.UseTransparentBackground = true;
+            // 
+            // guna2CustomCheckBox4
+            // 
+            this.guna2CustomCheckBox4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox4.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox4.CheckedState.BorderRadius = 2;
+            this.guna2CustomCheckBox4.CheckedState.BorderThickness = 0;
+            this.guna2CustomCheckBox4.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox4.Location = new System.Drawing.Point(58, 375);
+            this.guna2CustomCheckBox4.Name = "guna2CustomCheckBox4";
+            this.guna2CustomCheckBox4.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox4.ShadowDecoration.Depth = 15;
+            this.guna2CustomCheckBox4.ShadowDecoration.Enabled = true;
+            this.guna2CustomCheckBox4.Size = new System.Drawing.Size(30, 30);
+            this.guna2CustomCheckBox4.TabIndex = 34;
+            this.guna2CustomCheckBox4.Text = "guna2CustomCheckBox1";
+            this.guna2CustomCheckBox4.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox4.UncheckedState.BorderRadius = 2;
+            this.guna2CustomCheckBox4.UncheckedState.BorderThickness = 0;
+            this.guna2CustomCheckBox4.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox4.UseTransparentBackground = true;
+            // 
+            // guna2CustomCheckBox5
+            // 
+            this.guna2CustomCheckBox5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox5.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox5.CheckedState.BorderRadius = 2;
+            this.guna2CustomCheckBox5.CheckedState.BorderThickness = 0;
+            this.guna2CustomCheckBox5.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox5.Location = new System.Drawing.Point(58, 429);
+            this.guna2CustomCheckBox5.Name = "guna2CustomCheckBox5";
+            this.guna2CustomCheckBox5.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox5.ShadowDecoration.Depth = 15;
+            this.guna2CustomCheckBox5.ShadowDecoration.Enabled = true;
+            this.guna2CustomCheckBox5.Size = new System.Drawing.Size(30, 30);
+            this.guna2CustomCheckBox5.TabIndex = 35;
+            this.guna2CustomCheckBox5.Text = "guna2CustomCheckBox1";
+            this.guna2CustomCheckBox5.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox5.UncheckedState.BorderRadius = 2;
+            this.guna2CustomCheckBox5.UncheckedState.BorderThickness = 0;
+            this.guna2CustomCheckBox5.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox5.UseTransparentBackground = true;
+            // 
+            // guna2CustomCheckBox6
+            // 
+            this.guna2CustomCheckBox6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox6.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox6.CheckedState.BorderRadius = 2;
+            this.guna2CustomCheckBox6.CheckedState.BorderThickness = 0;
+            this.guna2CustomCheckBox6.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox6.Location = new System.Drawing.Point(58, 483);
+            this.guna2CustomCheckBox6.Name = "guna2CustomCheckBox6";
+            this.guna2CustomCheckBox6.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox6.ShadowDecoration.Depth = 15;
+            this.guna2CustomCheckBox6.ShadowDecoration.Enabled = true;
+            this.guna2CustomCheckBox6.Size = new System.Drawing.Size(30, 30);
+            this.guna2CustomCheckBox6.TabIndex = 36;
+            this.guna2CustomCheckBox6.Text = "guna2CustomCheckBox1";
+            this.guna2CustomCheckBox6.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox6.UncheckedState.BorderRadius = 2;
+            this.guna2CustomCheckBox6.UncheckedState.BorderThickness = 0;
+            this.guna2CustomCheckBox6.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomCheckBox6.UseTransparentBackground = true;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2HtmlLabel1.IsSelectionEnabled = false;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(94, 166);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(319, 31);
+            this.guna2HtmlLabel1.TabIndex = 37;
+            this.guna2HtmlLabel1.Text = "Select the first date(From)";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkTurquoise;
             this.ClientSize = new System.Drawing.Size(1050, 673);
+            this.Controls.Add(this.DateWorkCountPanel);
             this.Controls.Add(this.InfoPanel);
             this.Controls.Add(this.UnixPanel);
             this.Controls.Add(this.MenuPanel);
@@ -942,6 +1261,8 @@
             this.guna2CustomGradientPanel4.ResumeLayout(false);
             this.guna2CustomGradientPanel3.ResumeLayout(false);
             this.guna2CustomGradientPanel2.ResumeLayout(false);
+            this.DateWorkCountPanel.ResumeLayout(false);
+            this.DateWorkCountPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1010,6 +1331,22 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel DCMSNum;
         private Guna.UI2.WinForms.Guna2HtmlLabel DCSecondNum;
         private Guna.UI2.WinForms.Guna2HtmlLabel DCMinutNum;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel DateWorkCountPanel;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl15;
+        private Guna.UI2.WinForms.Guna2GradientButton DWCDTNBtn;
+        private Guna.UI2.WinForms.Guna2GradientButton DWCGoBtn;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DWKSelectToPicker;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DWKSelectFromPicker;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DWKSelectToLbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DWKSelectFromLbl;
+        private Guna.UI2.WinForms.Guna2CustomCheckBox MondayCheckBox;
+        private Guna.UI2.WinForms.Guna2CustomCheckBox guna2CustomCheckBox6;
+        private Guna.UI2.WinForms.Guna2CustomCheckBox guna2CustomCheckBox5;
+        private Guna.UI2.WinForms.Guna2CustomCheckBox guna2CustomCheckBox4;
+        private Guna.UI2.WinForms.Guna2CustomCheckBox guna2CustomCheckBox3;
+        private Guna.UI2.WinForms.Guna2CustomCheckBox guna2CustomCheckBox2;
+        private Guna.UI2.WinForms.Guna2CustomCheckBox guna2CustomCheckBox1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }
 
