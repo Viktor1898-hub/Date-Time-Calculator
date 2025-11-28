@@ -24,7 +24,8 @@ namespace Date__Time_Calculator
             this.Controls.Add(DateCompPanel);
             this.Controls.Add(DateWorkCountPanel);
             this.Controls.Add(LeapPanel);
-            this.LeapPanel.BringToFront();
+            this.Controls.Add(ConverterPanel);
+            this.ConverterPanel.BringToFront();
         }
         private void UnixTimer_Tick(object sender, EventArgs e)
         {

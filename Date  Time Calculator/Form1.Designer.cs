@@ -128,6 +128,8 @@
             this.DWKSelectFromLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2DragControl15 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl16 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.ConverterPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2DragControl17 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.MenuPanel.SuspendLayout();
             this.UnixPanel.SuspendLayout();
             this.InfoPanel.SuspendLayout();
@@ -1006,6 +1008,7 @@
             this.LeapPanel.Name = "LeapPanel";
             this.LeapPanel.Size = new System.Drawing.Size(932, 573);
             this.LeapPanel.TabIndex = 47;
+            this.LeapPanel.Visible = false;
             // 
             // LeapResLbl
             // 
@@ -1538,12 +1541,29 @@
             this.guna2DragControl16.TargetControl = this.LeapPanel;
             this.guna2DragControl16.UseTransparentDrag = true;
             // 
+            // ConverterPanel
+            // 
+            this.ConverterPanel.BorderRadius = 17;
+            this.ConverterPanel.FillColor = System.Drawing.Color.Transparent;
+            this.ConverterPanel.FillColor3 = System.Drawing.Color.Transparent;
+            this.ConverterPanel.Location = new System.Drawing.Point(118, 100);
+            this.ConverterPanel.Name = "ConverterPanel";
+            this.ConverterPanel.Size = new System.Drawing.Size(932, 573);
+            this.ConverterPanel.TabIndex = 38;
+            // 
+            // guna2DragControl17
+            // 
+            this.guna2DragControl17.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl17.TargetControl = this.ConverterPanel;
+            this.guna2DragControl17.UseTransparentDrag = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkTurquoise;
             this.ClientSize = new System.Drawing.Size(1050, 673);
+            this.Controls.Add(this.ConverterPanel);
             this.Controls.Add(this.LeapPanel);
             this.Controls.Add(this.DateWorkCountPanel);
             this.Controls.Add(this.DateCompPanel);
@@ -1672,6 +1692,8 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel LeapToLbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel LeapFromLbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel LeapResLbl;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel ConverterPanel;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl17;
     }
 }
 
