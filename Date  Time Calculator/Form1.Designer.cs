@@ -49,6 +49,16 @@
             this.guna2DragControl3 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl4 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.InfoPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2CustomGradientPanel6 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.InfoBILabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2CustomGradientPanel5 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.InfoTCLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2CustomGradientPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.InfoLCLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2CustomGradientPanel3 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.InfoDWCLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.infoDCLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DateCompPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.DCMSNum = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DCSecondNum = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -72,16 +82,6 @@
             this.ComparerFromPicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.SelectToLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.SelectFromLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2CustomGradientPanel6 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.InfoBILabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2CustomGradientPanel5 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.InfoTCLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2CustomGradientPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.InfoLCLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2CustomGradientPanel3 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.InfoDWCLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.infoDCLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2DragControl11 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl10 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl9 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
@@ -94,15 +94,6 @@
             this.guna2DragControl13 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl14 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.DateWorkCountPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.LeapPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.LeapResLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.LeapPassLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.LeapDTNBtn = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.LeapGoBtn = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.LeapToPicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.LeapFromPicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.LeapToLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.LeapFromLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DWCResultLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DWCPassDatesLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DWCSunLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -126,21 +117,41 @@
             this.DWKSelectFromPicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.DWKSelectToLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DWKSelectFromLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.LeapPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.LeapResLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.LeapPassLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.LeapDTNBtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.LeapGoBtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.LeapToPicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.LeapFromPicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.LeapToLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.LeapFromLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2DragControl15 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl16 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.ConverterPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.ConvertInputBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ConvertInLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2DragControl17 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.ConvertOutputBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ConvertOutLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.ConvertAmountLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.ConvertUpDown = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.ConvertGoBtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.ConvertResLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.MenuPanel.SuspendLayout();
             this.UnixPanel.SuspendLayout();
             this.InfoPanel.SuspendLayout();
-            this.DateCompPanel.SuspendLayout();
             this.guna2CustomGradientPanel6.SuspendLayout();
             this.guna2CustomGradientPanel5.SuspendLayout();
             this.guna2CustomGradientPanel4.SuspendLayout();
             this.guna2CustomGradientPanel3.SuspendLayout();
             this.guna2CustomGradientPanel2.SuspendLayout();
+            this.DateCompPanel.SuspendLayout();
             this.DateWorkCountPanel.SuspendLayout();
             this.LeapPanel.SuspendLayout();
+            this.ConverterPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ConvertUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2ControlBox1
@@ -419,6 +430,139 @@
             this.InfoPanel.Name = "InfoPanel";
             this.InfoPanel.Size = new System.Drawing.Size(930, 573);
             this.InfoPanel.TabIndex = 8;
+            // 
+            // guna2CustomGradientPanel6
+            // 
+            this.guna2CustomGradientPanel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel6.BorderRadius = 16;
+            this.guna2CustomGradientPanel6.Controls.Add(this.InfoBILabel);
+            this.guna2CustomGradientPanel6.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel6.FillColor3 = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel6.FillColor4 = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel6.Location = new System.Drawing.Point(-2, 338);
+            this.guna2CustomGradientPanel6.Name = "guna2CustomGradientPanel6";
+            this.guna2CustomGradientPanel6.Size = new System.Drawing.Size(916, 73);
+            this.guna2CustomGradientPanel6.TabIndex = 6;
+            // 
+            // InfoBILabel
+            // 
+            this.InfoBILabel.AutoSize = false;
+            this.InfoBILabel.BackColor = System.Drawing.Color.Transparent;
+            this.InfoBILabel.Font = new System.Drawing.Font("Mongolian Baiti", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InfoBILabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.InfoBILabel.IsSelectionEnabled = false;
+            this.InfoBILabel.Location = new System.Drawing.Point(21, 3);
+            this.InfoBILabel.Name = "InfoBILabel";
+            this.InfoBILabel.Size = new System.Drawing.Size(876, 70);
+            this.InfoBILabel.TabIndex = 4;
+            this.InfoBILabel.Text = "How much time has passed since the date of birth, plus several other age-related " +
+    "functions";
+            // 
+            // guna2CustomGradientPanel5
+            // 
+            this.guna2CustomGradientPanel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel5.BorderRadius = 16;
+            this.guna2CustomGradientPanel5.Controls.Add(this.InfoTCLabel);
+            this.guna2CustomGradientPanel5.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel5.FillColor3 = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel5.FillColor4 = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel5.Location = new System.Drawing.Point(-2, 259);
+            this.guna2CustomGradientPanel5.Name = "guna2CustomGradientPanel5";
+            this.guna2CustomGradientPanel5.Size = new System.Drawing.Size(916, 73);
+            this.guna2CustomGradientPanel5.TabIndex = 6;
+            // 
+            // InfoTCLabel
+            // 
+            this.InfoTCLabel.AutoSize = false;
+            this.InfoTCLabel.BackColor = System.Drawing.Color.Transparent;
+            this.InfoTCLabel.Font = new System.Drawing.Font("Mongolian Baiti", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InfoTCLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.InfoTCLabel.IsSelectionEnabled = false;
+            this.InfoTCLabel.Location = new System.Drawing.Point(21, 3);
+            this.InfoTCLabel.Name = "InfoTCLabel";
+            this.InfoTCLabel.Size = new System.Drawing.Size(878, 70);
+            this.InfoTCLabel.TabIndex = 3;
+            this.InfoTCLabel.Text = "How many Y\\M\\W\\D\\H\\M\\S are in a specified amount\r\nFor example: “how many days are" +
+    " in 5000 hours?” or “how many minutes are in 120 months?”";
+            // 
+            // guna2CustomGradientPanel4
+            // 
+            this.guna2CustomGradientPanel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel4.BorderRadius = 16;
+            this.guna2CustomGradientPanel4.Controls.Add(this.InfoLCLabel);
+            this.guna2CustomGradientPanel4.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel4.FillColor3 = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel4.FillColor4 = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel4.Location = new System.Drawing.Point(-2, 180);
+            this.guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4";
+            this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(916, 73);
+            this.guna2CustomGradientPanel4.TabIndex = 6;
+            // 
+            // InfoLCLabel
+            // 
+            this.InfoLCLabel.AutoSize = false;
+            this.InfoLCLabel.BackColor = System.Drawing.Color.Transparent;
+            this.InfoLCLabel.Font = new System.Drawing.Font("Mongolian Baiti", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InfoLCLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.InfoLCLabel.IsSelectionEnabled = false;
+            this.InfoLCLabel.Location = new System.Drawing.Point(21, 3);
+            this.InfoLCLabel.Name = "InfoLCLabel";
+            this.InfoLCLabel.Size = new System.Drawing.Size(876, 70);
+            this.InfoLCLabel.TabIndex = 2;
+            this.InfoLCLabel.Text = "How many leap years have passed between two dates";
+            // 
+            // guna2CustomGradientPanel3
+            // 
+            this.guna2CustomGradientPanel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel3.BorderRadius = 16;
+            this.guna2CustomGradientPanel3.Controls.Add(this.InfoDWCLabel);
+            this.guna2CustomGradientPanel3.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel3.FillColor3 = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel3.FillColor4 = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel3.Location = new System.Drawing.Point(-2, 101);
+            this.guna2CustomGradientPanel3.Name = "guna2CustomGradientPanel3";
+            this.guna2CustomGradientPanel3.Size = new System.Drawing.Size(916, 73);
+            this.guna2CustomGradientPanel3.TabIndex = 6;
+            // 
+            // InfoDWCLabel
+            // 
+            this.InfoDWCLabel.AutoSize = false;
+            this.InfoDWCLabel.BackColor = System.Drawing.Color.Transparent;
+            this.InfoDWCLabel.Font = new System.Drawing.Font("Mongolian Baiti", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InfoDWCLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.InfoDWCLabel.IsSelectionEnabled = false;
+            this.InfoDWCLabel.Location = new System.Drawing.Point(21, 3);
+            this.InfoDWCLabel.Name = "InfoDWCLabel";
+            this.InfoDWCLabel.Size = new System.Drawing.Size(876, 70);
+            this.InfoDWCLabel.TabIndex = 1;
+            this.InfoDWCLabel.Text = "How many \"business” days have passed between two dates";
+            // 
+            // guna2CustomGradientPanel2
+            // 
+            this.guna2CustomGradientPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel2.BorderRadius = 16;
+            this.guna2CustomGradientPanel2.Controls.Add(this.infoDCLabel);
+            this.guna2CustomGradientPanel2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(-2, 22);
+            this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(916, 73);
+            this.guna2CustomGradientPanel2.TabIndex = 5;
+            // 
+            // infoDCLabel
+            // 
+            this.infoDCLabel.AutoSize = false;
+            this.infoDCLabel.BackColor = System.Drawing.Color.Transparent;
+            this.infoDCLabel.Font = new System.Drawing.Font("Mongolian Baiti", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.infoDCLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.infoDCLabel.IsSelectionEnabled = false;
+            this.infoDCLabel.Location = new System.Drawing.Point(21, 3);
+            this.infoDCLabel.Name = "infoDCLabel";
+            this.infoDCLabel.Size = new System.Drawing.Size(876, 70);
+            this.infoDCLabel.TabIndex = 0;
+            this.infoDCLabel.Text = "How many  Y\\M\\W\\D\\H\\M\\S\\MS have passed between two dates (+ a separate output sho" +
+    "wing the total number of days passed)";
             // 
             // DateCompPanel
             // 
@@ -759,139 +903,6 @@
             this.SelectFromLabel.TabIndex = 5;
             this.SelectFromLabel.Text = "Select the first date(From)";
             // 
-            // guna2CustomGradientPanel6
-            // 
-            this.guna2CustomGradientPanel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel6.BorderRadius = 16;
-            this.guna2CustomGradientPanel6.Controls.Add(this.InfoBILabel);
-            this.guna2CustomGradientPanel6.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel6.FillColor3 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel6.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel6.Location = new System.Drawing.Point(-2, 338);
-            this.guna2CustomGradientPanel6.Name = "guna2CustomGradientPanel6";
-            this.guna2CustomGradientPanel6.Size = new System.Drawing.Size(916, 73);
-            this.guna2CustomGradientPanel6.TabIndex = 6;
-            // 
-            // InfoBILabel
-            // 
-            this.InfoBILabel.AutoSize = false;
-            this.InfoBILabel.BackColor = System.Drawing.Color.Transparent;
-            this.InfoBILabel.Font = new System.Drawing.Font("Mongolian Baiti", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InfoBILabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.InfoBILabel.IsSelectionEnabled = false;
-            this.InfoBILabel.Location = new System.Drawing.Point(21, 3);
-            this.InfoBILabel.Name = "InfoBILabel";
-            this.InfoBILabel.Size = new System.Drawing.Size(876, 70);
-            this.InfoBILabel.TabIndex = 4;
-            this.InfoBILabel.Text = "How much time has passed since the date of birth, plus several other age-related " +
-    "functions";
-            // 
-            // guna2CustomGradientPanel5
-            // 
-            this.guna2CustomGradientPanel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel5.BorderRadius = 16;
-            this.guna2CustomGradientPanel5.Controls.Add(this.InfoTCLabel);
-            this.guna2CustomGradientPanel5.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel5.FillColor3 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel5.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel5.Location = new System.Drawing.Point(-2, 259);
-            this.guna2CustomGradientPanel5.Name = "guna2CustomGradientPanel5";
-            this.guna2CustomGradientPanel5.Size = new System.Drawing.Size(916, 73);
-            this.guna2CustomGradientPanel5.TabIndex = 6;
-            // 
-            // InfoTCLabel
-            // 
-            this.InfoTCLabel.AutoSize = false;
-            this.InfoTCLabel.BackColor = System.Drawing.Color.Transparent;
-            this.InfoTCLabel.Font = new System.Drawing.Font("Mongolian Baiti", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InfoTCLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.InfoTCLabel.IsSelectionEnabled = false;
-            this.InfoTCLabel.Location = new System.Drawing.Point(21, 3);
-            this.InfoTCLabel.Name = "InfoTCLabel";
-            this.InfoTCLabel.Size = new System.Drawing.Size(878, 70);
-            this.InfoTCLabel.TabIndex = 3;
-            this.InfoTCLabel.Text = "How many Y\\M\\W\\D\\H\\M\\S are in a specified amount\r\nFor example: “how many days are" +
-    " in 5000 hours?” or “how many minutes are in 120 months?”";
-            // 
-            // guna2CustomGradientPanel4
-            // 
-            this.guna2CustomGradientPanel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel4.BorderRadius = 16;
-            this.guna2CustomGradientPanel4.Controls.Add(this.InfoLCLabel);
-            this.guna2CustomGradientPanel4.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel4.FillColor3 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel4.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel4.Location = new System.Drawing.Point(-2, 180);
-            this.guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4";
-            this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(916, 73);
-            this.guna2CustomGradientPanel4.TabIndex = 6;
-            // 
-            // InfoLCLabel
-            // 
-            this.InfoLCLabel.AutoSize = false;
-            this.InfoLCLabel.BackColor = System.Drawing.Color.Transparent;
-            this.InfoLCLabel.Font = new System.Drawing.Font("Mongolian Baiti", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InfoLCLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.InfoLCLabel.IsSelectionEnabled = false;
-            this.InfoLCLabel.Location = new System.Drawing.Point(21, 3);
-            this.InfoLCLabel.Name = "InfoLCLabel";
-            this.InfoLCLabel.Size = new System.Drawing.Size(876, 70);
-            this.InfoLCLabel.TabIndex = 2;
-            this.InfoLCLabel.Text = "How many leap years have passed between two dates";
-            // 
-            // guna2CustomGradientPanel3
-            // 
-            this.guna2CustomGradientPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel3.BorderRadius = 16;
-            this.guna2CustomGradientPanel3.Controls.Add(this.InfoDWCLabel);
-            this.guna2CustomGradientPanel3.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel3.FillColor3 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel3.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel3.Location = new System.Drawing.Point(-2, 101);
-            this.guna2CustomGradientPanel3.Name = "guna2CustomGradientPanel3";
-            this.guna2CustomGradientPanel3.Size = new System.Drawing.Size(916, 73);
-            this.guna2CustomGradientPanel3.TabIndex = 6;
-            // 
-            // InfoDWCLabel
-            // 
-            this.InfoDWCLabel.AutoSize = false;
-            this.InfoDWCLabel.BackColor = System.Drawing.Color.Transparent;
-            this.InfoDWCLabel.Font = new System.Drawing.Font("Mongolian Baiti", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InfoDWCLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.InfoDWCLabel.IsSelectionEnabled = false;
-            this.InfoDWCLabel.Location = new System.Drawing.Point(21, 3);
-            this.InfoDWCLabel.Name = "InfoDWCLabel";
-            this.InfoDWCLabel.Size = new System.Drawing.Size(876, 70);
-            this.InfoDWCLabel.TabIndex = 1;
-            this.InfoDWCLabel.Text = "How many \"business” days have passed between two dates";
-            // 
-            // guna2CustomGradientPanel2
-            // 
-            this.guna2CustomGradientPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel2.BorderRadius = 16;
-            this.guna2CustomGradientPanel2.Controls.Add(this.infoDCLabel);
-            this.guna2CustomGradientPanel2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(-2, 22);
-            this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
-            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(916, 73);
-            this.guna2CustomGradientPanel2.TabIndex = 5;
-            // 
-            // infoDCLabel
-            // 
-            this.infoDCLabel.AutoSize = false;
-            this.infoDCLabel.BackColor = System.Drawing.Color.Transparent;
-            this.infoDCLabel.Font = new System.Drawing.Font("Mongolian Baiti", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.infoDCLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.infoDCLabel.IsSelectionEnabled = false;
-            this.infoDCLabel.Location = new System.Drawing.Point(21, 3);
-            this.infoDCLabel.Name = "infoDCLabel";
-            this.infoDCLabel.Size = new System.Drawing.Size(876, 70);
-            this.infoDCLabel.TabIndex = 0;
-            this.infoDCLabel.Text = "How many  Y\\M\\W\\D\\H\\M\\S\\MS have passed between two dates (+ a separate output sho" +
-    "wing the total number of days passed)";
-            // 
             // guna2DragControl11
             // 
             this.guna2DragControl11.DockIndicatorTransparencyValue = 0.6D;
@@ -990,163 +1001,6 @@
             this.DateWorkCountPanel.Size = new System.Drawing.Size(932, 573);
             this.DateWorkCountPanel.TabIndex = 8;
             this.DateWorkCountPanel.Visible = false;
-            // 
-            // LeapPanel
-            // 
-            this.LeapPanel.BorderRadius = 17;
-            this.LeapPanel.Controls.Add(this.LeapResLbl);
-            this.LeapPanel.Controls.Add(this.LeapPassLbl);
-            this.LeapPanel.Controls.Add(this.LeapDTNBtn);
-            this.LeapPanel.Controls.Add(this.LeapGoBtn);
-            this.LeapPanel.Controls.Add(this.LeapToPicker);
-            this.LeapPanel.Controls.Add(this.LeapFromPicker);
-            this.LeapPanel.Controls.Add(this.LeapToLbl);
-            this.LeapPanel.Controls.Add(this.LeapFromLbl);
-            this.LeapPanel.FillColor = System.Drawing.Color.Transparent;
-            this.LeapPanel.FillColor3 = System.Drawing.Color.Transparent;
-            this.LeapPanel.Location = new System.Drawing.Point(118, 100);
-            this.LeapPanel.Name = "LeapPanel";
-            this.LeapPanel.Size = new System.Drawing.Size(932, 573);
-            this.LeapPanel.TabIndex = 47;
-            this.LeapPanel.Visible = false;
-            // 
-            // LeapResLbl
-            // 
-            this.LeapResLbl.BackColor = System.Drawing.Color.Transparent;
-            this.LeapResLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LeapResLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LeapResLbl.IsSelectionEnabled = false;
-            this.LeapResLbl.Location = new System.Drawing.Point(301, 354);
-            this.LeapResLbl.Name = "LeapResLbl";
-            this.LeapResLbl.Size = new System.Drawing.Size(156, 31);
-            this.LeapResLbl.TabIndex = 37;
-            this.LeapResLbl.Text = "0 Leap years";
-            // 
-            // LeapPassLbl
-            // 
-            this.LeapPassLbl.BackColor = System.Drawing.Color.Transparent;
-            this.LeapPassLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LeapPassLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LeapPassLbl.IsSelectionEnabled = false;
-            this.LeapPassLbl.Location = new System.Drawing.Point(301, 310);
-            this.LeapPassLbl.Name = "LeapPassLbl";
-            this.LeapPassLbl.Size = new System.Drawing.Size(306, 31);
-            this.LeapPassLbl.TabIndex = 36;
-            this.LeapPassLbl.Text = "Passed between the dates";
-            // 
-            // LeapDTNBtn
-            // 
-            this.LeapDTNBtn.BackColor = System.Drawing.Color.Transparent;
-            this.LeapDTNBtn.BorderRadius = 8;
-            this.LeapDTNBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.LeapDTNBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.LeapDTNBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.LeapDTNBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.LeapDTNBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.LeapDTNBtn.FillColor = System.Drawing.Color.Transparent;
-            this.LeapDTNBtn.FillColor2 = System.Drawing.Color.Transparent;
-            this.LeapDTNBtn.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LeapDTNBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LeapDTNBtn.Location = new System.Drawing.Point(401, 94);
-            this.LeapDTNBtn.Name = "LeapDTNBtn";
-            this.LeapDTNBtn.ShadowDecoration.BorderRadius = 8;
-            this.LeapDTNBtn.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.LeapDTNBtn.ShadowDecoration.Depth = 20;
-            this.LeapDTNBtn.ShadowDecoration.Enabled = true;
-            this.LeapDTNBtn.Size = new System.Drawing.Size(118, 73);
-            this.LeapDTNBtn.TabIndex = 35;
-            this.LeapDTNBtn.Text = "Date Time Now";
-            this.LeapDTNBtn.UseTransparentBackground = true;
-            this.LeapDTNBtn.Click += new System.EventHandler(this.LeapDTNBtn_Click);
-            // 
-            // LeapGoBtn
-            // 
-            this.LeapGoBtn.BackColor = System.Drawing.Color.Transparent;
-            this.LeapGoBtn.BorderRadius = 8;
-            this.LeapGoBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.LeapGoBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.LeapGoBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.LeapGoBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.LeapGoBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.LeapGoBtn.FillColor = System.Drawing.Color.Transparent;
-            this.LeapGoBtn.FillColor2 = System.Drawing.Color.Transparent;
-            this.LeapGoBtn.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LeapGoBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LeapGoBtn.Location = new System.Drawing.Point(401, 173);
-            this.LeapGoBtn.Name = "LeapGoBtn";
-            this.LeapGoBtn.ShadowDecoration.BorderRadius = 8;
-            this.LeapGoBtn.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.LeapGoBtn.ShadowDecoration.Depth = 20;
-            this.LeapGoBtn.ShadowDecoration.Enabled = true;
-            this.LeapGoBtn.Size = new System.Drawing.Size(118, 73);
-            this.LeapGoBtn.TabIndex = 34;
-            this.LeapGoBtn.Text = "Go";
-            this.LeapGoBtn.UseTransparentBackground = true;
-            this.LeapGoBtn.Click += new System.EventHandler(this.LeapGoBtn_Click);
-            // 
-            // LeapToPicker
-            // 
-            this.LeapToPicker.Animated = true;
-            this.LeapToPicker.BackColor = System.Drawing.Color.Transparent;
-            this.LeapToPicker.BorderRadius = 10;
-            this.LeapToPicker.Checked = true;
-            this.LeapToPicker.CustomFormat = "yyyy ";
-            this.LeapToPicker.FillColor = System.Drawing.Color.PaleTurquoise;
-            this.LeapToPicker.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.LeapToPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.LeapToPicker.Location = new System.Drawing.Point(543, 123);
-            this.LeapToPicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.LeapToPicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.LeapToPicker.Name = "LeapToPicker";
-            this.LeapToPicker.ShowUpDown = true;
-            this.LeapToPicker.Size = new System.Drawing.Size(318, 44);
-            this.LeapToPicker.TabIndex = 33;
-            this.LeapToPicker.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.LeapToPicker.Value = new System.DateTime(2025, 11, 22, 16, 36, 11, 0);
-            // 
-            // LeapFromPicker
-            // 
-            this.LeapFromPicker.Animated = true;
-            this.LeapFromPicker.BackColor = System.Drawing.Color.Transparent;
-            this.LeapFromPicker.BorderRadius = 10;
-            this.LeapFromPicker.Checked = true;
-            this.LeapFromPicker.CustomFormat = "yyyy";
-            this.LeapFromPicker.FillColor = System.Drawing.Color.PaleTurquoise;
-            this.LeapFromPicker.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.LeapFromPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.LeapFromPicker.Location = new System.Drawing.Point(58, 124);
-            this.LeapFromPicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.LeapFromPicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.LeapFromPicker.Name = "LeapFromPicker";
-            this.LeapFromPicker.ShowUpDown = true;
-            this.LeapFromPicker.Size = new System.Drawing.Size(318, 44);
-            this.LeapFromPicker.TabIndex = 32;
-            this.LeapFromPicker.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.LeapFromPicker.Value = new System.DateTime(2025, 11, 22, 16, 36, 4, 0);
-            // 
-            // LeapToLbl
-            // 
-            this.LeapToLbl.BackColor = System.Drawing.Color.Transparent;
-            this.LeapToLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LeapToLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LeapToLbl.IsSelectionEnabled = false;
-            this.LeapToLbl.Location = new System.Drawing.Point(543, 86);
-            this.LeapToLbl.Name = "LeapToLbl";
-            this.LeapToLbl.Size = new System.Drawing.Size(323, 31);
-            this.LeapToLbl.TabIndex = 31;
-            this.LeapToLbl.Text = "Select the second date(To)";
-            // 
-            // LeapFromLbl
-            // 
-            this.LeapFromLbl.BackColor = System.Drawing.Color.Transparent;
-            this.LeapFromLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LeapFromLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LeapFromLbl.IsSelectionEnabled = false;
-            this.LeapFromLbl.Location = new System.Drawing.Point(58, 86);
-            this.LeapFromLbl.Name = "LeapFromLbl";
-            this.LeapFromLbl.Size = new System.Drawing.Size(319, 31);
-            this.LeapFromLbl.TabIndex = 30;
-            this.LeapFromLbl.Text = "Select the first date(From)";
             // 
             // DWCResultLbl
             // 
@@ -1529,6 +1383,163 @@
             this.DWKSelectFromLbl.TabIndex = 24;
             this.DWKSelectFromLbl.Text = "Select the first date(From)";
             // 
+            // LeapPanel
+            // 
+            this.LeapPanel.BorderRadius = 17;
+            this.LeapPanel.Controls.Add(this.LeapResLbl);
+            this.LeapPanel.Controls.Add(this.LeapPassLbl);
+            this.LeapPanel.Controls.Add(this.LeapDTNBtn);
+            this.LeapPanel.Controls.Add(this.LeapGoBtn);
+            this.LeapPanel.Controls.Add(this.LeapToPicker);
+            this.LeapPanel.Controls.Add(this.LeapFromPicker);
+            this.LeapPanel.Controls.Add(this.LeapToLbl);
+            this.LeapPanel.Controls.Add(this.LeapFromLbl);
+            this.LeapPanel.FillColor = System.Drawing.Color.Transparent;
+            this.LeapPanel.FillColor3 = System.Drawing.Color.Transparent;
+            this.LeapPanel.Location = new System.Drawing.Point(118, 100);
+            this.LeapPanel.Name = "LeapPanel";
+            this.LeapPanel.Size = new System.Drawing.Size(932, 573);
+            this.LeapPanel.TabIndex = 47;
+            this.LeapPanel.Visible = false;
+            // 
+            // LeapResLbl
+            // 
+            this.LeapResLbl.BackColor = System.Drawing.Color.Transparent;
+            this.LeapResLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LeapResLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LeapResLbl.IsSelectionEnabled = false;
+            this.LeapResLbl.Location = new System.Drawing.Point(301, 354);
+            this.LeapResLbl.Name = "LeapResLbl";
+            this.LeapResLbl.Size = new System.Drawing.Size(156, 31);
+            this.LeapResLbl.TabIndex = 37;
+            this.LeapResLbl.Text = "0 Leap years";
+            // 
+            // LeapPassLbl
+            // 
+            this.LeapPassLbl.BackColor = System.Drawing.Color.Transparent;
+            this.LeapPassLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LeapPassLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LeapPassLbl.IsSelectionEnabled = false;
+            this.LeapPassLbl.Location = new System.Drawing.Point(301, 310);
+            this.LeapPassLbl.Name = "LeapPassLbl";
+            this.LeapPassLbl.Size = new System.Drawing.Size(306, 31);
+            this.LeapPassLbl.TabIndex = 36;
+            this.LeapPassLbl.Text = "Passed between the dates";
+            // 
+            // LeapDTNBtn
+            // 
+            this.LeapDTNBtn.BackColor = System.Drawing.Color.Transparent;
+            this.LeapDTNBtn.BorderRadius = 8;
+            this.LeapDTNBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.LeapDTNBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.LeapDTNBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.LeapDTNBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.LeapDTNBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.LeapDTNBtn.FillColor = System.Drawing.Color.Transparent;
+            this.LeapDTNBtn.FillColor2 = System.Drawing.Color.Transparent;
+            this.LeapDTNBtn.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LeapDTNBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LeapDTNBtn.Location = new System.Drawing.Point(401, 94);
+            this.LeapDTNBtn.Name = "LeapDTNBtn";
+            this.LeapDTNBtn.ShadowDecoration.BorderRadius = 8;
+            this.LeapDTNBtn.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.LeapDTNBtn.ShadowDecoration.Depth = 20;
+            this.LeapDTNBtn.ShadowDecoration.Enabled = true;
+            this.LeapDTNBtn.Size = new System.Drawing.Size(118, 73);
+            this.LeapDTNBtn.TabIndex = 35;
+            this.LeapDTNBtn.Text = "Date Time Now";
+            this.LeapDTNBtn.UseTransparentBackground = true;
+            this.LeapDTNBtn.Click += new System.EventHandler(this.LeapDTNBtn_Click);
+            // 
+            // LeapGoBtn
+            // 
+            this.LeapGoBtn.BackColor = System.Drawing.Color.Transparent;
+            this.LeapGoBtn.BorderRadius = 8;
+            this.LeapGoBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.LeapGoBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.LeapGoBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.LeapGoBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.LeapGoBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.LeapGoBtn.FillColor = System.Drawing.Color.Transparent;
+            this.LeapGoBtn.FillColor2 = System.Drawing.Color.Transparent;
+            this.LeapGoBtn.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LeapGoBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LeapGoBtn.Location = new System.Drawing.Point(401, 173);
+            this.LeapGoBtn.Name = "LeapGoBtn";
+            this.LeapGoBtn.ShadowDecoration.BorderRadius = 8;
+            this.LeapGoBtn.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.LeapGoBtn.ShadowDecoration.Depth = 20;
+            this.LeapGoBtn.ShadowDecoration.Enabled = true;
+            this.LeapGoBtn.Size = new System.Drawing.Size(118, 73);
+            this.LeapGoBtn.TabIndex = 34;
+            this.LeapGoBtn.Text = "Go";
+            this.LeapGoBtn.UseTransparentBackground = true;
+            this.LeapGoBtn.Click += new System.EventHandler(this.LeapGoBtn_Click);
+            // 
+            // LeapToPicker
+            // 
+            this.LeapToPicker.Animated = true;
+            this.LeapToPicker.BackColor = System.Drawing.Color.Transparent;
+            this.LeapToPicker.BorderRadius = 10;
+            this.LeapToPicker.Checked = true;
+            this.LeapToPicker.CustomFormat = "yyyy ";
+            this.LeapToPicker.FillColor = System.Drawing.Color.PaleTurquoise;
+            this.LeapToPicker.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.LeapToPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.LeapToPicker.Location = new System.Drawing.Point(543, 123);
+            this.LeapToPicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.LeapToPicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.LeapToPicker.Name = "LeapToPicker";
+            this.LeapToPicker.ShowUpDown = true;
+            this.LeapToPicker.Size = new System.Drawing.Size(318, 44);
+            this.LeapToPicker.TabIndex = 33;
+            this.LeapToPicker.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LeapToPicker.Value = new System.DateTime(2025, 11, 22, 16, 36, 11, 0);
+            // 
+            // LeapFromPicker
+            // 
+            this.LeapFromPicker.Animated = true;
+            this.LeapFromPicker.BackColor = System.Drawing.Color.Transparent;
+            this.LeapFromPicker.BorderRadius = 10;
+            this.LeapFromPicker.Checked = true;
+            this.LeapFromPicker.CustomFormat = "yyyy";
+            this.LeapFromPicker.FillColor = System.Drawing.Color.PaleTurquoise;
+            this.LeapFromPicker.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.LeapFromPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.LeapFromPicker.Location = new System.Drawing.Point(58, 124);
+            this.LeapFromPicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.LeapFromPicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.LeapFromPicker.Name = "LeapFromPicker";
+            this.LeapFromPicker.ShowUpDown = true;
+            this.LeapFromPicker.Size = new System.Drawing.Size(318, 44);
+            this.LeapFromPicker.TabIndex = 32;
+            this.LeapFromPicker.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LeapFromPicker.Value = new System.DateTime(2025, 11, 22, 16, 36, 4, 0);
+            // 
+            // LeapToLbl
+            // 
+            this.LeapToLbl.BackColor = System.Drawing.Color.Transparent;
+            this.LeapToLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LeapToLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LeapToLbl.IsSelectionEnabled = false;
+            this.LeapToLbl.Location = new System.Drawing.Point(543, 86);
+            this.LeapToLbl.Name = "LeapToLbl";
+            this.LeapToLbl.Size = new System.Drawing.Size(323, 31);
+            this.LeapToLbl.TabIndex = 31;
+            this.LeapToLbl.Text = "Select the second date(To)";
+            // 
+            // LeapFromLbl
+            // 
+            this.LeapFromLbl.BackColor = System.Drawing.Color.Transparent;
+            this.LeapFromLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LeapFromLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LeapFromLbl.IsSelectionEnabled = false;
+            this.LeapFromLbl.Location = new System.Drawing.Point(58, 86);
+            this.LeapFromLbl.Name = "LeapFromLbl";
+            this.LeapFromLbl.Size = new System.Drawing.Size(319, 31);
+            this.LeapFromLbl.TabIndex = 30;
+            this.LeapFromLbl.Text = "Select the first date(From)";
+            // 
             // guna2DragControl15
             // 
             this.guna2DragControl15.DockIndicatorTransparencyValue = 0.6D;
@@ -1544,6 +1555,14 @@
             // ConverterPanel
             // 
             this.ConverterPanel.BorderRadius = 17;
+            this.ConverterPanel.Controls.Add(this.ConvertResLbl);
+            this.ConverterPanel.Controls.Add(this.ConvertGoBtn);
+            this.ConverterPanel.Controls.Add(this.ConvertUpDown);
+            this.ConverterPanel.Controls.Add(this.ConvertAmountLbl);
+            this.ConverterPanel.Controls.Add(this.ConvertOutputBox);
+            this.ConverterPanel.Controls.Add(this.ConvertOutLbl);
+            this.ConverterPanel.Controls.Add(this.ConvertInputBox);
+            this.ConverterPanel.Controls.Add(this.ConvertInLbl);
             this.ConverterPanel.FillColor = System.Drawing.Color.Transparent;
             this.ConverterPanel.FillColor3 = System.Drawing.Color.Transparent;
             this.ConverterPanel.Location = new System.Drawing.Point(118, 100);
@@ -1551,11 +1570,178 @@
             this.ConverterPanel.Size = new System.Drawing.Size(932, 573);
             this.ConverterPanel.TabIndex = 38;
             // 
+            // ConvertInputBox
+            // 
+            this.ConvertInputBox.AutoCompleteCustomSource.AddRange(new string[] {
+            "Year",
+            "Mounth",
+            "Week",
+            "Day",
+            "Hous",
+            "Minut",
+            "Second",
+            "Millisecond"});
+            this.ConvertInputBox.BackColor = System.Drawing.Color.Transparent;
+            this.ConvertInputBox.BorderColor = System.Drawing.Color.PaleTurquoise;
+            this.ConvertInputBox.BorderRadius = 5;
+            this.ConvertInputBox.DisabledState.BorderColor = System.Drawing.Color.Transparent;
+            this.ConvertInputBox.DisabledState.FillColor = System.Drawing.Color.Transparent;
+            this.ConvertInputBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ConvertInputBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ConvertInputBox.FillColor = System.Drawing.Color.PaleTurquoise;
+            this.ConvertInputBox.FocusedColor = System.Drawing.Color.Empty;
+            this.ConvertInputBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ConvertInputBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ConvertInputBox.ItemHeight = 30;
+            this.ConvertInputBox.Items.AddRange(new object[] {
+            "Year",
+            "Mounth",
+            "Day",
+            "Hous",
+            "Minut",
+            "Second"});
+            this.ConvertInputBox.Location = new System.Drawing.Point(123, 131);
+            this.ConvertInputBox.Name = "ConvertInputBox";
+            this.ConvertInputBox.ShadowDecoration.Enabled = true;
+            this.ConvertInputBox.Size = new System.Drawing.Size(190, 36);
+            this.ConvertInputBox.TabIndex = 38;
+            // 
+            // ConvertInLbl
+            // 
+            this.ConvertInLbl.BackColor = System.Drawing.Color.Transparent;
+            this.ConvertInLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConvertInLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ConvertInLbl.IsSelectionEnabled = false;
+            this.ConvertInLbl.Location = new System.Drawing.Point(123, 94);
+            this.ConvertInLbl.Name = "ConvertInLbl";
+            this.ConvertInLbl.Size = new System.Drawing.Size(233, 31);
+            this.ConvertInLbl.TabIndex = 37;
+            this.ConvertInLbl.Text = "Select input format";
+            // 
             // guna2DragControl17
             // 
             this.guna2DragControl17.DockIndicatorTransparencyValue = 0.6D;
             this.guna2DragControl17.TargetControl = this.ConverterPanel;
             this.guna2DragControl17.UseTransparentDrag = true;
+            // 
+            // ConvertOutputBox
+            // 
+            this.ConvertOutputBox.AutoCompleteCustomSource.AddRange(new string[] {
+            "Year",
+            "Mounth",
+            "Week",
+            "Day",
+            "Hous",
+            "Minut",
+            "Second",
+            "Millisecond"});
+            this.ConvertOutputBox.BackColor = System.Drawing.Color.Transparent;
+            this.ConvertOutputBox.BorderColor = System.Drawing.Color.PaleTurquoise;
+            this.ConvertOutputBox.BorderRadius = 5;
+            this.ConvertOutputBox.DisabledState.BorderColor = System.Drawing.Color.Transparent;
+            this.ConvertOutputBox.DisabledState.FillColor = System.Drawing.Color.Transparent;
+            this.ConvertOutputBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ConvertOutputBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ConvertOutputBox.FillColor = System.Drawing.Color.PaleTurquoise;
+            this.ConvertOutputBox.FocusedColor = System.Drawing.Color.Empty;
+            this.ConvertOutputBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ConvertOutputBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ConvertOutputBox.ItemHeight = 30;
+            this.ConvertOutputBox.Items.AddRange(new object[] {
+            "Year",
+            "Mounth",
+            "Day",
+            "Hous",
+            "Minut",
+            "Second"});
+            this.ConvertOutputBox.Location = new System.Drawing.Point(543, 131);
+            this.ConvertOutputBox.Name = "ConvertOutputBox";
+            this.ConvertOutputBox.ShadowDecoration.Enabled = true;
+            this.ConvertOutputBox.Size = new System.Drawing.Size(190, 36);
+            this.ConvertOutputBox.TabIndex = 40;
+            // 
+            // ConvertOutLbl
+            // 
+            this.ConvertOutLbl.BackColor = System.Drawing.Color.Transparent;
+            this.ConvertOutLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConvertOutLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ConvertOutLbl.IsSelectionEnabled = false;
+            this.ConvertOutLbl.Location = new System.Drawing.Point(543, 94);
+            this.ConvertOutLbl.Name = "ConvertOutLbl";
+            this.ConvertOutLbl.Size = new System.Drawing.Size(248, 31);
+            this.ConvertOutLbl.TabIndex = 39;
+            this.ConvertOutLbl.Text = "Select output format";
+            // 
+            // ConvertAmountLbl
+            // 
+            this.ConvertAmountLbl.BackColor = System.Drawing.Color.Transparent;
+            this.ConvertAmountLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConvertAmountLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ConvertAmountLbl.IsSelectionEnabled = false;
+            this.ConvertAmountLbl.Location = new System.Drawing.Point(123, 382);
+            this.ConvertAmountLbl.Name = "ConvertAmountLbl";
+            this.ConvertAmountLbl.Size = new System.Drawing.Size(217, 31);
+            this.ConvertAmountLbl.TabIndex = 41;
+            this.ConvertAmountLbl.Text = "Select the amount";
+            // 
+            // ConvertUpDown
+            // 
+            this.ConvertUpDown.BackColor = System.Drawing.Color.Transparent;
+            this.ConvertUpDown.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ConvertUpDown.FillColor = System.Drawing.Color.PaleTurquoise;
+            this.ConvertUpDown.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ConvertUpDown.Location = new System.Drawing.Point(346, 383);
+            this.ConvertUpDown.Name = "ConvertUpDown";
+            this.ConvertUpDown.Size = new System.Drawing.Size(92, 30);
+            this.ConvertUpDown.TabIndex = 42;
+            this.ConvertUpDown.UpDownButtonFillColor = System.Drawing.Color.Transparent;
+            this.ConvertUpDown.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.ContainerControl = this;
+            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
+            // ConvertGoBtn
+            // 
+            this.ConvertGoBtn.BackColor = System.Drawing.Color.Transparent;
+            this.ConvertGoBtn.BorderRadius = 8;
+            this.ConvertGoBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.ConvertGoBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.ConvertGoBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ConvertGoBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ConvertGoBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.ConvertGoBtn.FillColor = System.Drawing.Color.Transparent;
+            this.ConvertGoBtn.FillColor2 = System.Drawing.Color.Transparent;
+            this.ConvertGoBtn.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConvertGoBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ConvertGoBtn.Location = new System.Drawing.Point(579, 383);
+            this.ConvertGoBtn.Name = "ConvertGoBtn";
+            this.ConvertGoBtn.ShadowDecoration.BorderRadius = 8;
+            this.ConvertGoBtn.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.ConvertGoBtn.ShadowDecoration.Depth = 20;
+            this.ConvertGoBtn.ShadowDecoration.Enabled = true;
+            this.ConvertGoBtn.Size = new System.Drawing.Size(118, 31);
+            this.ConvertGoBtn.TabIndex = 43;
+            this.ConvertGoBtn.Text = "Go";
+            this.ConvertGoBtn.UseTransparentBackground = true;
+            // 
+            // ConvertResLbl
+            // 
+            this.ConvertResLbl.BackColor = System.Drawing.Color.Transparent;
+            this.ConvertResLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConvertResLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ConvertResLbl.IsSelectionEnabled = false;
+            this.ConvertResLbl.Location = new System.Drawing.Point(123, 456);
+            this.ConvertResLbl.Name = "ConvertResLbl";
+            this.ConvertResLbl.Size = new System.Drawing.Size(284, 31);
+            this.ConvertResLbl.TabIndex = 44;
+            this.ConvertResLbl.Text = "1 Year equals 365 days";
             // 
             // Form1
             // 
@@ -1578,17 +1764,20 @@
             this.UnixPanel.ResumeLayout(false);
             this.UnixPanel.PerformLayout();
             this.InfoPanel.ResumeLayout(false);
-            this.DateCompPanel.ResumeLayout(false);
-            this.DateCompPanel.PerformLayout();
             this.guna2CustomGradientPanel6.ResumeLayout(false);
             this.guna2CustomGradientPanel5.ResumeLayout(false);
             this.guna2CustomGradientPanel4.ResumeLayout(false);
             this.guna2CustomGradientPanel3.ResumeLayout(false);
             this.guna2CustomGradientPanel2.ResumeLayout(false);
+            this.DateCompPanel.ResumeLayout(false);
+            this.DateCompPanel.PerformLayout();
             this.DateWorkCountPanel.ResumeLayout(false);
             this.DateWorkCountPanel.PerformLayout();
             this.LeapPanel.ResumeLayout(false);
             this.LeapPanel.PerformLayout();
+            this.ConverterPanel.ResumeLayout(false);
+            this.ConverterPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ConvertUpDown)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1694,6 +1883,15 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel LeapResLbl;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel ConverterPanel;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl17;
+        private Guna.UI2.WinForms.Guna2HtmlLabel ConvertInLbl;
+        private Guna.UI2.WinForms.Guna2ComboBox ConvertInputBox;
+        private Guna.UI2.WinForms.Guna2ComboBox ConvertOutputBox;
+        private Guna.UI2.WinForms.Guna2HtmlLabel ConvertOutLbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel ConvertAmountLbl;
+        private Guna.UI2.WinForms.Guna2NumericUpDown ConvertUpDown;
+        private Guna.UI2.WinForms.Guna2HtmlLabel ConvertResLbl;
+        private Guna.UI2.WinForms.Guna2GradientButton ConvertGoBtn;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
     }
 }
 
