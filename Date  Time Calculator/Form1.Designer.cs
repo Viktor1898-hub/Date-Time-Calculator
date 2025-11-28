@@ -94,31 +94,39 @@
             this.guna2DragControl13 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl14 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.DateWorkCountPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2DragControl15 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.LeapPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.LeapResLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.LeapPassLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.LeapDTNBtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.LeapGoBtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.LeapToPicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.LeapFromPicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.LeapToLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.LeapFromLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DWCResultLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DWCPassDatesLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DWCSunLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DWCSaturLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DWCFriLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DWCThursLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DWCWednLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DWCTuesLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DWCMonLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DWCSelDayLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DWCSundayCheckBox = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.DWCSaturdayCheckBox = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.DWCFridayCheckBox = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.DWCThursdayCheckBox = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.DWCWednesdayCheckBox = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.DWCTuesdayCheckBox = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.DWCMondayCheckBox = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.DWCDTNBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.DWCGoBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.DWKSelectToPicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.DWKSelectFromPicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.DWKSelectToLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DWKSelectFromLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DWCMondayCheckBox = new Guna.UI2.WinForms.Guna2CustomCheckBox();
-            this.DWCTuesdayCheckBox = new Guna.UI2.WinForms.Guna2CustomCheckBox();
-            this.DWCWednesdayCheckBox = new Guna.UI2.WinForms.Guna2CustomCheckBox();
-            this.DWCThursdayCheckBox = new Guna.UI2.WinForms.Guna2CustomCheckBox();
-            this.DWCFridayCheckBox = new Guna.UI2.WinForms.Guna2CustomCheckBox();
-            this.DWCSaturdayCheckBox = new Guna.UI2.WinForms.Guna2CustomCheckBox();
-            this.DWCSundayCheckBox = new Guna.UI2.WinForms.Guna2CustomCheckBox();
-            this.DWCSelDayLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DWCMonLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DWCTuesLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DWCWednLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DWCThursLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DWCFriLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DWCSaturLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DWCSunLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DWCPassDatesLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DWCResultLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.LeapPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2DragControl15 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl16 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.MenuPanel.SuspendLayout();
             this.UnixPanel.SuspendLayout();
@@ -130,6 +138,7 @@
             this.guna2CustomGradientPanel3.SuspendLayout();
             this.guna2CustomGradientPanel2.SuspendLayout();
             this.DateWorkCountPanel.SuspendLayout();
+            this.LeapPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2ControlBox1
@@ -302,7 +311,7 @@
             this.LeapCounterBtn.Name = "LeapCounterBtn";
             this.LeapCounterBtn.Size = new System.Drawing.Size(120, 73);
             this.LeapCounterBtn.TabIndex = 1;
-            this.LeapCounterBtn.Text = "Leap Conter";
+            this.LeapCounterBtn.Text = "Leap Counter";
             this.LeapCounterBtn.UseTransparentBackground = true;
             // 
             // DateComparerBtn
@@ -397,7 +406,6 @@
             // InfoPanel
             // 
             this.InfoPanel.BorderRadius = 17;
-            this.InfoPanel.Controls.Add(this.DateCompPanel);
             this.InfoPanel.Controls.Add(this.guna2CustomGradientPanel6);
             this.InfoPanel.Controls.Add(this.guna2CustomGradientPanel5);
             this.InfoPanel.Controls.Add(this.guna2CustomGradientPanel4);
@@ -437,7 +445,7 @@
             this.DateCompPanel.Controls.Add(this.SelectFromLabel);
             this.DateCompPanel.FillColor = System.Drawing.Color.Transparent;
             this.DateCompPanel.FillColor3 = System.Drawing.Color.Transparent;
-            this.DateCompPanel.Location = new System.Drawing.Point(-2, 0);
+            this.DateCompPanel.Location = new System.Drawing.Point(118, 100);
             this.DateCompPanel.Name = "DateCompPanel";
             this.DateCompPanel.Size = new System.Drawing.Size(932, 573);
             this.DateCompPanel.TabIndex = 8;
@@ -950,7 +958,6 @@
             // DateWorkCountPanel
             // 
             this.DateWorkCountPanel.BorderRadius = 17;
-            this.DateWorkCountPanel.Controls.Add(this.LeapPanel);
             this.DateWorkCountPanel.Controls.Add(this.DWCResultLbl);
             this.DateWorkCountPanel.Controls.Add(this.DWCPassDatesLbl);
             this.DateWorkCountPanel.Controls.Add(this.DWCSunLbl);
@@ -982,11 +989,428 @@
             this.DateWorkCountPanel.TabIndex = 8;
             this.DateWorkCountPanel.Visible = false;
             // 
-            // guna2DragControl15
+            // LeapPanel
             // 
-            this.guna2DragControl15.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl15.TargetControl = this.DateWorkCountPanel;
-            this.guna2DragControl15.UseTransparentDrag = true;
+            this.LeapPanel.BorderRadius = 17;
+            this.LeapPanel.Controls.Add(this.LeapResLbl);
+            this.LeapPanel.Controls.Add(this.LeapPassLbl);
+            this.LeapPanel.Controls.Add(this.LeapDTNBtn);
+            this.LeapPanel.Controls.Add(this.LeapGoBtn);
+            this.LeapPanel.Controls.Add(this.LeapToPicker);
+            this.LeapPanel.Controls.Add(this.LeapFromPicker);
+            this.LeapPanel.Controls.Add(this.LeapToLbl);
+            this.LeapPanel.Controls.Add(this.LeapFromLbl);
+            this.LeapPanel.FillColor = System.Drawing.Color.Transparent;
+            this.LeapPanel.FillColor3 = System.Drawing.Color.Transparent;
+            this.LeapPanel.Location = new System.Drawing.Point(118, 100);
+            this.LeapPanel.Name = "LeapPanel";
+            this.LeapPanel.Size = new System.Drawing.Size(932, 573);
+            this.LeapPanel.TabIndex = 47;
+            // 
+            // LeapResLbl
+            // 
+            this.LeapResLbl.BackColor = System.Drawing.Color.Transparent;
+            this.LeapResLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LeapResLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LeapResLbl.IsSelectionEnabled = false;
+            this.LeapResLbl.Location = new System.Drawing.Point(301, 354);
+            this.LeapResLbl.Name = "LeapResLbl";
+            this.LeapResLbl.Size = new System.Drawing.Size(156, 31);
+            this.LeapResLbl.TabIndex = 37;
+            this.LeapResLbl.Text = "0 Leap years";
+            // 
+            // LeapPassLbl
+            // 
+            this.LeapPassLbl.BackColor = System.Drawing.Color.Transparent;
+            this.LeapPassLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LeapPassLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LeapPassLbl.IsSelectionEnabled = false;
+            this.LeapPassLbl.Location = new System.Drawing.Point(301, 310);
+            this.LeapPassLbl.Name = "LeapPassLbl";
+            this.LeapPassLbl.Size = new System.Drawing.Size(306, 31);
+            this.LeapPassLbl.TabIndex = 36;
+            this.LeapPassLbl.Text = "Passed between the dates";
+            // 
+            // LeapDTNBtn
+            // 
+            this.LeapDTNBtn.BackColor = System.Drawing.Color.Transparent;
+            this.LeapDTNBtn.BorderRadius = 8;
+            this.LeapDTNBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.LeapDTNBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.LeapDTNBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.LeapDTNBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.LeapDTNBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.LeapDTNBtn.FillColor = System.Drawing.Color.Transparent;
+            this.LeapDTNBtn.FillColor2 = System.Drawing.Color.Transparent;
+            this.LeapDTNBtn.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LeapDTNBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LeapDTNBtn.Location = new System.Drawing.Point(401, 94);
+            this.LeapDTNBtn.Name = "LeapDTNBtn";
+            this.LeapDTNBtn.ShadowDecoration.BorderRadius = 8;
+            this.LeapDTNBtn.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.LeapDTNBtn.ShadowDecoration.Depth = 20;
+            this.LeapDTNBtn.ShadowDecoration.Enabled = true;
+            this.LeapDTNBtn.Size = new System.Drawing.Size(118, 73);
+            this.LeapDTNBtn.TabIndex = 35;
+            this.LeapDTNBtn.Text = "Date Time Now";
+            this.LeapDTNBtn.UseTransparentBackground = true;
+            this.LeapDTNBtn.Click += new System.EventHandler(this.LeapDTNBtn_Click);
+            // 
+            // LeapGoBtn
+            // 
+            this.LeapGoBtn.BackColor = System.Drawing.Color.Transparent;
+            this.LeapGoBtn.BorderRadius = 8;
+            this.LeapGoBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.LeapGoBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.LeapGoBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.LeapGoBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.LeapGoBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.LeapGoBtn.FillColor = System.Drawing.Color.Transparent;
+            this.LeapGoBtn.FillColor2 = System.Drawing.Color.Transparent;
+            this.LeapGoBtn.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LeapGoBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LeapGoBtn.Location = new System.Drawing.Point(401, 173);
+            this.LeapGoBtn.Name = "LeapGoBtn";
+            this.LeapGoBtn.ShadowDecoration.BorderRadius = 8;
+            this.LeapGoBtn.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.LeapGoBtn.ShadowDecoration.Depth = 20;
+            this.LeapGoBtn.ShadowDecoration.Enabled = true;
+            this.LeapGoBtn.Size = new System.Drawing.Size(118, 73);
+            this.LeapGoBtn.TabIndex = 34;
+            this.LeapGoBtn.Text = "Go";
+            this.LeapGoBtn.UseTransparentBackground = true;
+            this.LeapGoBtn.Click += new System.EventHandler(this.LeapGoBtn_Click);
+            // 
+            // LeapToPicker
+            // 
+            this.LeapToPicker.Animated = true;
+            this.LeapToPicker.BackColor = System.Drawing.Color.Transparent;
+            this.LeapToPicker.BorderRadius = 10;
+            this.LeapToPicker.Checked = true;
+            this.LeapToPicker.CustomFormat = "yyyy ";
+            this.LeapToPicker.FillColor = System.Drawing.Color.PaleTurquoise;
+            this.LeapToPicker.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.LeapToPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.LeapToPicker.Location = new System.Drawing.Point(543, 123);
+            this.LeapToPicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.LeapToPicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.LeapToPicker.Name = "LeapToPicker";
+            this.LeapToPicker.ShowUpDown = true;
+            this.LeapToPicker.Size = new System.Drawing.Size(318, 44);
+            this.LeapToPicker.TabIndex = 33;
+            this.LeapToPicker.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LeapToPicker.Value = new System.DateTime(2025, 11, 22, 16, 36, 11, 0);
+            // 
+            // LeapFromPicker
+            // 
+            this.LeapFromPicker.Animated = true;
+            this.LeapFromPicker.BackColor = System.Drawing.Color.Transparent;
+            this.LeapFromPicker.BorderRadius = 10;
+            this.LeapFromPicker.Checked = true;
+            this.LeapFromPicker.CustomFormat = "yyyy";
+            this.LeapFromPicker.FillColor = System.Drawing.Color.PaleTurquoise;
+            this.LeapFromPicker.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.LeapFromPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.LeapFromPicker.Location = new System.Drawing.Point(58, 124);
+            this.LeapFromPicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.LeapFromPicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.LeapFromPicker.Name = "LeapFromPicker";
+            this.LeapFromPicker.ShowUpDown = true;
+            this.LeapFromPicker.Size = new System.Drawing.Size(318, 44);
+            this.LeapFromPicker.TabIndex = 32;
+            this.LeapFromPicker.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LeapFromPicker.Value = new System.DateTime(2025, 11, 22, 16, 36, 4, 0);
+            // 
+            // LeapToLbl
+            // 
+            this.LeapToLbl.BackColor = System.Drawing.Color.Transparent;
+            this.LeapToLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LeapToLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LeapToLbl.IsSelectionEnabled = false;
+            this.LeapToLbl.Location = new System.Drawing.Point(543, 86);
+            this.LeapToLbl.Name = "LeapToLbl";
+            this.LeapToLbl.Size = new System.Drawing.Size(323, 31);
+            this.LeapToLbl.TabIndex = 31;
+            this.LeapToLbl.Text = "Select the second date(To)";
+            // 
+            // LeapFromLbl
+            // 
+            this.LeapFromLbl.BackColor = System.Drawing.Color.Transparent;
+            this.LeapFromLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LeapFromLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LeapFromLbl.IsSelectionEnabled = false;
+            this.LeapFromLbl.Location = new System.Drawing.Point(58, 86);
+            this.LeapFromLbl.Name = "LeapFromLbl";
+            this.LeapFromLbl.Size = new System.Drawing.Size(319, 31);
+            this.LeapFromLbl.TabIndex = 30;
+            this.LeapFromLbl.Text = "Select the first date(From)";
+            // 
+            // DWCResultLbl
+            // 
+            this.DWCResultLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DWCResultLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DWCResultLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DWCResultLbl.IsSelectionEnabled = false;
+            this.DWCResultLbl.Location = new System.Drawing.Point(454, 324);
+            this.DWCResultLbl.Name = "DWCResultLbl";
+            this.DWCResultLbl.Size = new System.Drawing.Size(194, 31);
+            this.DWCResultLbl.TabIndex = 46;
+            this.DWCResultLbl.Text = "0 Working days";
+            // 
+            // DWCPassDatesLbl
+            // 
+            this.DWCPassDatesLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DWCPassDatesLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DWCPassDatesLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DWCPassDatesLbl.IsSelectionEnabled = false;
+            this.DWCPassDatesLbl.Location = new System.Drawing.Point(454, 282);
+            this.DWCPassDatesLbl.Name = "DWCPassDatesLbl";
+            this.DWCPassDatesLbl.Size = new System.Drawing.Size(315, 31);
+            this.DWCPassDatesLbl.TabIndex = 45;
+            this.DWCPassDatesLbl.Text = "Passed between the dates: ";
+            // 
+            // DWCSunLbl
+            // 
+            this.DWCSunLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DWCSunLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DWCSunLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DWCSunLbl.IsSelectionEnabled = false;
+            this.DWCSunLbl.Location = new System.Drawing.Point(94, 515);
+            this.DWCSunLbl.Name = "DWCSunLbl";
+            this.DWCSunLbl.Size = new System.Drawing.Size(92, 31);
+            this.DWCSunLbl.TabIndex = 44;
+            this.DWCSunLbl.Text = "Sunday";
+            // 
+            // DWCSaturLbl
+            // 
+            this.DWCSaturLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DWCSaturLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DWCSaturLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DWCSaturLbl.IsSelectionEnabled = false;
+            this.DWCSaturLbl.Location = new System.Drawing.Point(94, 467);
+            this.DWCSaturLbl.Name = "DWCSaturLbl";
+            this.DWCSaturLbl.Size = new System.Drawing.Size(109, 31);
+            this.DWCSaturLbl.TabIndex = 43;
+            this.DWCSaturLbl.Text = "Saturday";
+            // 
+            // DWCFriLbl
+            // 
+            this.DWCFriLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DWCFriLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DWCFriLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DWCFriLbl.IsSelectionEnabled = false;
+            this.DWCFriLbl.Location = new System.Drawing.Point(94, 419);
+            this.DWCFriLbl.Name = "DWCFriLbl";
+            this.DWCFriLbl.Size = new System.Drawing.Size(81, 31);
+            this.DWCFriLbl.TabIndex = 42;
+            this.DWCFriLbl.Text = "Friday";
+            // 
+            // DWCThursLbl
+            // 
+            this.DWCThursLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DWCThursLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DWCThursLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DWCThursLbl.IsSelectionEnabled = false;
+            this.DWCThursLbl.Location = new System.Drawing.Point(94, 371);
+            this.DWCThursLbl.Name = "DWCThursLbl";
+            this.DWCThursLbl.Size = new System.Drawing.Size(116, 31);
+            this.DWCThursLbl.TabIndex = 41;
+            this.DWCThursLbl.Text = "Thursday";
+            // 
+            // DWCWednLbl
+            // 
+            this.DWCWednLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DWCWednLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DWCWednLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DWCWednLbl.IsSelectionEnabled = false;
+            this.DWCWednLbl.Location = new System.Drawing.Point(94, 323);
+            this.DWCWednLbl.Name = "DWCWednLbl";
+            this.DWCWednLbl.Size = new System.Drawing.Size(140, 31);
+            this.DWCWednLbl.TabIndex = 40;
+            this.DWCWednLbl.Text = "Wednesday";
+            // 
+            // DWCTuesLbl
+            // 
+            this.DWCTuesLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DWCTuesLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DWCTuesLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DWCTuesLbl.IsSelectionEnabled = false;
+            this.DWCTuesLbl.Location = new System.Drawing.Point(94, 275);
+            this.DWCTuesLbl.Name = "DWCTuesLbl";
+            this.DWCTuesLbl.Size = new System.Drawing.Size(104, 31);
+            this.DWCTuesLbl.TabIndex = 39;
+            this.DWCTuesLbl.Text = "Tuesday";
+            // 
+            // DWCMonLbl
+            // 
+            this.DWCMonLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DWCMonLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DWCMonLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DWCMonLbl.IsSelectionEnabled = false;
+            this.DWCMonLbl.Location = new System.Drawing.Point(94, 227);
+            this.DWCMonLbl.Name = "DWCMonLbl";
+            this.DWCMonLbl.Size = new System.Drawing.Size(101, 31);
+            this.DWCMonLbl.TabIndex = 38;
+            this.DWCMonLbl.Text = "Monday";
+            // 
+            // DWCSelDayLbl
+            // 
+            this.DWCSelDayLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DWCSelDayLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DWCSelDayLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DWCSelDayLbl.IsSelectionEnabled = false;
+            this.DWCSelDayLbl.Location = new System.Drawing.Point(57, 180);
+            this.DWCSelDayLbl.Name = "DWCSelDayLbl";
+            this.DWCSelDayLbl.Size = new System.Drawing.Size(292, 31);
+            this.DWCSelDayLbl.TabIndex = 37;
+            this.DWCSelDayLbl.Text = "Select the working days";
+            // 
+            // DWCSundayCheckBox
+            // 
+            this.DWCSundayCheckBox.BackColor = System.Drawing.Color.Transparent;
+            this.DWCSundayCheckBox.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.DWCSundayCheckBox.CheckedState.BorderRadius = 2;
+            this.DWCSundayCheckBox.CheckedState.BorderThickness = 0;
+            this.DWCSundayCheckBox.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.DWCSundayCheckBox.Location = new System.Drawing.Point(58, 516);
+            this.DWCSundayCheckBox.Name = "DWCSundayCheckBox";
+            this.DWCSundayCheckBox.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.DWCSundayCheckBox.ShadowDecoration.Depth = 15;
+            this.DWCSundayCheckBox.ShadowDecoration.Enabled = true;
+            this.DWCSundayCheckBox.Size = new System.Drawing.Size(30, 30);
+            this.DWCSundayCheckBox.TabIndex = 36;
+            this.DWCSundayCheckBox.Text = "guna2CustomCheckBox1";
+            this.DWCSundayCheckBox.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.DWCSundayCheckBox.UncheckedState.BorderRadius = 2;
+            this.DWCSundayCheckBox.UncheckedState.BorderThickness = 0;
+            this.DWCSundayCheckBox.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.DWCSundayCheckBox.UseTransparentBackground = true;
+            // 
+            // DWCSaturdayCheckBox
+            // 
+            this.DWCSaturdayCheckBox.BackColor = System.Drawing.Color.Transparent;
+            this.DWCSaturdayCheckBox.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.DWCSaturdayCheckBox.CheckedState.BorderRadius = 2;
+            this.DWCSaturdayCheckBox.CheckedState.BorderThickness = 0;
+            this.DWCSaturdayCheckBox.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.DWCSaturdayCheckBox.Location = new System.Drawing.Point(58, 468);
+            this.DWCSaturdayCheckBox.Name = "DWCSaturdayCheckBox";
+            this.DWCSaturdayCheckBox.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.DWCSaturdayCheckBox.ShadowDecoration.Depth = 15;
+            this.DWCSaturdayCheckBox.ShadowDecoration.Enabled = true;
+            this.DWCSaturdayCheckBox.Size = new System.Drawing.Size(30, 30);
+            this.DWCSaturdayCheckBox.TabIndex = 35;
+            this.DWCSaturdayCheckBox.Text = "guna2CustomCheckBox1";
+            this.DWCSaturdayCheckBox.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.DWCSaturdayCheckBox.UncheckedState.BorderRadius = 2;
+            this.DWCSaturdayCheckBox.UncheckedState.BorderThickness = 0;
+            this.DWCSaturdayCheckBox.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.DWCSaturdayCheckBox.UseTransparentBackground = true;
+            // 
+            // DWCFridayCheckBox
+            // 
+            this.DWCFridayCheckBox.BackColor = System.Drawing.Color.Transparent;
+            this.DWCFridayCheckBox.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.DWCFridayCheckBox.CheckedState.BorderRadius = 2;
+            this.DWCFridayCheckBox.CheckedState.BorderThickness = 0;
+            this.DWCFridayCheckBox.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.DWCFridayCheckBox.Location = new System.Drawing.Point(58, 420);
+            this.DWCFridayCheckBox.Name = "DWCFridayCheckBox";
+            this.DWCFridayCheckBox.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.DWCFridayCheckBox.ShadowDecoration.Depth = 15;
+            this.DWCFridayCheckBox.ShadowDecoration.Enabled = true;
+            this.DWCFridayCheckBox.Size = new System.Drawing.Size(30, 30);
+            this.DWCFridayCheckBox.TabIndex = 34;
+            this.DWCFridayCheckBox.Text = "guna2CustomCheckBox1";
+            this.DWCFridayCheckBox.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.DWCFridayCheckBox.UncheckedState.BorderRadius = 2;
+            this.DWCFridayCheckBox.UncheckedState.BorderThickness = 0;
+            this.DWCFridayCheckBox.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.DWCFridayCheckBox.UseTransparentBackground = true;
+            // 
+            // DWCThursdayCheckBox
+            // 
+            this.DWCThursdayCheckBox.BackColor = System.Drawing.Color.Transparent;
+            this.DWCThursdayCheckBox.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.DWCThursdayCheckBox.CheckedState.BorderRadius = 2;
+            this.DWCThursdayCheckBox.CheckedState.BorderThickness = 0;
+            this.DWCThursdayCheckBox.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.DWCThursdayCheckBox.Location = new System.Drawing.Point(58, 372);
+            this.DWCThursdayCheckBox.Name = "DWCThursdayCheckBox";
+            this.DWCThursdayCheckBox.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.DWCThursdayCheckBox.ShadowDecoration.Depth = 15;
+            this.DWCThursdayCheckBox.ShadowDecoration.Enabled = true;
+            this.DWCThursdayCheckBox.Size = new System.Drawing.Size(30, 30);
+            this.DWCThursdayCheckBox.TabIndex = 33;
+            this.DWCThursdayCheckBox.Text = "guna2CustomCheckBox1";
+            this.DWCThursdayCheckBox.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.DWCThursdayCheckBox.UncheckedState.BorderRadius = 2;
+            this.DWCThursdayCheckBox.UncheckedState.BorderThickness = 0;
+            this.DWCThursdayCheckBox.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.DWCThursdayCheckBox.UseTransparentBackground = true;
+            // 
+            // DWCWednesdayCheckBox
+            // 
+            this.DWCWednesdayCheckBox.BackColor = System.Drawing.Color.Transparent;
+            this.DWCWednesdayCheckBox.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.DWCWednesdayCheckBox.CheckedState.BorderRadius = 2;
+            this.DWCWednesdayCheckBox.CheckedState.BorderThickness = 0;
+            this.DWCWednesdayCheckBox.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.DWCWednesdayCheckBox.Location = new System.Drawing.Point(58, 324);
+            this.DWCWednesdayCheckBox.Name = "DWCWednesdayCheckBox";
+            this.DWCWednesdayCheckBox.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.DWCWednesdayCheckBox.ShadowDecoration.Depth = 15;
+            this.DWCWednesdayCheckBox.ShadowDecoration.Enabled = true;
+            this.DWCWednesdayCheckBox.Size = new System.Drawing.Size(30, 30);
+            this.DWCWednesdayCheckBox.TabIndex = 32;
+            this.DWCWednesdayCheckBox.Text = "guna2CustomCheckBox1";
+            this.DWCWednesdayCheckBox.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.DWCWednesdayCheckBox.UncheckedState.BorderRadius = 2;
+            this.DWCWednesdayCheckBox.UncheckedState.BorderThickness = 0;
+            this.DWCWednesdayCheckBox.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.DWCWednesdayCheckBox.UseTransparentBackground = true;
+            // 
+            // DWCTuesdayCheckBox
+            // 
+            this.DWCTuesdayCheckBox.BackColor = System.Drawing.Color.Transparent;
+            this.DWCTuesdayCheckBox.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.DWCTuesdayCheckBox.CheckedState.BorderRadius = 2;
+            this.DWCTuesdayCheckBox.CheckedState.BorderThickness = 0;
+            this.DWCTuesdayCheckBox.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.DWCTuesdayCheckBox.Location = new System.Drawing.Point(58, 276);
+            this.DWCTuesdayCheckBox.Name = "DWCTuesdayCheckBox";
+            this.DWCTuesdayCheckBox.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.DWCTuesdayCheckBox.ShadowDecoration.Depth = 15;
+            this.DWCTuesdayCheckBox.ShadowDecoration.Enabled = true;
+            this.DWCTuesdayCheckBox.Size = new System.Drawing.Size(30, 30);
+            this.DWCTuesdayCheckBox.TabIndex = 31;
+            this.DWCTuesdayCheckBox.Text = "guna2CustomCheckBox1";
+            this.DWCTuesdayCheckBox.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.DWCTuesdayCheckBox.UncheckedState.BorderRadius = 2;
+            this.DWCTuesdayCheckBox.UncheckedState.BorderThickness = 0;
+            this.DWCTuesdayCheckBox.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.DWCTuesdayCheckBox.UseTransparentBackground = true;
+            // 
+            // DWCMondayCheckBox
+            // 
+            this.DWCMondayCheckBox.BackColor = System.Drawing.Color.Transparent;
+            this.DWCMondayCheckBox.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.DWCMondayCheckBox.CheckedState.BorderRadius = 2;
+            this.DWCMondayCheckBox.CheckedState.BorderThickness = 0;
+            this.DWCMondayCheckBox.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.DWCMondayCheckBox.Location = new System.Drawing.Point(58, 228);
+            this.DWCMondayCheckBox.Name = "DWCMondayCheckBox";
+            this.DWCMondayCheckBox.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.DWCMondayCheckBox.ShadowDecoration.Depth = 15;
+            this.DWCMondayCheckBox.ShadowDecoration.Enabled = true;
+            this.DWCMondayCheckBox.Size = new System.Drawing.Size(30, 30);
+            this.DWCMondayCheckBox.TabIndex = 30;
+            this.DWCMondayCheckBox.Text = "guna2CustomCheckBox1";
+            this.DWCMondayCheckBox.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.DWCMondayCheckBox.UncheckedState.BorderRadius = 2;
+            this.DWCMondayCheckBox.UncheckedState.BorderThickness = 0;
+            this.DWCMondayCheckBox.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.DWCMondayCheckBox.UseTransparentBackground = true;
             // 
             // DWCDTNBtn
             // 
@@ -1102,282 +1526,11 @@
             this.DWKSelectFromLbl.TabIndex = 24;
             this.DWKSelectFromLbl.Text = "Select the first date(From)";
             // 
-            // DWCMondayCheckBox
+            // guna2DragControl15
             // 
-            this.DWCMondayCheckBox.BackColor = System.Drawing.Color.Transparent;
-            this.DWCMondayCheckBox.CheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.DWCMondayCheckBox.CheckedState.BorderRadius = 2;
-            this.DWCMondayCheckBox.CheckedState.BorderThickness = 0;
-            this.DWCMondayCheckBox.CheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.DWCMondayCheckBox.Location = new System.Drawing.Point(58, 228);
-            this.DWCMondayCheckBox.Name = "DWCMondayCheckBox";
-            this.DWCMondayCheckBox.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.DWCMondayCheckBox.ShadowDecoration.Depth = 15;
-            this.DWCMondayCheckBox.ShadowDecoration.Enabled = true;
-            this.DWCMondayCheckBox.Size = new System.Drawing.Size(30, 30);
-            this.DWCMondayCheckBox.TabIndex = 30;
-            this.DWCMondayCheckBox.Text = "guna2CustomCheckBox1";
-            this.DWCMondayCheckBox.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.DWCMondayCheckBox.UncheckedState.BorderRadius = 2;
-            this.DWCMondayCheckBox.UncheckedState.BorderThickness = 0;
-            this.DWCMondayCheckBox.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.DWCMondayCheckBox.UseTransparentBackground = true;
-            // 
-            // DWCTuesdayCheckBox
-            // 
-            this.DWCTuesdayCheckBox.BackColor = System.Drawing.Color.Transparent;
-            this.DWCTuesdayCheckBox.CheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.DWCTuesdayCheckBox.CheckedState.BorderRadius = 2;
-            this.DWCTuesdayCheckBox.CheckedState.BorderThickness = 0;
-            this.DWCTuesdayCheckBox.CheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.DWCTuesdayCheckBox.Location = new System.Drawing.Point(58, 276);
-            this.DWCTuesdayCheckBox.Name = "DWCTuesdayCheckBox";
-            this.DWCTuesdayCheckBox.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.DWCTuesdayCheckBox.ShadowDecoration.Depth = 15;
-            this.DWCTuesdayCheckBox.ShadowDecoration.Enabled = true;
-            this.DWCTuesdayCheckBox.Size = new System.Drawing.Size(30, 30);
-            this.DWCTuesdayCheckBox.TabIndex = 31;
-            this.DWCTuesdayCheckBox.Text = "guna2CustomCheckBox1";
-            this.DWCTuesdayCheckBox.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.DWCTuesdayCheckBox.UncheckedState.BorderRadius = 2;
-            this.DWCTuesdayCheckBox.UncheckedState.BorderThickness = 0;
-            this.DWCTuesdayCheckBox.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.DWCTuesdayCheckBox.UseTransparentBackground = true;
-            // 
-            // DWCWednesdayCheckBox
-            // 
-            this.DWCWednesdayCheckBox.BackColor = System.Drawing.Color.Transparent;
-            this.DWCWednesdayCheckBox.CheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.DWCWednesdayCheckBox.CheckedState.BorderRadius = 2;
-            this.DWCWednesdayCheckBox.CheckedState.BorderThickness = 0;
-            this.DWCWednesdayCheckBox.CheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.DWCWednesdayCheckBox.Location = new System.Drawing.Point(58, 324);
-            this.DWCWednesdayCheckBox.Name = "DWCWednesdayCheckBox";
-            this.DWCWednesdayCheckBox.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.DWCWednesdayCheckBox.ShadowDecoration.Depth = 15;
-            this.DWCWednesdayCheckBox.ShadowDecoration.Enabled = true;
-            this.DWCWednesdayCheckBox.Size = new System.Drawing.Size(30, 30);
-            this.DWCWednesdayCheckBox.TabIndex = 32;
-            this.DWCWednesdayCheckBox.Text = "guna2CustomCheckBox1";
-            this.DWCWednesdayCheckBox.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.DWCWednesdayCheckBox.UncheckedState.BorderRadius = 2;
-            this.DWCWednesdayCheckBox.UncheckedState.BorderThickness = 0;
-            this.DWCWednesdayCheckBox.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.DWCWednesdayCheckBox.UseTransparentBackground = true;
-            // 
-            // DWCThursdayCheckBox
-            // 
-            this.DWCThursdayCheckBox.BackColor = System.Drawing.Color.Transparent;
-            this.DWCThursdayCheckBox.CheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.DWCThursdayCheckBox.CheckedState.BorderRadius = 2;
-            this.DWCThursdayCheckBox.CheckedState.BorderThickness = 0;
-            this.DWCThursdayCheckBox.CheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.DWCThursdayCheckBox.Location = new System.Drawing.Point(58, 372);
-            this.DWCThursdayCheckBox.Name = "DWCThursdayCheckBox";
-            this.DWCThursdayCheckBox.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.DWCThursdayCheckBox.ShadowDecoration.Depth = 15;
-            this.DWCThursdayCheckBox.ShadowDecoration.Enabled = true;
-            this.DWCThursdayCheckBox.Size = new System.Drawing.Size(30, 30);
-            this.DWCThursdayCheckBox.TabIndex = 33;
-            this.DWCThursdayCheckBox.Text = "guna2CustomCheckBox1";
-            this.DWCThursdayCheckBox.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.DWCThursdayCheckBox.UncheckedState.BorderRadius = 2;
-            this.DWCThursdayCheckBox.UncheckedState.BorderThickness = 0;
-            this.DWCThursdayCheckBox.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.DWCThursdayCheckBox.UseTransparentBackground = true;
-            // 
-            // DWCFridayCheckBox
-            // 
-            this.DWCFridayCheckBox.BackColor = System.Drawing.Color.Transparent;
-            this.DWCFridayCheckBox.CheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.DWCFridayCheckBox.CheckedState.BorderRadius = 2;
-            this.DWCFridayCheckBox.CheckedState.BorderThickness = 0;
-            this.DWCFridayCheckBox.CheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.DWCFridayCheckBox.Location = new System.Drawing.Point(58, 420);
-            this.DWCFridayCheckBox.Name = "DWCFridayCheckBox";
-            this.DWCFridayCheckBox.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.DWCFridayCheckBox.ShadowDecoration.Depth = 15;
-            this.DWCFridayCheckBox.ShadowDecoration.Enabled = true;
-            this.DWCFridayCheckBox.Size = new System.Drawing.Size(30, 30);
-            this.DWCFridayCheckBox.TabIndex = 34;
-            this.DWCFridayCheckBox.Text = "guna2CustomCheckBox1";
-            this.DWCFridayCheckBox.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.DWCFridayCheckBox.UncheckedState.BorderRadius = 2;
-            this.DWCFridayCheckBox.UncheckedState.BorderThickness = 0;
-            this.DWCFridayCheckBox.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.DWCFridayCheckBox.UseTransparentBackground = true;
-            // 
-            // DWCSaturdayCheckBox
-            // 
-            this.DWCSaturdayCheckBox.BackColor = System.Drawing.Color.Transparent;
-            this.DWCSaturdayCheckBox.CheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.DWCSaturdayCheckBox.CheckedState.BorderRadius = 2;
-            this.DWCSaturdayCheckBox.CheckedState.BorderThickness = 0;
-            this.DWCSaturdayCheckBox.CheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.DWCSaturdayCheckBox.Location = new System.Drawing.Point(58, 468);
-            this.DWCSaturdayCheckBox.Name = "DWCSaturdayCheckBox";
-            this.DWCSaturdayCheckBox.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.DWCSaturdayCheckBox.ShadowDecoration.Depth = 15;
-            this.DWCSaturdayCheckBox.ShadowDecoration.Enabled = true;
-            this.DWCSaturdayCheckBox.Size = new System.Drawing.Size(30, 30);
-            this.DWCSaturdayCheckBox.TabIndex = 35;
-            this.DWCSaturdayCheckBox.Text = "guna2CustomCheckBox1";
-            this.DWCSaturdayCheckBox.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.DWCSaturdayCheckBox.UncheckedState.BorderRadius = 2;
-            this.DWCSaturdayCheckBox.UncheckedState.BorderThickness = 0;
-            this.DWCSaturdayCheckBox.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.DWCSaturdayCheckBox.UseTransparentBackground = true;
-            // 
-            // DWCSundayCheckBox
-            // 
-            this.DWCSundayCheckBox.BackColor = System.Drawing.Color.Transparent;
-            this.DWCSundayCheckBox.CheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.DWCSundayCheckBox.CheckedState.BorderRadius = 2;
-            this.DWCSundayCheckBox.CheckedState.BorderThickness = 0;
-            this.DWCSundayCheckBox.CheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.DWCSundayCheckBox.Location = new System.Drawing.Point(58, 516);
-            this.DWCSundayCheckBox.Name = "DWCSundayCheckBox";
-            this.DWCSundayCheckBox.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.DWCSundayCheckBox.ShadowDecoration.Depth = 15;
-            this.DWCSundayCheckBox.ShadowDecoration.Enabled = true;
-            this.DWCSundayCheckBox.Size = new System.Drawing.Size(30, 30);
-            this.DWCSundayCheckBox.TabIndex = 36;
-            this.DWCSundayCheckBox.Text = "guna2CustomCheckBox1";
-            this.DWCSundayCheckBox.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
-            this.DWCSundayCheckBox.UncheckedState.BorderRadius = 2;
-            this.DWCSundayCheckBox.UncheckedState.BorderThickness = 0;
-            this.DWCSundayCheckBox.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.DWCSundayCheckBox.UseTransparentBackground = true;
-            // 
-            // DWCSelDayLbl
-            // 
-            this.DWCSelDayLbl.BackColor = System.Drawing.Color.Transparent;
-            this.DWCSelDayLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DWCSelDayLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DWCSelDayLbl.IsSelectionEnabled = false;
-            this.DWCSelDayLbl.Location = new System.Drawing.Point(57, 180);
-            this.DWCSelDayLbl.Name = "DWCSelDayLbl";
-            this.DWCSelDayLbl.Size = new System.Drawing.Size(292, 31);
-            this.DWCSelDayLbl.TabIndex = 37;
-            this.DWCSelDayLbl.Text = "Select the working days";
-            // 
-            // DWCMonLbl
-            // 
-            this.DWCMonLbl.BackColor = System.Drawing.Color.Transparent;
-            this.DWCMonLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DWCMonLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DWCMonLbl.IsSelectionEnabled = false;
-            this.DWCMonLbl.Location = new System.Drawing.Point(94, 227);
-            this.DWCMonLbl.Name = "DWCMonLbl";
-            this.DWCMonLbl.Size = new System.Drawing.Size(101, 31);
-            this.DWCMonLbl.TabIndex = 38;
-            this.DWCMonLbl.Text = "Monday";
-            // 
-            // DWCTuesLbl
-            // 
-            this.DWCTuesLbl.BackColor = System.Drawing.Color.Transparent;
-            this.DWCTuesLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DWCTuesLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DWCTuesLbl.IsSelectionEnabled = false;
-            this.DWCTuesLbl.Location = new System.Drawing.Point(94, 275);
-            this.DWCTuesLbl.Name = "DWCTuesLbl";
-            this.DWCTuesLbl.Size = new System.Drawing.Size(104, 31);
-            this.DWCTuesLbl.TabIndex = 39;
-            this.DWCTuesLbl.Text = "Tuesday";
-            // 
-            // DWCWednLbl
-            // 
-            this.DWCWednLbl.BackColor = System.Drawing.Color.Transparent;
-            this.DWCWednLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DWCWednLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DWCWednLbl.IsSelectionEnabled = false;
-            this.DWCWednLbl.Location = new System.Drawing.Point(94, 323);
-            this.DWCWednLbl.Name = "DWCWednLbl";
-            this.DWCWednLbl.Size = new System.Drawing.Size(140, 31);
-            this.DWCWednLbl.TabIndex = 40;
-            this.DWCWednLbl.Text = "Wednesday";
-            // 
-            // DWCThursLbl
-            // 
-            this.DWCThursLbl.BackColor = System.Drawing.Color.Transparent;
-            this.DWCThursLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DWCThursLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DWCThursLbl.IsSelectionEnabled = false;
-            this.DWCThursLbl.Location = new System.Drawing.Point(94, 371);
-            this.DWCThursLbl.Name = "DWCThursLbl";
-            this.DWCThursLbl.Size = new System.Drawing.Size(116, 31);
-            this.DWCThursLbl.TabIndex = 41;
-            this.DWCThursLbl.Text = "Thursday";
-            // 
-            // DWCFriLbl
-            // 
-            this.DWCFriLbl.BackColor = System.Drawing.Color.Transparent;
-            this.DWCFriLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DWCFriLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DWCFriLbl.IsSelectionEnabled = false;
-            this.DWCFriLbl.Location = new System.Drawing.Point(94, 419);
-            this.DWCFriLbl.Name = "DWCFriLbl";
-            this.DWCFriLbl.Size = new System.Drawing.Size(81, 31);
-            this.DWCFriLbl.TabIndex = 42;
-            this.DWCFriLbl.Text = "Friday";
-            // 
-            // DWCSaturLbl
-            // 
-            this.DWCSaturLbl.BackColor = System.Drawing.Color.Transparent;
-            this.DWCSaturLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DWCSaturLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DWCSaturLbl.IsSelectionEnabled = false;
-            this.DWCSaturLbl.Location = new System.Drawing.Point(94, 467);
-            this.DWCSaturLbl.Name = "DWCSaturLbl";
-            this.DWCSaturLbl.Size = new System.Drawing.Size(109, 31);
-            this.DWCSaturLbl.TabIndex = 43;
-            this.DWCSaturLbl.Text = "Saturday";
-            // 
-            // DWCSunLbl
-            // 
-            this.DWCSunLbl.BackColor = System.Drawing.Color.Transparent;
-            this.DWCSunLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DWCSunLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DWCSunLbl.IsSelectionEnabled = false;
-            this.DWCSunLbl.Location = new System.Drawing.Point(94, 515);
-            this.DWCSunLbl.Name = "DWCSunLbl";
-            this.DWCSunLbl.Size = new System.Drawing.Size(92, 31);
-            this.DWCSunLbl.TabIndex = 44;
-            this.DWCSunLbl.Text = "Sunday";
-            // 
-            // DWCPassDatesLbl
-            // 
-            this.DWCPassDatesLbl.BackColor = System.Drawing.Color.Transparent;
-            this.DWCPassDatesLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DWCPassDatesLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DWCPassDatesLbl.IsSelectionEnabled = false;
-            this.DWCPassDatesLbl.Location = new System.Drawing.Point(454, 282);
-            this.DWCPassDatesLbl.Name = "DWCPassDatesLbl";
-            this.DWCPassDatesLbl.Size = new System.Drawing.Size(315, 31);
-            this.DWCPassDatesLbl.TabIndex = 45;
-            this.DWCPassDatesLbl.Text = "Passed between the dates: ";
-            // 
-            // DWCResultLbl
-            // 
-            this.DWCResultLbl.BackColor = System.Drawing.Color.Transparent;
-            this.DWCResultLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DWCResultLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DWCResultLbl.IsSelectionEnabled = false;
-            this.DWCResultLbl.Location = new System.Drawing.Point(454, 324);
-            this.DWCResultLbl.Name = "DWCResultLbl";
-            this.DWCResultLbl.Size = new System.Drawing.Size(194, 31);
-            this.DWCResultLbl.TabIndex = 46;
-            this.DWCResultLbl.Text = "0 Working days";
-            // 
-            // LeapPanel
-            // 
-            this.LeapPanel.BorderRadius = 17;
-            this.LeapPanel.FillColor = System.Drawing.Color.Transparent;
-            this.LeapPanel.FillColor3 = System.Drawing.Color.Transparent;
-            this.LeapPanel.Location = new System.Drawing.Point(0, 0);
-            this.LeapPanel.Name = "LeapPanel";
-            this.LeapPanel.Size = new System.Drawing.Size(932, 573);
-            this.LeapPanel.TabIndex = 47;
+            this.guna2DragControl15.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl15.TargetControl = this.DateWorkCountPanel;
+            this.guna2DragControl15.UseTransparentDrag = true;
             // 
             // guna2DragControl16
             // 
@@ -1391,7 +1544,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkTurquoise;
             this.ClientSize = new System.Drawing.Size(1050, 673);
+            this.Controls.Add(this.LeapPanel);
             this.Controls.Add(this.DateWorkCountPanel);
+            this.Controls.Add(this.DateCompPanel);
             this.Controls.Add(this.InfoPanel);
             this.Controls.Add(this.UnixPanel);
             this.Controls.Add(this.MenuPanel);
@@ -1412,6 +1567,8 @@
             this.guna2CustomGradientPanel2.ResumeLayout(false);
             this.DateWorkCountPanel.ResumeLayout(false);
             this.DateWorkCountPanel.PerformLayout();
+            this.LeapPanel.ResumeLayout(false);
+            this.LeapPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1507,6 +1664,14 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel DWCPassDatesLbl;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel LeapPanel;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl16;
+        private Guna.UI2.WinForms.Guna2HtmlLabel LeapPassLbl;
+        private Guna.UI2.WinForms.Guna2GradientButton LeapDTNBtn;
+        private Guna.UI2.WinForms.Guna2GradientButton LeapGoBtn;
+        private Guna.UI2.WinForms.Guna2DateTimePicker LeapToPicker;
+        private Guna.UI2.WinForms.Guna2DateTimePicker LeapFromPicker;
+        private Guna.UI2.WinForms.Guna2HtmlLabel LeapToLbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel LeapFromLbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel LeapResLbl;
     }
 }
 

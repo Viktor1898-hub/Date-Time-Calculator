@@ -20,6 +20,11 @@ namespace Date__Time_Calculator
             ComparerToPicker.Value = DateTime.Now;
             DWKSelectFromPicker.Value = DateTime.Now;
             DWKSelectToPicker.Value = DateTime.Now;
+            this.Controls.Add(InfoPanel);
+            this.Controls.Add(DateCompPanel);
+            this.Controls.Add(DateWorkCountPanel);
+            this.Controls.Add(LeapPanel);
+            this.LeapPanel.BringToFront();
         }
         private void UnixTimer_Tick(object sender, EventArgs e)
         {
@@ -94,5 +99,34 @@ namespace Date__Time_Calculator
             catch { }
         }
 
+        private void LeapDTNBtn_Click(object sender, EventArgs e)
+        {
+            LeapFromPicker.Value = DateTime.Now;
+            LeapToPicker.Value = DateTime.Now;
+            LeapResLbl.Text = "0 Leap years";
+        }
+
+        private void LeapGoBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (LeapFromPicker.Value > LeapToPicker.Value)
+                {
+                    MessageBox.Show("The 'From' date cannot be later than the 'To' date.", "Date Time Calculator", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                Settings.pickfrom = LeapFromPicker.Value;
+                Settings.pickto = LeapToPicker.Value;
+                Work.LeapCount();
+                if (Settings.total == 1)
+                {
+                    LeapResLbl.Text = Settings.total.ToString() + " Leap year";
+                }
+                else
+                {
+                    LeapResLbl.Text = Settings.total.ToString() + " Leap years";
+                }
+            }
+            catch { }
+        }
     }
 }
