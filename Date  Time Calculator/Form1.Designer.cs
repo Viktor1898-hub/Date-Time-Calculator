@@ -500,6 +500,7 @@
             this.DCDateTimeNowBtn.TabIndex = 23;
             this.DCDateTimeNowBtn.Text = "Date Time Now";
             this.DCDateTimeNowBtn.UseTransparentBackground = true;
+            this.DCDateTimeNowBtn.Click += new System.EventHandler(this.DCDateTimeNowBtn_Click);
             // 
             // DCTotalNumLbl
             // 
@@ -1006,6 +1007,7 @@
             this.DWCDTNBtn.TabIndex = 29;
             this.DWCDTNBtn.Text = "Date Time Now";
             this.DWCDTNBtn.UseTransparentBackground = true;
+            this.DWCDTNBtn.Click += new System.EventHandler(this.DWCDTNBtn_Click);
             // 
             // DWCGoBtn
             // 
@@ -1030,6 +1032,7 @@
             this.DWCGoBtn.TabIndex = 28;
             this.DWCGoBtn.Text = "Go";
             this.DWCGoBtn.UseTransparentBackground = true;
+            this.DWCGoBtn.Click += new System.EventHandler(this.DWCGoBtn_Click);
             // 
             // DWKSelectToPicker
             // 

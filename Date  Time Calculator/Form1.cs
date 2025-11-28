@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,8 @@ namespace Date__Time_Calculator
             InitializeComponent();
             ComparerFromPicker.Value = DateTime.Now;
             ComparerToPicker.Value = DateTime.Now;
+            DWKSelectFromPicker.Value = DateTime.Now;
+            DWKSelectToPicker.Value = DateTime.Now;
         }
         private void UnixTimer_Tick(object sender, EventArgs e)
         {
@@ -35,8 +38,8 @@ namespace Date__Time_Calculator
 
                 }
                 Work.DateCompar();
-                Settings.dcfrom = ComparerFromPicker.Value;
-                Settings.dcto = ComparerToPicker.Value;
+                Settings.pickfrom = ComparerFromPicker.Value;
+                Settings.pickto = ComparerToPicker.Value;
                 DCYersNumLbl.Text = Settings.years.ToString();
                 DCMonthNumLbl.Text = Settings.months.ToString();
                 DCWeekNumLbl.Text = Settings.weeks.ToString();
@@ -55,11 +58,41 @@ namespace Date__Time_Calculator
             catch { }
         }
 
-
         private void DCDateTimeNowBtn_Click(object sender, EventArgs e)
         {
             ComparerFromPicker.Value = DateTime.Now;
             ComparerToPicker.Value = DateTime.Now;
         }
+
+        private void DWCDTNBtn_Click(object sender, EventArgs e)
+        {
+            DWKSelectFromPicker.Value = DateTime.Now;
+            DWKSelectToPicker.Value = DateTime.Now;
+            DWCResultLbl.Text = "0 Working days";
+        }
+
+        private void DWCGoBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (DWKSelectFromPicker.Value > DWKSelectToPicker.Value)
+                {
+                    MessageBox.Show("The 'From' date cannot be later than the 'To' date.", "Date Time Calculator", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                Settings.pickfrom = DWKSelectFromPicker.Value;
+                Settings.pickto = DWKSelectToPicker.Value;
+                Settings.monday = DWCMondayCheckBox.Checked;
+                Settings.tuesday = DWCTuesdayCheckBox.Checked;
+                Settings.wednesday = DWCWednesdayCheckBox.Checked;
+                Settings.thursday = DWCThursdayCheckBox.Checked;
+                Settings.friday = DWCFridayCheckBox.Checked;
+                Settings.saturday = DWCSaturdayCheckBox.Checked;
+                Settings.sunday = DWCSundayCheckBox.Checked;
+                Work.WorkCounter();
+                DWCResultLbl.Text = Settings.days.ToString() + " Working days";
+            }
+            catch { }
+        }
+
     }
 }
