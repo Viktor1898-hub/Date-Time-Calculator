@@ -118,6 +118,8 @@
             this.DWCSunLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DWCPassDatesLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DWCResultLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.LeapPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2DragControl16 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.MenuPanel.SuspendLayout();
             this.UnixPanel.SuspendLayout();
             this.InfoPanel.SuspendLayout();
@@ -948,6 +950,7 @@
             // DateWorkCountPanel
             // 
             this.DateWorkCountPanel.BorderRadius = 17;
+            this.DateWorkCountPanel.Controls.Add(this.LeapPanel);
             this.DateWorkCountPanel.Controls.Add(this.DWCResultLbl);
             this.DateWorkCountPanel.Controls.Add(this.DWCPassDatesLbl);
             this.DateWorkCountPanel.Controls.Add(this.DWCSunLbl);
@@ -977,6 +980,7 @@
             this.DateWorkCountPanel.Name = "DateWorkCountPanel";
             this.DateWorkCountPanel.Size = new System.Drawing.Size(932, 573);
             this.DateWorkCountPanel.TabIndex = 8;
+            this.DateWorkCountPanel.Visible = false;
             // 
             // guna2DragControl15
             // 
@@ -1365,6 +1369,22 @@
             this.DWCResultLbl.TabIndex = 46;
             this.DWCResultLbl.Text = "0 Working days";
             // 
+            // LeapPanel
+            // 
+            this.LeapPanel.BorderRadius = 17;
+            this.LeapPanel.FillColor = System.Drawing.Color.Transparent;
+            this.LeapPanel.FillColor3 = System.Drawing.Color.Transparent;
+            this.LeapPanel.Location = new System.Drawing.Point(0, 0);
+            this.LeapPanel.Name = "LeapPanel";
+            this.LeapPanel.Size = new System.Drawing.Size(932, 573);
+            this.LeapPanel.TabIndex = 47;
+            // 
+            // guna2DragControl16
+            // 
+            this.guna2DragControl16.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl16.TargetControl = this.LeapPanel;
+            this.guna2DragControl16.UseTransparentDrag = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1485,6 +1505,8 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel DWCMonLbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel DWCResultLbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel DWCPassDatesLbl;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel LeapPanel;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl16;
     }
 }
 
