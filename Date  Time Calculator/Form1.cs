@@ -129,5 +129,68 @@ namespace Date__Time_Calculator
             }
             catch { }
         }
+
+        private void ConvertGoBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ConvertInputBox.SelectedIndex > ConvertOutputBox.SelectedIndex)
+                {
+                    MessageBox.Show("The 'Output' format cannot be higher than the 'Input' format.", "Date Time Calculator", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    ConvertOutputBox.SelectedIndex = ConvertInputBox.SelectedIndex + 1;
+                }
+                Settings.input = ConvertInputBox.SelectedIndex;
+                Settings.output = ConvertOutputBox.SelectedIndex;
+                Work.Converter();
+                var result = Settings.total * ConvertUpDown.Value;
+                ConvertResLbl.Text = ConvertUpDown.Value.ToString();
+                if (ConvertInputBox.SelectedIndex == 0)
+                {
+                    ConvertResLbl.Text += " Year";
+                }
+                if (ConvertInputBox.SelectedIndex == 1)
+                {
+                    ConvertResLbl.Text += " Month";
+                }
+                if (ConvertInputBox.SelectedIndex == 2)
+                {
+                    ConvertResLbl.Text += " Day";
+                }
+                if (ConvertInputBox.SelectedIndex == 3)
+                {
+                    ConvertResLbl.Text += " Hour";
+                }
+                if (ConvertInputBox.SelectedIndex == 4)
+                {
+                    ConvertResLbl.Text += " Minut";
+                }
+                if (ConvertUpDown.Value > 1)
+                {
+                    ConvertResLbl.Text += "s";
+                }
+                ConvertResLbl.Text += " equals " + result.ToString();
+                if (ConvertOutputBox.SelectedIndex == 0)
+                {
+                    ConvertResLbl.Text += " months";
+                }
+                if (ConvertOutputBox.SelectedIndex == 1)
+                {
+                    ConvertResLbl.Text += " days";
+                }
+                if (ConvertOutputBox.SelectedIndex == 2)
+                {
+                    ConvertResLbl.Text += " hours";
+                }
+                if (ConvertOutputBox.SelectedIndex == 3)
+                {
+                    ConvertResLbl.Text += " minuts";
+                }
+                if (ConvertOutputBox.SelectedIndex == 4)
+                {
+                    ConvertResLbl.Text += " seconds";
+                }
+            }
+            catch { }
+        }
     }
 }

@@ -1598,12 +1598,12 @@
             "Mounth",
             "Day",
             "Hous",
-            "Minut",
-            "Second"});
+            "Minut"});
             this.ConvertInputBox.Location = new System.Drawing.Point(123, 131);
             this.ConvertInputBox.Name = "ConvertInputBox";
             this.ConvertInputBox.ShadowDecoration.Enabled = true;
             this.ConvertInputBox.Size = new System.Drawing.Size(190, 36);
+            this.ConvertInputBox.StartIndex = 0;
             this.ConvertInputBox.TabIndex = 38;
             // 
             // ConvertInLbl
@@ -1648,7 +1648,6 @@
             this.ConvertOutputBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.ConvertOutputBox.ItemHeight = 30;
             this.ConvertOutputBox.Items.AddRange(new object[] {
-            "Year",
             "Mounth",
             "Day",
             "Hous",
@@ -1658,6 +1657,7 @@
             this.ConvertOutputBox.Name = "ConvertOutputBox";
             this.ConvertOutputBox.ShadowDecoration.Enabled = true;
             this.ConvertOutputBox.Size = new System.Drawing.Size(190, 36);
+            this.ConvertOutputBox.StartIndex = 1;
             this.ConvertOutputBox.TabIndex = 40;
             // 
             // ConvertOutLbl
@@ -1720,16 +1720,17 @@
             this.ConvertGoBtn.FillColor2 = System.Drawing.Color.Transparent;
             this.ConvertGoBtn.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConvertGoBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ConvertGoBtn.Location = new System.Drawing.Point(579, 383);
+            this.ConvertGoBtn.Location = new System.Drawing.Point(579, 401);
             this.ConvertGoBtn.Name = "ConvertGoBtn";
             this.ConvertGoBtn.ShadowDecoration.BorderRadius = 8;
             this.ConvertGoBtn.ShadowDecoration.Color = System.Drawing.Color.Transparent;
             this.ConvertGoBtn.ShadowDecoration.Depth = 20;
             this.ConvertGoBtn.ShadowDecoration.Enabled = true;
-            this.ConvertGoBtn.Size = new System.Drawing.Size(118, 31);
+            this.ConvertGoBtn.Size = new System.Drawing.Size(118, 67);
             this.ConvertGoBtn.TabIndex = 43;
             this.ConvertGoBtn.Text = "Go";
             this.ConvertGoBtn.UseTransparentBackground = true;
+            this.ConvertGoBtn.Click += new System.EventHandler(this.ConvertGoBtn_Click);
             // 
             // ConvertResLbl
             // 
