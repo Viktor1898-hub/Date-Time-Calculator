@@ -43,7 +43,7 @@
             this.DateComparerBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.UnixPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.BirthdayPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.TimerLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.UnixLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2DragControl3 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
@@ -139,6 +139,7 @@
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.ConvertGoBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.ConvertResLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2DragControl18 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.MenuPanel.SuspendLayout();
             this.UnixPanel.SuspendLayout();
             this.InfoPanel.SuspendLayout();
@@ -358,7 +359,6 @@
             // UnixPanel
             // 
             this.UnixPanel.BorderRadius = 17;
-            this.UnixPanel.Controls.Add(this.guna2CustomGradientPanel1);
             this.UnixPanel.Controls.Add(this.TimerLabel);
             this.UnixPanel.Controls.Add(this.UnixLabel);
             this.UnixPanel.Controls.Add(this.guna2ControlBox1);
@@ -370,15 +370,15 @@
             this.UnixPanel.Size = new System.Drawing.Size(934, 100);
             this.UnixPanel.TabIndex = 5;
             // 
-            // guna2CustomGradientPanel1
+            // BirthdayPanel
             // 
-            this.guna2CustomGradientPanel1.BorderRadius = 17;
-            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(724, 34);
-            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(104, 63);
-            this.guna2CustomGradientPanel1.TabIndex = 7;
+            this.BirthdayPanel.BorderRadius = 17;
+            this.BirthdayPanel.FillColor = System.Drawing.Color.Transparent;
+            this.BirthdayPanel.FillColor3 = System.Drawing.Color.Transparent;
+            this.BirthdayPanel.Location = new System.Drawing.Point(118, 100);
+            this.BirthdayPanel.Name = "BirthdayPanel";
+            this.BirthdayPanel.Size = new System.Drawing.Size(932, 573);
+            this.BirthdayPanel.TabIndex = 7;
             // 
             // TimerLabel
             // 
@@ -1569,6 +1569,7 @@
             this.ConverterPanel.Name = "ConverterPanel";
             this.ConverterPanel.Size = new System.Drawing.Size(932, 573);
             this.ConverterPanel.TabIndex = 38;
+            this.ConverterPanel.Visible = false;
             // 
             // ConvertInputBox
             // 
@@ -1744,12 +1745,19 @@
             this.ConvertResLbl.TabIndex = 44;
             this.ConvertResLbl.Text = "1 Year equals 365 days";
             // 
+            // guna2DragControl18
+            // 
+            this.guna2DragControl18.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl18.TargetControl = this.BirthdayPanel;
+            this.guna2DragControl18.UseTransparentDrag = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkTurquoise;
             this.ClientSize = new System.Drawing.Size(1050, 673);
+            this.Controls.Add(this.BirthdayPanel);
             this.Controls.Add(this.ConverterPanel);
             this.Controls.Add(this.LeapPanel);
             this.Controls.Add(this.DateWorkCountPanel);
@@ -1800,7 +1808,7 @@
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl4;
         private Guna.UI2.WinForms.Guna2HtmlLabel TimerLabel;
         private Guna.UI2.WinForms.Guna2HtmlLabel UnixLabel;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel BirthdayPanel;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel InfoPanel;
         private Guna.UI2.WinForms.Guna2GradientButton InfoBtn;
         private Guna.UI2.WinForms.Guna2HtmlLabel infoDCLabel;
@@ -1893,6 +1901,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel ConvertResLbl;
         private Guna.UI2.WinForms.Guna2GradientButton ConvertGoBtn;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl18;
     }
 }
 
