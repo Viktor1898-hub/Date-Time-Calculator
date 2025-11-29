@@ -140,8 +140,13 @@
             this.ConvertGoBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.ConvertResLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2DragControl18 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2NumericUpDown1 = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.MenuPanel.SuspendLayout();
             this.UnixPanel.SuspendLayout();
+            this.BirthdayPanel.SuspendLayout();
             this.InfoPanel.SuspendLayout();
             this.guna2CustomGradientPanel6.SuspendLayout();
             this.guna2CustomGradientPanel5.SuspendLayout();
@@ -153,6 +158,7 @@
             this.LeapPanel.SuspendLayout();
             this.ConverterPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConvertUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2ControlBox1
@@ -373,6 +379,10 @@
             // BirthdayPanel
             // 
             this.BirthdayPanel.BorderRadius = 17;
+            this.BirthdayPanel.Controls.Add(this.guna2NumericUpDown1);
+            this.BirthdayPanel.Controls.Add(this.guna2HtmlLabel2);
+            this.BirthdayPanel.Controls.Add(this.guna2DateTimePicker1);
+            this.BirthdayPanel.Controls.Add(this.guna2HtmlLabel1);
             this.BirthdayPanel.FillColor = System.Drawing.Color.Transparent;
             this.BirthdayPanel.FillColor3 = System.Drawing.Color.Transparent;
             this.BirthdayPanel.Location = new System.Drawing.Point(118, 100);
@@ -1751,6 +1761,67 @@
             this.guna2DragControl18.TargetControl = this.BirthdayPanel;
             this.guna2DragControl18.UseTransparentDrag = true;
             // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2HtmlLabel1.IsSelectionEnabled = false;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(94, 73);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(233, 31);
+            this.guna2HtmlLabel1.TabIndex = 38;
+            this.guna2HtmlLabel1.Text = "Select date of birth";
+            // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.Animated = true;
+            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2DateTimePicker1.BorderRadius = 10;
+            this.guna2DateTimePicker1.Checked = true;
+            this.guna2DateTimePicker1.CustomFormat = "yyyy.MM.dd.HH:mm:ss";
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.PaleTurquoise;
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(353, 60);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.ShowUpDown = true;
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(318, 44);
+            this.guna2DateTimePicker1.TabIndex = 39;
+            this.guna2DateTimePicker1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2025, 11, 22, 16, 36, 4, 0);
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2HtmlLabel2.IsSelectionEnabled = false;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(94, 165);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(239, 31);
+            this.guna2HtmlLabel2.TabIndex = 40;
+            this.guna2HtmlLabel2.Text = "Select expected age";
+            // 
+            // guna2NumericUpDown1
+            // 
+            this.guna2NumericUpDown1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2NumericUpDown1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2NumericUpDown1.FillColor = System.Drawing.Color.PaleTurquoise;
+            this.guna2NumericUpDown1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2NumericUpDown1.Location = new System.Drawing.Point(353, 165);
+            this.guna2NumericUpDown1.Name = "guna2NumericUpDown1";
+            this.guna2NumericUpDown1.Size = new System.Drawing.Size(92, 30);
+            this.guna2NumericUpDown1.TabIndex = 43;
+            this.guna2NumericUpDown1.UpDownButtonFillColor = System.Drawing.Color.Transparent;
+            this.guna2NumericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1772,6 +1843,8 @@
             this.MenuPanel.ResumeLayout(false);
             this.UnixPanel.ResumeLayout(false);
             this.UnixPanel.PerformLayout();
+            this.BirthdayPanel.ResumeLayout(false);
+            this.BirthdayPanel.PerformLayout();
             this.InfoPanel.ResumeLayout(false);
             this.guna2CustomGradientPanel6.ResumeLayout(false);
             this.guna2CustomGradientPanel5.ResumeLayout(false);
@@ -1787,6 +1860,7 @@
             this.ConverterPanel.ResumeLayout(false);
             this.ConverterPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConvertUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1902,6 +1976,10 @@
         private Guna.UI2.WinForms.Guna2GradientButton ConvertGoBtn;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl18;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2NumericUpDown guna2NumericUpDown1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
     }
 }
 
