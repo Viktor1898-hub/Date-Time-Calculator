@@ -20,6 +20,7 @@ namespace Date__Time_Calculator
             ComparerToPicker.Value = DateTime.Now;
             DWKSelectFromPicker.Value = DateTime.Now;
             DWKSelectToPicker.Value = DateTime.Now;
+            BirthPicker.Value = DateTime.Now;
             this.Controls.Add(InfoPanel);
             this.Controls.Add(DateCompPanel);
             this.Controls.Add(DateWorkCountPanel);
@@ -163,7 +164,7 @@ namespace Date__Time_Calculator
                 }
                 if (ConvertInputBox.SelectedIndex == 4)
                 {
-                    ConvertResLbl.Text += " Minut";
+                    ConvertResLbl.Text += " Minute";
                 }
                 if (ConvertUpDown.Value > 1)
                 {
@@ -184,7 +185,7 @@ namespace Date__Time_Calculator
                 }
                 if (ConvertOutputBox.SelectedIndex == 3)
                 {
-                    ConvertResLbl.Text += " minuts";
+                    ConvertResLbl.Text += " minutes";
                 }
                 if (ConvertOutputBox.SelectedIndex == 4)
                 {
@@ -192,6 +193,27 @@ namespace Date__Time_Calculator
                 }
             }
             catch { }
+        }
+
+        private void LiveForTimer_Tick(object sender, EventArgs e)
+        {
+            Settings.pickfrom = BirthPicker.Value;
+            Work.LiveFor();
+            LiveForResLbl.Text = $"{Settings.years}Y {Settings.months}M {Settings.days}D {Settings.hours}H {Settings.minutes}Min {Settings.seconds}Sec";
+        }
+
+        private void BirthGoBtn_Click(object sender, EventArgs e)
+        {
+            LiveForTimer.Start();
+        }
+
+        private void BirthPicker_ValueChanged(object sender, EventArgs e)
+        {
+            if (BirthPicker.Value > DateTime.Now)
+            {
+                BirthPicker.Value = DateTime.Now;
+                MessageBox.Show("The date cannot be later than today", "Date Time Calculator", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

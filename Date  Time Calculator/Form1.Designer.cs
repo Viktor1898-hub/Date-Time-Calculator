@@ -140,10 +140,20 @@
             this.ConvertGoBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.ConvertResLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2DragControl18 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2NumericUpDown1 = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.BirthLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.BirthPicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.AgeLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.AgeNumeric = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.BirthGoBtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.LiveForLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.NextLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.Age18Lbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.WillBeLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.LiveForResLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.NextBResLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.Age18ResLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.WillBeResLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.LiveForTimer = new System.Windows.Forms.Timer(this.components);
             this.MenuPanel.SuspendLayout();
             this.UnixPanel.SuspendLayout();
             this.BirthdayPanel.SuspendLayout();
@@ -158,7 +168,7 @@
             this.LeapPanel.SuspendLayout();
             this.ConverterPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConvertUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AgeNumeric)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2ControlBox1
@@ -379,10 +389,19 @@
             // BirthdayPanel
             // 
             this.BirthdayPanel.BorderRadius = 17;
-            this.BirthdayPanel.Controls.Add(this.guna2NumericUpDown1);
-            this.BirthdayPanel.Controls.Add(this.guna2HtmlLabel2);
-            this.BirthdayPanel.Controls.Add(this.guna2DateTimePicker1);
-            this.BirthdayPanel.Controls.Add(this.guna2HtmlLabel1);
+            this.BirthdayPanel.Controls.Add(this.WillBeResLbl);
+            this.BirthdayPanel.Controls.Add(this.Age18ResLbl);
+            this.BirthdayPanel.Controls.Add(this.NextBResLbl);
+            this.BirthdayPanel.Controls.Add(this.LiveForResLbl);
+            this.BirthdayPanel.Controls.Add(this.WillBeLbl);
+            this.BirthdayPanel.Controls.Add(this.Age18Lbl);
+            this.BirthdayPanel.Controls.Add(this.NextLbl);
+            this.BirthdayPanel.Controls.Add(this.LiveForLbl);
+            this.BirthdayPanel.Controls.Add(this.BirthGoBtn);
+            this.BirthdayPanel.Controls.Add(this.AgeNumeric);
+            this.BirthdayPanel.Controls.Add(this.AgeLbl);
+            this.BirthdayPanel.Controls.Add(this.BirthPicker);
+            this.BirthdayPanel.Controls.Add(this.BirthLbl);
             this.BirthdayPanel.FillColor = System.Drawing.Color.Transparent;
             this.BirthdayPanel.FillColor3 = System.Drawing.Color.Transparent;
             this.BirthdayPanel.Location = new System.Drawing.Point(118, 100);
@@ -1761,66 +1780,192 @@
             this.guna2DragControl18.TargetControl = this.BirthdayPanel;
             this.guna2DragControl18.UseTransparentDrag = true;
             // 
-            // guna2HtmlLabel1
+            // BirthLbl
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2HtmlLabel1.IsSelectionEnabled = false;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(94, 73);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(233, 31);
-            this.guna2HtmlLabel1.TabIndex = 38;
-            this.guna2HtmlLabel1.Text = "Select date of birth";
+            this.BirthLbl.BackColor = System.Drawing.Color.Transparent;
+            this.BirthLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BirthLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BirthLbl.IsSelectionEnabled = false;
+            this.BirthLbl.Location = new System.Drawing.Point(94, 73);
+            this.BirthLbl.Name = "BirthLbl";
+            this.BirthLbl.Size = new System.Drawing.Size(233, 31);
+            this.BirthLbl.TabIndex = 38;
+            this.BirthLbl.Text = "Select date of birth";
             // 
-            // guna2DateTimePicker1
+            // BirthPicker
             // 
-            this.guna2DateTimePicker1.Animated = true;
-            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2DateTimePicker1.BorderRadius = 10;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.CustomFormat = "yyyy.MM.dd.HH:mm:ss";
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.PaleTurquoise;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(353, 60);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShowUpDown = true;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(318, 44);
-            this.guna2DateTimePicker1.TabIndex = 39;
-            this.guna2DateTimePicker1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2025, 11, 22, 16, 36, 4, 0);
+            this.BirthPicker.Animated = true;
+            this.BirthPicker.BackColor = System.Drawing.Color.Transparent;
+            this.BirthPicker.BorderRadius = 10;
+            this.BirthPicker.Checked = true;
+            this.BirthPicker.CustomFormat = "dd.MM.yyyy.HH:mm:ss";
+            this.BirthPicker.FillColor = System.Drawing.Color.PaleTurquoise;
+            this.BirthPicker.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.BirthPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.BirthPicker.Location = new System.Drawing.Point(353, 60);
+            this.BirthPicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.BirthPicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.BirthPicker.Name = "BirthPicker";
+            this.BirthPicker.ShowUpDown = true;
+            this.BirthPicker.Size = new System.Drawing.Size(318, 44);
+            this.BirthPicker.TabIndex = 39;
+            this.BirthPicker.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BirthPicker.Value = new System.DateTime(2025, 11, 29, 10, 30, 0, 0);
+            this.BirthPicker.ValueChanged += new System.EventHandler(this.BirthPicker_ValueChanged);
             // 
-            // guna2HtmlLabel2
+            // AgeLbl
             // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2HtmlLabel2.IsSelectionEnabled = false;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(94, 165);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(239, 31);
-            this.guna2HtmlLabel2.TabIndex = 40;
-            this.guna2HtmlLabel2.Text = "Select expected age";
+            this.AgeLbl.BackColor = System.Drawing.Color.Transparent;
+            this.AgeLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AgeLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.AgeLbl.IsSelectionEnabled = false;
+            this.AgeLbl.Location = new System.Drawing.Point(94, 165);
+            this.AgeLbl.Name = "AgeLbl";
+            this.AgeLbl.Size = new System.Drawing.Size(239, 31);
+            this.AgeLbl.TabIndex = 40;
+            this.AgeLbl.Text = "Select expected age";
             // 
-            // guna2NumericUpDown1
+            // AgeNumeric
             // 
-            this.guna2NumericUpDown1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2NumericUpDown1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2NumericUpDown1.FillColor = System.Drawing.Color.PaleTurquoise;
-            this.guna2NumericUpDown1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2NumericUpDown1.Location = new System.Drawing.Point(353, 165);
-            this.guna2NumericUpDown1.Name = "guna2NumericUpDown1";
-            this.guna2NumericUpDown1.Size = new System.Drawing.Size(92, 30);
-            this.guna2NumericUpDown1.TabIndex = 43;
-            this.guna2NumericUpDown1.UpDownButtonFillColor = System.Drawing.Color.Transparent;
-            this.guna2NumericUpDown1.Value = new decimal(new int[] {
-            1,
+            this.AgeNumeric.BackColor = System.Drawing.Color.Transparent;
+            this.AgeNumeric.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AgeNumeric.FillColor = System.Drawing.Color.PaleTurquoise;
+            this.AgeNumeric.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.AgeNumeric.Location = new System.Drawing.Point(353, 165);
+            this.AgeNumeric.Name = "AgeNumeric";
+            this.AgeNumeric.Size = new System.Drawing.Size(92, 30);
+            this.AgeNumeric.TabIndex = 43;
+            this.AgeNumeric.UpDownButtonFillColor = System.Drawing.Color.Transparent;
+            this.AgeNumeric.Value = new decimal(new int[] {
+            33,
             0,
             0,
             0});
+            // 
+            // BirthGoBtn
+            // 
+            this.BirthGoBtn.BackColor = System.Drawing.Color.Transparent;
+            this.BirthGoBtn.BorderRadius = 8;
+            this.BirthGoBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BirthGoBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BirthGoBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BirthGoBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BirthGoBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BirthGoBtn.FillColor = System.Drawing.Color.Transparent;
+            this.BirthGoBtn.FillColor2 = System.Drawing.Color.Transparent;
+            this.BirthGoBtn.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BirthGoBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BirthGoBtn.Location = new System.Drawing.Point(553, 165);
+            this.BirthGoBtn.Name = "BirthGoBtn";
+            this.BirthGoBtn.ShadowDecoration.BorderRadius = 8;
+            this.BirthGoBtn.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.BirthGoBtn.ShadowDecoration.Depth = 20;
+            this.BirthGoBtn.ShadowDecoration.Enabled = true;
+            this.BirthGoBtn.Size = new System.Drawing.Size(118, 57);
+            this.BirthGoBtn.TabIndex = 44;
+            this.BirthGoBtn.Text = "Go";
+            this.BirthGoBtn.UseTransparentBackground = true;
+            this.BirthGoBtn.Click += new System.EventHandler(this.BirthGoBtn_Click);
+            // 
+            // LiveForLbl
+            // 
+            this.LiveForLbl.BackColor = System.Drawing.Color.Transparent;
+            this.LiveForLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LiveForLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LiveForLbl.IsSelectionEnabled = false;
+            this.LiveForLbl.Location = new System.Drawing.Point(94, 301);
+            this.LiveForLbl.Name = "LiveForLbl";
+            this.LiveForLbl.Size = new System.Drawing.Size(151, 31);
+            this.LiveForLbl.TabIndex = 45;
+            this.LiveForLbl.Text = "You live for";
+            // 
+            // NextLbl
+            // 
+            this.NextLbl.BackColor = System.Drawing.Color.Transparent;
+            this.NextLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NextLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.NextLbl.IsSelectionEnabled = false;
+            this.NextLbl.Location = new System.Drawing.Point(94, 338);
+            this.NextLbl.Name = "NextLbl";
+            this.NextLbl.Size = new System.Drawing.Size(235, 31);
+            this.NextLbl.TabIndex = 46;
+            this.NextLbl.Text = "Until next birthday";
+            // 
+            // Age18Lbl
+            // 
+            this.Age18Lbl.BackColor = System.Drawing.Color.Transparent;
+            this.Age18Lbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Age18Lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Age18Lbl.IsSelectionEnabled = false;
+            this.Age18Lbl.Location = new System.Drawing.Point(94, 375);
+            this.Age18Lbl.Name = "Age18Lbl";
+            this.Age18Lbl.Size = new System.Drawing.Size(275, 31);
+            this.Age18Lbl.TabIndex = 47;
+            this.Age18Lbl.Text = "You were 18 years old";
+            // 
+            // WillBeLbl
+            // 
+            this.WillBeLbl.BackColor = System.Drawing.Color.Transparent;
+            this.WillBeLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WillBeLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.WillBeLbl.IsSelectionEnabled = false;
+            this.WillBeLbl.Location = new System.Drawing.Point(94, 412);
+            this.WillBeLbl.Name = "WillBeLbl";
+            this.WillBeLbl.Size = new System.Drawing.Size(302, 31);
+            this.WillBeLbl.TabIndex = 48;
+            this.WillBeLbl.Text = "You will be 33 years old";
+            // 
+            // LiveForResLbl
+            // 
+            this.LiveForResLbl.BackColor = System.Drawing.Color.Transparent;
+            this.LiveForResLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LiveForResLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LiveForResLbl.IsSelectionEnabled = false;
+            this.LiveForResLbl.Location = new System.Drawing.Point(455, 301);
+            this.LiveForResLbl.Name = "LiveForResLbl";
+            this.LiveForResLbl.Size = new System.Drawing.Size(312, 31);
+            this.LiveForResLbl.TabIndex = 49;
+            this.LiveForResLbl.Text = "0Y 0M 0D 0H 0Min 0Sec";
+            // 
+            // NextBResLbl
+            // 
+            this.NextBResLbl.BackColor = System.Drawing.Color.Transparent;
+            this.NextBResLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NextBResLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.NextBResLbl.IsSelectionEnabled = false;
+            this.NextBResLbl.Location = new System.Drawing.Point(455, 338);
+            this.NextBResLbl.Name = "NextBResLbl";
+            this.NextBResLbl.Size = new System.Drawing.Size(312, 31);
+            this.NextBResLbl.TabIndex = 50;
+            this.NextBResLbl.Text = "0Y 0M 0D 0H 0Min 0Sec";
+            // 
+            // Age18ResLbl
+            // 
+            this.Age18ResLbl.BackColor = System.Drawing.Color.Transparent;
+            this.Age18ResLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Age18ResLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Age18ResLbl.IsSelectionEnabled = false;
+            this.Age18ResLbl.Location = new System.Drawing.Point(454, 375);
+            this.Age18ResLbl.Name = "Age18ResLbl";
+            this.Age18ResLbl.Size = new System.Drawing.Size(312, 31);
+            this.Age18ResLbl.TabIndex = 51;
+            this.Age18ResLbl.Text = "0Y 0M 0D 0H 0Min 0Sec";
+            // 
+            // WillBeResLbl
+            // 
+            this.WillBeResLbl.BackColor = System.Drawing.Color.Transparent;
+            this.WillBeResLbl.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WillBeResLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.WillBeResLbl.IsSelectionEnabled = false;
+            this.WillBeResLbl.Location = new System.Drawing.Point(454, 412);
+            this.WillBeResLbl.Name = "WillBeResLbl";
+            this.WillBeResLbl.Size = new System.Drawing.Size(312, 31);
+            this.WillBeResLbl.TabIndex = 52;
+            this.WillBeResLbl.Text = "0Y 0M 0D 0H 0Min 0Sec";
+            // 
+            // LiveForTimer
+            // 
+            this.LiveForTimer.Tick += new System.EventHandler(this.LiveForTimer_Tick);
             // 
             // Form1
             // 
@@ -1860,7 +2005,7 @@
             this.ConverterPanel.ResumeLayout(false);
             this.ConverterPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConvertUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AgeNumeric)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1976,10 +2121,20 @@
         private Guna.UI2.WinForms.Guna2GradientButton ConvertGoBtn;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl18;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2NumericUpDown guna2NumericUpDown1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker BirthPicker;
+        private Guna.UI2.WinForms.Guna2HtmlLabel BirthLbl;
+        private Guna.UI2.WinForms.Guna2NumericUpDown AgeNumeric;
+        private Guna.UI2.WinForms.Guna2HtmlLabel AgeLbl;
+        private Guna.UI2.WinForms.Guna2GradientButton BirthGoBtn;
+        private Guna.UI2.WinForms.Guna2HtmlLabel Age18Lbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel NextLbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel LiveForLbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel WillBeLbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel WillBeResLbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel Age18ResLbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel NextBResLbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel LiveForResLbl;
+        private System.Windows.Forms.Timer LiveForTimer;
     }
 }
 

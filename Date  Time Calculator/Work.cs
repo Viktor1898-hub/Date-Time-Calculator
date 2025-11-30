@@ -160,5 +160,41 @@ namespace Date__Time_Calculator
                 }
             }
         }
+        public static void LiveFor()
+        {
+            Settings.seconds = DateTime.Now.Second - Settings.pickfrom.Second;
+            Settings.minutes = DateTime.Now.Minute - Settings.pickfrom.Minute;
+            Settings.hours = DateTime.Now.Hour - Settings.pickfrom.Hour;
+            Settings.years = DateTime.Now.Year - Settings.pickfrom.Year;
+            Settings.months = DateTime.Now.Month - Settings.pickfrom.Month;
+            Settings.days = DateTime.Now.Day - Settings.pickfrom.Day;
+
+            if (Settings.seconds < 0)
+            {
+                Settings.minutes--;
+                Settings.seconds += 60;
+            }
+            if (Settings.minutes < 0)
+            {
+                Settings.hours--;
+                Settings.minutes += 60;
+            }
+            if (Settings.hours < 0)
+            {
+                Settings.days--;
+                Settings.hours += 24;
+            }
+            if (Settings.days < 0)
+            {
+                Settings.months--;
+                var prevMonth = DateTime.Now.AddMonths(-1);
+                Settings.days += DateTime.DaysInMonth(prevMonth.Year, prevMonth.Month);
+            }
+            if (Settings.months < 0)
+            {
+                Settings.years--;
+                Settings.months += 12;
+            }
+        }
     }
 }
