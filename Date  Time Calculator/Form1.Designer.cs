@@ -348,6 +348,7 @@
             this.LeapCounterBtn.TabIndex = 1;
             this.LeapCounterBtn.Text = "Leap Counter";
             this.LeapCounterBtn.UseTransparentBackground = true;
+            this.LeapCounterBtn.Click += new System.EventHandler(this.LeapCounterBtn_Click);
             // 
             // DateComparerBtn
             // 
