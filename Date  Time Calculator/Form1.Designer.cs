@@ -156,6 +156,7 @@
             this.LiveForTimer = new System.Windows.Forms.Timer(this.components);
             this.NextBirthdayTimer = new System.Windows.Forms.Timer(this.components);
             this.Age18Timer = new System.Windows.Forms.Timer(this.components);
+            this.ExpectAgeTimer = new System.Windows.Forms.Timer(this.components);
             this.MenuPanel.SuspendLayout();
             this.UnixPanel.SuspendLayout();
             this.BirthdayPanel.SuspendLayout();
@@ -1976,6 +1977,10 @@
             // 
             this.Age18Timer.Tick += new System.EventHandler(this.Age18Timer_Tick);
             // 
+            // ExpectAgeTimer
+            // 
+            this.ExpectAgeTimer.Tick += new System.EventHandler(this.ExpectAgeTimer_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2146,6 +2151,7 @@
         private System.Windows.Forms.Timer LiveForTimer;
         private System.Windows.Forms.Timer NextBirthdayTimer;
         private System.Windows.Forms.Timer Age18Timer;
+        private System.Windows.Forms.Timer ExpectAgeTimer;
     }
 }
 

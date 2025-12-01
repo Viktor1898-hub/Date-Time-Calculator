@@ -216,10 +216,18 @@ namespace Date__Time_Calculator
             {
                 Age18Lbl.Text = "You were 18 years old";
             }
+            if (DateTime.Now.Year - BirthPicker.Value.Year >= AgeNumeric.Value)
+            {
+                AgeNumeric.Value = DateTime.Now.Year - BirthPicker.Value.Year + 1;
+                MessageBox.Show("Expected age cannot be lower than your age", "Date Time Calculator", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            WillBeLbl.Text = $"You will be {AgeNumeric.Value} years old";
+            Settings.input = (int)AgeNumeric.Value;
             Settings.pickfrom = BirthPicker.Value;
             LiveForTimer.Start();
             NextBirthdayTimer.Start();
             Age18Timer.Start();
+            ExpectAgeTimer.Start();
         }
 
         private void NextBirthdayTimer_Tick(object sender, EventArgs e)
@@ -232,6 +240,12 @@ namespace Date__Time_Calculator
         {
             Work.Age18();
             Age18ResLbl.Text = $"{Settings.years}Y {Settings.months}M {Settings.days}D {Settings.hours}H {Settings.minutes}Min {Settings.seconds}Sec";
+        }
+
+        private void ExpectAgeTimer_Tick(object sender, EventArgs e)
+        {
+            Work.ExpectAge();
+            WillBeResLbl.Text = $"{Settings.years}Y {Settings.months}M {Settings.days}D {Settings.hours}H {Settings.minutes}Min {Settings.seconds}Sec";
         }
     }
 }

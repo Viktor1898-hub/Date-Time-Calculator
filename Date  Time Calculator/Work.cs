@@ -251,5 +251,30 @@ namespace Date__Time_Calculator
                 Settings.seconds = timeSpan.Seconds;
             }
         }
+        public static void ExpectAge()
+        {
+            DateTime Age18 = new DateTime(Settings.pickfrom.Year, Settings.pickfrom.Month, Settings.pickfrom.Day, Settings.pickfrom.Hour, Settings.pickfrom.Minute, Settings.pickfrom.Second);
+            Age18 = Age18.AddYears(Settings.input);
+            TimeSpan timeSpan = Age18 - DateTime.Now;
+            DateTime temp = DateTime.Now;
+            int months = 0;
+            int years = 0;
+            while (temp.AddYears(1) <= Age18)
+            {
+                temp = temp.AddYears(1);
+                years++;
+            }
+            while (temp.AddMonths(1) <= Age18)
+            {
+                temp = temp.AddMonths(1);
+                months++;
+            }
+            Settings.years = years;
+            Settings.months = months;
+            Settings.days = (Age18 - temp).Days;
+            Settings.hours = timeSpan.Hours;
+            Settings.minutes = timeSpan.Minutes;
+            Settings.seconds = timeSpan.Seconds;
+        }
     }
 }
