@@ -242,6 +242,7 @@
             this.InfoBtn.TabIndex = 5;
             this.InfoBtn.Text = "Info";
             this.InfoBtn.UseTransparentBackground = true;
+            this.InfoBtn.Click += new System.EventHandler(this.InfoBtn_Click);
             // 
             // guna2ImageButton1
             // 

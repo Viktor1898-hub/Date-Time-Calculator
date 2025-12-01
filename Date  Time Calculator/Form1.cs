@@ -27,7 +27,7 @@ namespace Date__Time_Calculator
             this.Controls.Add(LeapPanel);
             this.Controls.Add(ConverterPanel);
             this.Controls.Add(BirthdayPanel);
-            this.BirthdayPanel.BringToFront();
+            BirthdayPanel.BringToFront();
         }
         private void UnixTimer_Tick(object sender, EventArgs e)
         {
@@ -246,6 +246,17 @@ namespace Date__Time_Calculator
         {
             Work.ExpectAge();
             WillBeResLbl.Text = $"{Settings.years}Y {Settings.months}M {Settings.days}D {Settings.hours}H {Settings.minutes}Min {Settings.seconds}Sec";
+        }
+
+        private void InfoBtn_Click(object sender, EventArgs e)
+        {
+            BirthdayPanel.Visible = false;
+            ConverterPanel.Visible = false;
+            DateWorkCountPanel.Visible = false;
+            LeapPanel.Visible = false;
+            DateCompPanel.Visible = false;
+            InfoPanel.Visible = true;
+            InfoPanel.BringToFront();
         }
     }
 }
