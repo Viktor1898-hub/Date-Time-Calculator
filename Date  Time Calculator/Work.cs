@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -195,6 +196,27 @@ namespace Date__Time_Calculator
                 Settings.years--;
                 Settings.months += 12;
             }
+        }
+        public static void NextBirthday()
+        {
+            DateTime nextBirthday = new DateTime(DateTime.Now.Year, Settings.pickfrom.Month, Settings.pickfrom.Day, Settings.pickfrom.Hour, Settings.pickfrom.Minute, Settings.pickfrom.Second);
+            if (nextBirthday <= DateTime.Now)
+            {
+                nextBirthday = nextBirthday.AddYears(1);
+            }
+            TimeSpan timeSpan = nextBirthday - DateTime.Now;
+            DateTime temp = DateTime.Now;
+            int months = 0;
+            while (temp.AddMonths(1) <= nextBirthday)
+            {
+                temp = temp.AddMonths(1);
+                months++;
+            }
+            Settings.months = months;
+            Settings.days = (nextBirthday - temp).Days;
+            Settings.hours = timeSpan.Hours;
+            Settings.minutes = timeSpan.Minutes;
+            Settings.seconds = timeSpan.Seconds;
         }
     }
 }

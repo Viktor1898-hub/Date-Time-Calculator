@@ -197,23 +197,26 @@ namespace Date__Time_Calculator
 
         private void LiveForTimer_Tick(object sender, EventArgs e)
         {
-            Settings.pickfrom = BirthPicker.Value;
             Work.LiveFor();
             LiveForResLbl.Text = $"{Settings.years}Y {Settings.months}M {Settings.days}D {Settings.hours}H {Settings.minutes}Min {Settings.seconds}Sec";
         }
 
         private void BirthGoBtn_Click(object sender, EventArgs e)
         {
-            LiveForTimer.Start();
-        }
-
-        private void BirthPicker_ValueChanged(object sender, EventArgs e)
-        {
             if (BirthPicker.Value > DateTime.Now)
             {
                 BirthPicker.Value = DateTime.Now;
                 MessageBox.Show("The date cannot be later than today", "Date Time Calculator", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            Settings.pickfrom = BirthPicker.Value;
+            LiveForTimer.Start();
+            NextBirthdayTimer.Start();
+        }
+
+        private void NextBirthdayTimer_Tick(object sender, EventArgs e)
+        { 
+            Work.NextBirthday();
+            NextBResLbl.Text = $"{Settings.months}M {Settings.days}D {Settings.hours}H {Settings.minutes}Min {Settings.seconds}Sec";
         }
     }
 }
