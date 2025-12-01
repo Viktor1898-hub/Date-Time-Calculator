@@ -303,6 +303,7 @@
             this.TimeConverterBtn.TabIndex = 3;
             this.TimeConverterBtn.Text = "Time Converter";
             this.TimeConverterBtn.UseTransparentBackground = true;
+            this.TimeConverterBtn.Click += new System.EventHandler(this.TimeConverterBtn_Click);
             // 
             // DateWorkCountBtn
             // 

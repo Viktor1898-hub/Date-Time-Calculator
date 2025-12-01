@@ -290,5 +290,16 @@ namespace Date__Time_Calculator
             InfoPanel.Visible = false;
             LeapPanel.BringToFront();
         }
+
+        private void TimeConverterBtn_Click(object sender, EventArgs e)
+        {
+            BirthdayPanel.Visible = false;
+            ConverterPanel.Visible = true;
+            DateWorkCountPanel.Visible = false;
+            LeapPanel.Visible = false;
+            DateCompPanel.Visible = false;
+            InfoPanel.Visible = false;
+            ConverterPanel.BringToFront();
+        }
     }
 }
