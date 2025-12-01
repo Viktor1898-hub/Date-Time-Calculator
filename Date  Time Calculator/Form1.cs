@@ -44,9 +44,9 @@ namespace Date__Time_Calculator
                     MessageBox.Show("The 'From' date cannot be later than the 'To' date.", "Date Time Calculator", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 }
-                Work.DateCompar();
                 Settings.pickfrom = ComparerFromPicker.Value;
                 Settings.pickto = ComparerToPicker.Value;
+                Work.DateCompar();
                 DCYersNumLbl.Text = Settings.years.ToString();
                 DCMonthNumLbl.Text = Settings.months.ToString();
                 DCWeekNumLbl.Text = Settings.weeks.ToString();
@@ -69,6 +69,15 @@ namespace Date__Time_Calculator
         {
             ComparerFromPicker.Value = DateTime.Now;
             ComparerToPicker.Value = DateTime.Now;
+            DCYersNumLbl.Text = "0";
+            DCMonthNumLbl.Text = "0";
+            DCWeekNumLbl.Text = "0";
+            DCDayNumLbl.Text = "0";
+            DCHourNum.Text = "00: ";
+            DCMinutNum.Text = "00: ";
+            DCSecondNum.Text = "00: ";
+            DCMSNum.Text = "000";
+            DCTotalNumLbl.Text = "0";
         }
 
         private void DWCDTNBtn_Click(object sender, EventArgs e)
@@ -138,7 +147,7 @@ namespace Date__Time_Calculator
                 if (ConvertInputBox.SelectedIndex > ConvertOutputBox.SelectedIndex)
                 {
                     MessageBox.Show("The 'Output' format cannot be higher than the 'Input' format.", "Date Time Calculator", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    ConvertOutputBox.SelectedIndex = ConvertInputBox.SelectedIndex + 1;
+                    ConvertOutputBox.SelectedIndex = ConvertInputBox.SelectedIndex + 0;
                 }
                 Settings.input = ConvertInputBox.SelectedIndex;
                 Settings.output = ConvertOutputBox.SelectedIndex;
