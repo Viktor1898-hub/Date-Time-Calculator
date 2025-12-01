@@ -3344,4 +3344,7 @@
   <metadata name="NextBirthdayTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>134, 119</value>
   </metadata>
+  <metadata name="Age18Timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>287, 119</value>
+  </metadata>
 </root>

@@ -155,6 +155,7 @@
             this.guna2DragControl18 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.LiveForTimer = new System.Windows.Forms.Timer(this.components);
             this.NextBirthdayTimer = new System.Windows.Forms.Timer(this.components);
+            this.Age18Timer = new System.Windows.Forms.Timer(this.components);
             this.MenuPanel.SuspendLayout();
             this.UnixPanel.SuspendLayout();
             this.BirthdayPanel.SuspendLayout();
@@ -1971,6 +1972,10 @@
             // 
             this.NextBirthdayTimer.Tick += new System.EventHandler(this.NextBirthdayTimer_Tick);
             // 
+            // Age18Timer
+            // 
+            this.Age18Timer.Tick += new System.EventHandler(this.Age18Timer_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2140,6 +2145,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel LiveForResLbl;
         private System.Windows.Forms.Timer LiveForTimer;
         private System.Windows.Forms.Timer NextBirthdayTimer;
+        private System.Windows.Forms.Timer Age18Timer;
     }
 }
 

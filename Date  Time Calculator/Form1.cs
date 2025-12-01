@@ -208,15 +208,30 @@ namespace Date__Time_Calculator
                 BirthPicker.Value = DateTime.Now;
                 MessageBox.Show("The date cannot be later than today", "Date Time Calculator", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            if (DateTime.Now.Year - BirthPicker.Value.Year <= 18)
+            {
+                Age18Lbl.Text = "You will be 18 years old";
+            }
+            else
+            {
+                Age18Lbl.Text = "You were 18 years old";
+            }
             Settings.pickfrom = BirthPicker.Value;
             LiveForTimer.Start();
             NextBirthdayTimer.Start();
+            Age18Timer.Start();
         }
 
         private void NextBirthdayTimer_Tick(object sender, EventArgs e)
         { 
             Work.NextBirthday();
             NextBResLbl.Text = $"{Settings.months}M {Settings.days}D {Settings.hours}H {Settings.minutes}Min {Settings.seconds}Sec";
+        }
+
+        private void Age18Timer_Tick(object sender, EventArgs e)
+        {
+            Work.Age18();
+            Age18ResLbl.Text = $"{Settings.years}Y {Settings.months}M {Settings.days}D {Settings.hours}H {Settings.minutes}Min {Settings.seconds}Sec";
         }
     }
 }
