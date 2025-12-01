@@ -325,6 +325,7 @@
             this.DateWorkCountBtn.TabIndex = 2;
             this.DateWorkCountBtn.Text = "Date Working Counter";
             this.DateWorkCountBtn.UseTransparentBackground = true;
+            this.DateWorkCountBtn.Click += new System.EventHandler(this.DateWorkCountBtn_Click);
             // 
             // LeapCounterBtn
             // 
