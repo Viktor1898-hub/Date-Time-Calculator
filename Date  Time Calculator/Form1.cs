@@ -27,7 +27,6 @@ namespace Date__Time_Calculator
             this.Controls.Add(LeapPanel);
             this.Controls.Add(ConverterPanel);
             this.Controls.Add(BirthdayPanel);
-            BirthdayPanel.BringToFront();
         }
         private void UnixTimer_Tick(object sender, EventArgs e)
         {
@@ -257,6 +256,17 @@ namespace Date__Time_Calculator
             DateCompPanel.Visible = false;
             InfoPanel.Visible = true;
             InfoPanel.BringToFront();
+        }
+
+        private void DateComparerBtn_Click(object sender, EventArgs e)
+        {
+            BirthdayPanel.Visible = false;
+            ConverterPanel.Visible = false;
+            DateWorkCountPanel.Visible = false;
+            LeapPanel.Visible = false;
+            InfoPanel.Visible = false;
+            DateCompPanel.Visible = true;
+            DateCompPanel.BringToFront();
         }
     }
 }

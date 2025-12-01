@@ -369,6 +369,7 @@
             this.DateComparerBtn.TabIndex = 0;
             this.DateComparerBtn.Text = "Date Comparer";
             this.DateComparerBtn.UseTransparentBackground = true;
+            this.DateComparerBtn.Click += new System.EventHandler(this.DateComparerBtn_Click);
             // 
             // guna2DragControl2
             // 
@@ -436,6 +437,7 @@
             this.BirthdayPanel.Name = "BirthdayPanel";
             this.BirthdayPanel.Size = new System.Drawing.Size(932, 573);
             this.BirthdayPanel.TabIndex = 7;
+            this.BirthdayPanel.Visible = false;
             // 
             // WillBeResLbl
             // 
