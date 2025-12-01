@@ -281,6 +281,7 @@
             this.BirthdayInformerBtn.TabIndex = 4;
             this.BirthdayInformerBtn.Text = "Birthday Informer";
             this.BirthdayInformerBtn.UseTransparentBackground = true;
+            this.BirthdayInformerBtn.Click += new System.EventHandler(this.BirthdayInformerBtn_Click);
             // 
             // TimeConverterBtn
             // 

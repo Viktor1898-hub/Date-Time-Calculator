@@ -301,5 +301,16 @@ namespace Date__Time_Calculator
             InfoPanel.Visible = false;
             ConverterPanel.BringToFront();
         }
+
+        private void BirthdayInformerBtn_Click(object sender, EventArgs e)
+        {
+            BirthdayPanel.Visible = true;
+            ConverterPanel.Visible = false;
+            DateWorkCountPanel.Visible = false;
+            LeapPanel.Visible = false;
+            DateCompPanel.Visible = false;
+            InfoPanel.Visible = false;
+            BirthdayPanel.BringToFront();
+        }
     }
 }
