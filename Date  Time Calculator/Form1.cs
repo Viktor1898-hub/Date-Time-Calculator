@@ -75,13 +75,6 @@ namespace Date__Time_Calculator
             catch { }
         }
 
-        private void DWCDTNBtn_Click(object sender, EventArgs e)
-        {
-            DWKSelectFromPicker.Value = DateTime.Now;
-            DWKSelectToPicker.Value = DateTime.Now;
-            DWCResultLbl.Text = "0 Working days";
-        }
-
         private void DWCGoBtn_Click(object sender, EventArgs e)
         {
             try

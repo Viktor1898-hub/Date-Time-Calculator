@@ -1494,12 +1494,11 @@
             this.DWKSelectToPicker.CustomFormat = "dd.MM.yyyy ";
             this.DWKSelectToPicker.FillColor = System.Drawing.Color.PaleTurquoise;
             this.DWKSelectToPicker.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.DWKSelectToPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DWKSelectToPicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.DWKSelectToPicker.Location = new System.Drawing.Point(543, 74);
             this.DWKSelectToPicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.DWKSelectToPicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.DWKSelectToPicker.Name = "DWKSelectToPicker";
-            this.DWKSelectToPicker.ShowUpDown = true;
             this.DWKSelectToPicker.Size = new System.Drawing.Size(318, 44);
             this.DWKSelectToPicker.TabIndex = 27;
             this.DWKSelectToPicker.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1514,12 +1513,11 @@
             this.DWKSelectFromPicker.CustomFormat = "dd.MM.yyyy";
             this.DWKSelectFromPicker.FillColor = System.Drawing.Color.PaleTurquoise;
             this.DWKSelectFromPicker.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.DWKSelectFromPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DWKSelectFromPicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.DWKSelectFromPicker.Location = new System.Drawing.Point(58, 75);
             this.DWKSelectFromPicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.DWKSelectFromPicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.DWKSelectFromPicker.Name = "DWKSelectFromPicker";
-            this.DWKSelectFromPicker.ShowUpDown = true;
             this.DWKSelectFromPicker.Size = new System.Drawing.Size(318, 44);
             this.DWKSelectFromPicker.TabIndex = 26;
             this.DWKSelectFromPicker.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

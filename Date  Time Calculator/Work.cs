@@ -74,6 +74,10 @@ namespace Date__Time_Calculator
                 }
             }
             Settings.days = count;
+            if (from == to)
+            {
+                Settings.days = 0;
+            }
         }
         public static void LeapCount()
         {
