@@ -101,83 +101,141 @@ namespace Date__Time_Calculator
         {
             if (Settings.input == Settings.output)
             {
-                Settings.total = 0;
+                Settings.total = 1;
             }
-            if (Settings.input == 0)
+            else if (Settings.input < Settings.output)
             {
-                if (Settings.output == 0)
+                Settings.total = 1;
+                for (int i = Settings.input; i < Settings.output; i++)
                 {
-                    Settings.total = 12;
-                }
-                if (Settings.output == 1)
-                {
-                    Settings.total = 365;
-                }
-                if (Settings.output == 2)
-                {
-                    Settings.total = 8760;
-                }
-                if (Settings.output == 3)
-                {
-                    Settings.total = 525600;
-                }
-                if (Settings.output == 4)
-                {
-                    Settings.total = 31536000;
+                    if (i == 0)
+                    {
+                        Settings.total *= 12;
+                    }
+                    else if (i == 1)
+                    {
+                        Settings.total *= 30.41666667;
+                    }
+                    else if (i == 2)
+                    {
+                        Settings.total *= 24;
+                    }
+                    else if (i == 3)
+                    {
+                        Settings.total *= 60;
+                    }
+                    else if (i == 4)
+                    {
+                        Settings.total *= 60;
+                    }
                 }
             }
-            if (Settings.input == 1)
+            else if (Settings.input > Settings.output)
             {
-                if (Settings.output == 1)
+                Settings.total = 1.0;
+                for (int i = Settings.input; i > Settings.output; i--)
                 {
-                    Settings.total = 30;
-                }
-                if (Settings.output == 2)
-                {
-                    Settings.total = 720;
-                }
-                if (Settings.output == 3)
-                {
-                    Settings.total = 43200;
-                }
-                if (Settings.output == 4) 
-                {
-                    Settings.total = 2592000;
-                }
-            }
-            if (Settings.input == 2)
-            {
-                if (Settings.output == 2)
-                {
-                    Settings.total = 24;
-                }
-                if (Settings.output == 3)
-                {
-                    Settings.total = 1440;
-                }
-                if (Settings.output == 4)
-                {
-                    Settings.total = 86400;
+                    if (i == 5)
+                    {
+                        Settings.total /= 60.0;
+                    }
+                    else if (i == 4)
+                    {
+                        Settings.total /= 60.0;
+                    }
+                    else if (i == 3)
+                    {
+                        Settings.total /= 24.0;
+                    }
+                    else if (i == 2)
+                    {
+                        Settings.total /= 30.41666667;
+                    }
+                    else if (i == 1)
+                    {
+                        Settings.total /= 12.0;
+                    }
                 }
             }
-            if (Settings.input == 3)
-            {
-                if (Settings.output == 3)
-                {
-                    Settings.total = 60;
-                }
-                if (Settings.output == 4)
-                {
-                    Settings.total = 3600;
-                }
-            }
-            if (Settings.input == 4) 
-            {
-                if (Settings.output == 4)
-                {
-                    Settings.total = 60;
-                }
-            }
+            //if (Settings.input == 0)
+            //{
+            //    if (Settings.output == 1)
+            //    {
+            //        Settings.total = 12;
+            //    }
+            //    if (Settings.output == 2)
+            //    {
+            //        Settings.total = 365;
+            //    }
+            //    if (Settings.output == 3)
+            //    {
+            //        Settings.total = 8760;
+            //    }
+            //    if (Settings.output == 4)
+            //    {
+            //        Settings.total = 525600;
+            //    }
+            //    if (Settings.output == 5)
+            //    {
+            //        Settings.total = 31536000;
+            //    }
+            //}
+            //if (Settings.input == 1)
+            //{
+            //    if (Settings.output == 1)
+            //    {
+            //        Settings.total = 12;
+            //    }
+            //    if (Settings.output == 2)
+            //    {
+            //        Settings.total = 30;
+            //    }
+            //    if (Settings.output == 3)
+            //    {
+            //        Settings.total = 720;
+            //    }
+            //    if (Settings.output == 4)
+            //    {
+            //        Settings.total = 43200;
+            //    }
+            //    if (Settings.output == 5)
+            //    {
+            //        Settings.total = 2592000;
+            //    }
+            //}
+            //if (Settings.input == 2)
+            //{
+            //    if (Settings.output == 3)
+            //    {
+            //        Settings.total = 24;
+            //    }
+            //    if (Settings.output == 4)
+            //    {
+            //        Settings.total = 1440;
+            //    }
+            //    if (Settings.output == 5)
+            //    {
+            //        Settings.total = 86400;
+            //    }
+            //}
+            //if (Settings.input == 3)
+            //{
+            //    if (Settings.output == 4)
+            //    {
+            //        Settings.total = 60;
+            //    }
+            //    if (Settings.output == 5)
+            //    {
+            //        Settings.total = 3600;
+            //    }
+            //}
+            //if (Settings.input == 4)
+            //{
+            //    if (Settings.output == 5)
+            //    {
+            //        Settings.total = 60;
+            //    }
+            //}
         }
         public static void LiveFor()
         {

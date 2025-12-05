@@ -436,7 +436,7 @@
             this.BirthdayPanel.FillColor3 = System.Drawing.Color.Transparent;
             this.BirthdayPanel.Location = new System.Drawing.Point(118, 100);
             this.BirthdayPanel.Name = "BirthdayPanel";
-            this.BirthdayPanel.Size = new System.Drawing.Size(932, 573);
+            this.BirthdayPanel.Size = new System.Drawing.Size(150, 150);
             this.BirthdayPanel.TabIndex = 7;
             this.BirthdayPanel.Visible = false;
             // 
@@ -1734,7 +1734,7 @@
             this.ConvertGoBtn.FillColor2 = System.Drawing.Color.Transparent;
             this.ConvertGoBtn.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConvertGoBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ConvertGoBtn.Location = new System.Drawing.Point(579, 401);
+            this.ConvertGoBtn.Location = new System.Drawing.Point(575, 372);
             this.ConvertGoBtn.Name = "ConvertGoBtn";
             this.ConvertGoBtn.ShadowDecoration.BorderRadius = 8;
             this.ConvertGoBtn.ShadowDecoration.Color = System.Drawing.Color.Transparent;
@@ -1753,6 +1753,11 @@
             this.ConvertUpDown.FillColor = System.Drawing.Color.PaleTurquoise;
             this.ConvertUpDown.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ConvertUpDown.Location = new System.Drawing.Point(346, 383);
+            this.ConvertUpDown.Maximum = new decimal(new int[] {
+            1410065407,
+            2,
+            0,
+            0});
             this.ConvertUpDown.Name = "ConvertUpDown";
             this.ConvertUpDown.Size = new System.Drawing.Size(92, 30);
             this.ConvertUpDown.TabIndex = 42;
@@ -1799,6 +1804,7 @@
             this.ConvertOutputBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.ConvertOutputBox.ItemHeight = 30;
             this.ConvertOutputBox.Items.AddRange(new object[] {
+            "Year",
             "Mounth",
             "Day",
             "Hous",
@@ -1808,7 +1814,7 @@
             this.ConvertOutputBox.Name = "ConvertOutputBox";
             this.ConvertOutputBox.ShadowDecoration.Enabled = true;
             this.ConvertOutputBox.Size = new System.Drawing.Size(190, 36);
-            this.ConvertOutputBox.StartIndex = 1;
+            this.ConvertOutputBox.StartIndex = 2;
             this.ConvertOutputBox.TabIndex = 40;
             // 
             // ConvertOutLbl
@@ -1851,7 +1857,8 @@
             "Mounth",
             "Day",
             "Hous",
-            "Minut"});
+            "Minut",
+            "Second"});
             this.ConvertInputBox.Location = new System.Drawing.Point(123, 131);
             this.ConvertInputBox.Name = "ConvertInputBox";
             this.ConvertInputBox.ShadowDecoration.Enabled = true;
