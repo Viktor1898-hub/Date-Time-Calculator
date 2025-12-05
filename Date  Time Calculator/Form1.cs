@@ -42,7 +42,17 @@ namespace Date__Time_Calculator
                 if (ComparerFromPicker.Value > ComparerToPicker.Value)
                 {
                     MessageBox.Show("The 'From' date cannot be later than the 'To' date.", "Date Time Calculator", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
+                    ComparerFromPicker.Value = DateTime.Now;
+                    ComparerToPicker.Value = DateTime.Now;
+                    DCYersNumLbl.Text = "0";
+                    DCMonthNumLbl.Text = "0";
+                    DCWeekNumLbl.Text = "0";
+                    DCDayNumLbl.Text = "0";
+                    DCHourNum.Text = "00: ";
+                    DCMinutNum.Text = "00: ";
+                    DCSecondNum.Text = "00: ";
+                    DCMSNum.Text = "000";
+                    DCTotalNumLbl.Text = "0";
                 }
                 Settings.pickfrom = ComparerFromPicker.Value;
                 Settings.pickto = ComparerToPicker.Value;
@@ -63,21 +73,6 @@ namespace Date__Time_Calculator
                 else if (Settings.milliseconds < 100) DCMSNum.Text = "0" + DCMSNum.Text;
             }
             catch { }
-        }
-
-        private void DCDateTimeNowBtn_Click(object sender, EventArgs e)
-        {
-            ComparerFromPicker.Value = DateTime.Now;
-            ComparerToPicker.Value = DateTime.Now;
-            DCYersNumLbl.Text = "0";
-            DCMonthNumLbl.Text = "0";
-            DCWeekNumLbl.Text = "0";
-            DCDayNumLbl.Text = "0";
-            DCHourNum.Text = "00: ";
-            DCMinutNum.Text = "00: ";
-            DCSecondNum.Text = "00: ";
-            DCMSNum.Text = "000";
-            DCTotalNumLbl.Text = "0";
         }
 
         private void DWCDTNBtn_Click(object sender, EventArgs e)
@@ -108,13 +103,6 @@ namespace Date__Time_Calculator
                 DWCResultLbl.Text = Settings.days.ToString() + " Working days";
             }
             catch { }
-        }
-
-        private void LeapDTNBtn_Click(object sender, EventArgs e)
-        {
-            LeapFromPicker.Value = DateTime.Now;
-            LeapToPicker.Value = DateTime.Now;
-            LeapResLbl.Text = "0 Leap years";
         }
 
         private void LeapGoBtn_Click(object sender, EventArgs e)

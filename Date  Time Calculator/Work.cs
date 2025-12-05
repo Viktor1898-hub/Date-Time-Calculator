@@ -12,27 +12,40 @@ namespace Date__Time_Calculator
     {
         public static void DateCompar()
         {
-            Settings.years = 0;
-            Settings.months = 0;
-            Settings.weeks = 0;
-            Settings.days = 0;
-            Settings.hours = 0;
-            Settings.minutes = 0;
-            Settings.seconds = 0;
-            Settings.milliseconds = 0;
             TimeSpan timeSpan = Settings.pickto - Settings.pickfrom;
-            Settings.hours = timeSpan.Hours;
-            Settings.minutes = timeSpan.Minutes;
-            Settings.seconds = timeSpan.Seconds;
-            Settings.milliseconds = timeSpan.Milliseconds;
             Settings.total = timeSpan.Days;
+            Settings.milliseconds = Settings.pickto.Millisecond - Settings.pickfrom.Millisecond;
+            Settings.seconds = Settings.pickto.Second - Settings.pickfrom.Second;
+            Settings.minutes = Settings.pickto.Minute - Settings.pickfrom.Minute;
+            Settings.hours = Settings.pickto.Hour - Settings.pickfrom.Hour;
             Settings.years = Settings.pickto.Year - Settings.pickfrom.Year;
             Settings.months = Settings.pickto.Month - Settings.pickfrom.Month;
             Settings.days = Settings.pickto.Day - Settings.pickfrom.Day;
+            if (Settings.milliseconds < 0) 
+            {
+                Settings.seconds--;
+                Settings.milliseconds += 1000;
+            }
+            if (Settings.seconds < 0)
+            {
+                Settings.minutes--;
+                Settings.seconds += 60;
+            }
+            if (Settings.minutes < 0)
+            {
+                Settings.hours--;
+                Settings.minutes += 60;
+            }
+            if (Settings.hours < 0)
+            {
+                Settings.days--;
+                Settings.hours += 24;
+            }
             if (Settings.days < 0)
             {
                 Settings.months--;
-                Settings.days += DateTime.DaysInMonth(Settings.pickfrom.Year, Settings.pickfrom.Month - 1);
+                var prevMonth = DateTime.Now.AddMonths(-1);
+                Settings.days += DateTime.DaysInMonth(prevMonth.Year, prevMonth.Month);
             }
             if (Settings.months < 0)
             {
@@ -42,6 +55,7 @@ namespace Date__Time_Calculator
             Settings.weeks = Settings.days / 7;
             Settings.days = Settings.days % 7;
         }
+
         public static void WorkCounter()
         {
             DateTime from = Settings.pickfrom;

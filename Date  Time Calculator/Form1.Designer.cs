@@ -76,7 +76,6 @@
             this.DCMSNum = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DCSecondNum = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DCMinutNum = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DCDateTimeNowBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.DCTotalNumLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.TotalDayLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DCHourNum = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -124,7 +123,6 @@
             this.DWCWednesdayCheckBox = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.DWCTuesdayCheckBox = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.DWCMondayCheckBox = new Guna.UI2.WinForms.Guna2CustomCheckBox();
-            this.DWCDTNBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.DWCGoBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.DWKSelectToPicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.DWKSelectFromPicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -133,7 +131,6 @@
             this.LeapPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.LeapResLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LeapPassLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.LeapDTNBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.LeapGoBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.LeapToPicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.LeapFromPicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -791,7 +788,6 @@
             this.DateCompPanel.Controls.Add(this.DCMSNum);
             this.DateCompPanel.Controls.Add(this.DCSecondNum);
             this.DateCompPanel.Controls.Add(this.DCMinutNum);
-            this.DateCompPanel.Controls.Add(this.DCDateTimeNowBtn);
             this.DateCompPanel.Controls.Add(this.DCTotalNumLbl);
             this.DateCompPanel.Controls.Add(this.TotalDayLbl);
             this.DateCompPanel.Controls.Add(this.DCHourNum);
@@ -853,31 +849,6 @@
             this.DCMinutNum.Size = new System.Drawing.Size(42, 31);
             this.DCMinutNum.TabIndex = 24;
             this.DCMinutNum.Text = "00:";
-            // 
-            // DCDateTimeNowBtn
-            // 
-            this.DCDateTimeNowBtn.BackColor = System.Drawing.Color.Transparent;
-            this.DCDateTimeNowBtn.BorderRadius = 8;
-            this.DCDateTimeNowBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.DCDateTimeNowBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.DCDateTimeNowBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.DCDateTimeNowBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.DCDateTimeNowBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.DCDateTimeNowBtn.FillColor = System.Drawing.Color.Transparent;
-            this.DCDateTimeNowBtn.FillColor2 = System.Drawing.Color.Transparent;
-            this.DCDateTimeNowBtn.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DCDateTimeNowBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DCDateTimeNowBtn.Location = new System.Drawing.Point(401, 44);
-            this.DCDateTimeNowBtn.Name = "DCDateTimeNowBtn";
-            this.DCDateTimeNowBtn.ShadowDecoration.BorderRadius = 8;
-            this.DCDateTimeNowBtn.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.DCDateTimeNowBtn.ShadowDecoration.Depth = 20;
-            this.DCDateTimeNowBtn.ShadowDecoration.Enabled = true;
-            this.DCDateTimeNowBtn.Size = new System.Drawing.Size(118, 73);
-            this.DCDateTimeNowBtn.TabIndex = 23;
-            this.DCDateTimeNowBtn.Text = "Date Time Now";
-            this.DCDateTimeNowBtn.UseTransparentBackground = true;
-            this.DCDateTimeNowBtn.Click += new System.EventHandler(this.DCDateTimeNowBtn_Click);
             // 
             // DCTotalNumLbl
             // 
@@ -1209,7 +1180,6 @@
             this.DateWorkCountPanel.Controls.Add(this.DWCWednesdayCheckBox);
             this.DateWorkCountPanel.Controls.Add(this.DWCTuesdayCheckBox);
             this.DateWorkCountPanel.Controls.Add(this.DWCMondayCheckBox);
-            this.DateWorkCountPanel.Controls.Add(this.DWCDTNBtn);
             this.DateWorkCountPanel.Controls.Add(this.DWCGoBtn);
             this.DateWorkCountPanel.Controls.Add(this.DWKSelectToPicker);
             this.DateWorkCountPanel.Controls.Add(this.DWKSelectFromPicker);
@@ -1490,31 +1460,6 @@
             this.DWCMondayCheckBox.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.DWCMondayCheckBox.UseTransparentBackground = true;
             // 
-            // DWCDTNBtn
-            // 
-            this.DWCDTNBtn.BackColor = System.Drawing.Color.Transparent;
-            this.DWCDTNBtn.BorderRadius = 8;
-            this.DWCDTNBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.DWCDTNBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.DWCDTNBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.DWCDTNBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.DWCDTNBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.DWCDTNBtn.FillColor = System.Drawing.Color.Transparent;
-            this.DWCDTNBtn.FillColor2 = System.Drawing.Color.Transparent;
-            this.DWCDTNBtn.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DWCDTNBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DWCDTNBtn.Location = new System.Drawing.Point(401, 45);
-            this.DWCDTNBtn.Name = "DWCDTNBtn";
-            this.DWCDTNBtn.ShadowDecoration.BorderRadius = 8;
-            this.DWCDTNBtn.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.DWCDTNBtn.ShadowDecoration.Depth = 20;
-            this.DWCDTNBtn.ShadowDecoration.Enabled = true;
-            this.DWCDTNBtn.Size = new System.Drawing.Size(118, 73);
-            this.DWCDTNBtn.TabIndex = 29;
-            this.DWCDTNBtn.Text = "Date Time Now";
-            this.DWCDTNBtn.UseTransparentBackground = true;
-            this.DWCDTNBtn.Click += new System.EventHandler(this.DWCDTNBtn_Click);
-            // 
             // DWCGoBtn
             // 
             this.DWCGoBtn.BackColor = System.Drawing.Color.Transparent;
@@ -1609,7 +1554,6 @@
             this.LeapPanel.BorderRadius = 17;
             this.LeapPanel.Controls.Add(this.LeapResLbl);
             this.LeapPanel.Controls.Add(this.LeapPassLbl);
-            this.LeapPanel.Controls.Add(this.LeapDTNBtn);
             this.LeapPanel.Controls.Add(this.LeapGoBtn);
             this.LeapPanel.Controls.Add(this.LeapToPicker);
             this.LeapPanel.Controls.Add(this.LeapFromPicker);
@@ -1646,31 +1590,6 @@
             this.LeapPassLbl.Size = new System.Drawing.Size(306, 31);
             this.LeapPassLbl.TabIndex = 36;
             this.LeapPassLbl.Text = "Passed between the dates";
-            // 
-            // LeapDTNBtn
-            // 
-            this.LeapDTNBtn.BackColor = System.Drawing.Color.Transparent;
-            this.LeapDTNBtn.BorderRadius = 8;
-            this.LeapDTNBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.LeapDTNBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.LeapDTNBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.LeapDTNBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.LeapDTNBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.LeapDTNBtn.FillColor = System.Drawing.Color.Transparent;
-            this.LeapDTNBtn.FillColor2 = System.Drawing.Color.Transparent;
-            this.LeapDTNBtn.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LeapDTNBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LeapDTNBtn.Location = new System.Drawing.Point(401, 94);
-            this.LeapDTNBtn.Name = "LeapDTNBtn";
-            this.LeapDTNBtn.ShadowDecoration.BorderRadius = 8;
-            this.LeapDTNBtn.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.LeapDTNBtn.ShadowDecoration.Depth = 20;
-            this.LeapDTNBtn.ShadowDecoration.Enabled = true;
-            this.LeapDTNBtn.Size = new System.Drawing.Size(118, 73);
-            this.LeapDTNBtn.TabIndex = 35;
-            this.LeapDTNBtn.Text = "Date Time Now";
-            this.LeapDTNBtn.UseTransparentBackground = true;
-            this.LeapDTNBtn.Click += new System.EventHandler(this.LeapDTNBtn_Click);
             // 
             // LeapGoBtn
             // 
@@ -2091,13 +2010,11 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel HMSMSLbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel DCTotalNumLbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel TotalDayLbl;
-        private Guna.UI2.WinForms.Guna2GradientButton DCDateTimeNowBtn;
         private Guna.UI2.WinForms.Guna2HtmlLabel DCMSNum;
         private Guna.UI2.WinForms.Guna2HtmlLabel DCSecondNum;
         private Guna.UI2.WinForms.Guna2HtmlLabel DCMinutNum;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel DateWorkCountPanel;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl15;
-        private Guna.UI2.WinForms.Guna2GradientButton DWCDTNBtn;
         private Guna.UI2.WinForms.Guna2GradientButton DWCGoBtn;
         private Guna.UI2.WinForms.Guna2DateTimePicker DWKSelectToPicker;
         private Guna.UI2.WinForms.Guna2DateTimePicker DWKSelectFromPicker;
@@ -2123,7 +2040,6 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel LeapPanel;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl16;
         private Guna.UI2.WinForms.Guna2HtmlLabel LeapPassLbl;
-        private Guna.UI2.WinForms.Guna2GradientButton LeapDTNBtn;
         private Guna.UI2.WinForms.Guna2GradientButton LeapGoBtn;
         private Guna.UI2.WinForms.Guna2DateTimePicker LeapToPicker;
         private Guna.UI2.WinForms.Guna2DateTimePicker LeapFromPicker;
