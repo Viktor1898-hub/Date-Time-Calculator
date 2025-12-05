@@ -90,7 +90,7 @@ namespace Date__Time_Calculator
                 for (DateTime start = from; start <= to; start = start.AddYears(1))
                 {
                     year = start.Year;
-                    if (year % 4 == 0 || year % 400 == 0 && year % 100 != 0)
+                    if (year % 100 != 0 && year % 4 == 0 || year % 400 == 0)
                     {
                         Settings.total++;
                     }
