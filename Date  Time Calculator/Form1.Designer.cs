@@ -436,7 +436,7 @@
             this.BirthdayPanel.FillColor3 = System.Drawing.Color.Transparent;
             this.BirthdayPanel.Location = new System.Drawing.Point(118, 100);
             this.BirthdayPanel.Name = "BirthdayPanel";
-            this.BirthdayPanel.Size = new System.Drawing.Size(150, 150);
+            this.BirthdayPanel.Size = new System.Drawing.Size(139, 117);
             this.BirthdayPanel.TabIndex = 7;
             this.BirthdayPanel.Visible = false;
             // 

@@ -125,6 +125,12 @@ namespace Date__Time_Calculator
         {
             try
             {
+                if (string.IsNullOrEmpty(ConvertUpDown.Text))
+                {
+                    MessageBox.Show("Please enter a valid number to convert.", "Date Time Calculator", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    ConvertUpDown.Value = 1;
+                    ConvertUpDown.Text = "1";
+                }
                 Settings.input = ConvertInputBox.SelectedIndex;
                 Settings.output = ConvertOutputBox.SelectedIndex;
                 Work.Converter();
